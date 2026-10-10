@@ -494,6 +494,118 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "cocido-de-malole",
+  "titulo": "Cocido de Malole",
+  "titulo_es": "Cocido rápido con garbanzos de bote y pollo",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa (hojas de cuadros)",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Guisos",
+  "etiquetas": [
+   "legumbres",
+   "garbanzos",
+   "pollo",
+   "caldo",
+   "plato de cuchara",
+   "de casa"
+  ],
+  "estilo": "libro-rosa-cuadros",
+  "raciones": {
+   "cantidad": 2,
+   "unidad": "personas",
+   "original": "2 pers."
+  },
+  "tiempos": {
+   "preparacion": 10,
+   "coccion": 60
+  },
+  "ingredientes": [
+   {
+    "grupo": "Todo a la olla",
+    "items": [
+     {
+      "cantidad": 500,
+      "unidad": "g",
+      "nombre": "garbanzos cocidos",
+      "nota": "un bote, lavados"
+     },
+     {
+      "cantidad": 2,
+      "nombre": "patata",
+      "nombre_plural": "patatas",
+      "nota": "peladas y partidas"
+     },
+     {
+      "cantidad": 2,
+      "nombre": "cuarto trasero de pollo",
+      "nombre_plural": "cuartos traseros de pollo",
+      "nota": "limpios, sin piel"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "cebolla",
+      "nombre_plural": "cebollas",
+      "nota": "entera, pelada y pinchada"
+     },
+     {
+      "cantidad": 3,
+      "unidad": "diente",
+      "nombre": "ajo"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pastilla",
+      "nombre": "caldo de pollo",
+      "nota": "tipo Avecrem"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "chorro",
+      "nombre": "aceite de oliva"
+     },
+     {
+      "nombre": "sal"
+     },
+     {
+      "nombre": "agua",
+      "nota": "hasta cubrir"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Preparar",
+    "texto": "Lava los garbanzos del bote. Pela y parte las patatas. Limpia los traseros de pollo y quítales la piel. Pela la cebolla, déjala entera y pínchala varias veces con un tenedor para que suelte el sabor."
+   },
+   {
+    "titulo": "Todo junto a la olla",
+    "texto": "Pon todo en una olla: garbanzos, patatas, pollo, cebolla, ajos y la pastilla de caldo. Cúbrelo con agua, añade un chorro de aceite de oliva y sal."
+   },
+   {
+    "titulo": "Una hora a fuego medio",
+    "texto": "Tapa la olla, sin cerrarla del todo, y deja cocer 1 hora a fuego medio.",
+    "nota_adaptacion": "Los garbanzos de bote ya vienen cocidos. Si los quieres enteros y no deshechos, puedes añadirlos en los últimos 20 minutos."
+   },
+   {
+    "titulo": "Lo que sale",
+    "texto": "De la olla sale: el caldo, para tomarlo como sopa; las patatas y los garbanzos; y el pollo, que se desmiga para croquetas, ensalada… O todo junto, como plato de cuchara."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "COCIDO DE MALOLE (2 pers.)\n\n1 bote de garbanzos cocidos lavados (½ kg).\n2 patatas peladas y partidas.\n2 traseros de pollo limpios (sin piel).\n1 cebolla entera sin piel y pinchada.\n3 dientes de ajo\n1 pastilla de avecrem.\nAgua, aceite oliva, sal.\n\nTodo junto a la olla. Se cubre con agua con un chorro de aceite de oliva y sal.\nLo tapo (no del todo) 1 h a Tª media.\n\nSale → caldo.\n         Patatas y garbanzos\n         Pollo (para croquetas, ensalada…)\n      ó plato de cuchara.",
+   "dudas": [
+    "«Malole»: ¿lo leo bien? Entiendo que es el nombre o apodo de quien hacía la receta."
+   ]
+  },
+  "alta": "2026-10-10"
+ },
+ {
   "id": "cordero-asado",
   "titulo": "Cordero asado",
   "titulo_es": "Dos piernas y una paletilla de lechal",

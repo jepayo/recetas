@@ -78,3 +78,4 @@ Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble.
 | canelones-de-verano | libro rosa | 2026-10-10 |
 | monteritas-de-mejillones | libro rosa | 2026-10-10 |
 | cordero-asado | libro rosa | 2026-10-10 |
+| cocido-de-malole | libro rosa, hojas de cuadros | 2026-10-10 |
