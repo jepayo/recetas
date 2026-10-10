@@ -1,0 +1,124 @@
+{
+  "id": "ensalada-de-canonigos",
+  "titulo": "Ensalada de canónigos",
+  "titulo_es": "Con bacon, queso de cabra y vinagreta de miel y mostaza",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Ensaladas",
+  "etiquetas": [
+    "ensalada",
+    "queso de cabra",
+    "frutos secos",
+    "rápida",
+    "de casa"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+    "cantidad": 2,
+    "unidad": "personas",
+    "original": "No lo indica: 2 estimado por la cantidad de salsa"
+  },
+  "tiempos": {
+    "preparacion": 10,
+    "coccion": 5
+  },
+  "ingredientes": [
+    {
+      "grupo": "Para la ensalada",
+      "items": [
+        {
+          "cantidad": 125,
+          "unidad": "g",
+          "nombre": "canónigos",
+          "nota": "una bolsa",
+          "estimada": true
+        },
+        {
+          "cantidad": 40,
+          "unidad": "g",
+          "nombre": "nueces o piñones",
+          "estimada": true
+        },
+        {
+          "cantidad": 100,
+          "unidad": "g",
+          "nombre": "bacon",
+          "nota": "en tiras",
+          "estimada": true
+        },
+        {
+          "cantidad": 100,
+          "unidad": "g",
+          "nombre": "queso de cabra fresco",
+          "estimada": true
+        }
+      ]
+    },
+    {
+      "grupo": "Para la salsa",
+      "items": [
+        {
+          "cantidad": 45,
+          "unidad": "ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": 15,
+          "unidad": "ml",
+          "nombre": "vinagre"
+        },
+        {
+          "cantidad": 5,
+          "unidad": "g",
+          "nombre": "mostaza amarilla",
+          "nota": "en el original «1 c.»: ¿5 g o 15 g? [?]"
+        },
+        {
+          "cantidad": 7,
+          "unidad": "g",
+          "nombre": "miel",
+          "nota": "en el original «1 c.»: ¿7 g o 20 g? [?]"
+        },
+        {
+          "nombre": "sal fina"
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El bacon",
+      "texto": "Fríe el bacon en una sartén sin aceite: suelta su propia grasa. Déjalo hasta que quede crujiente y escúrrelo sobre papel de cocina."
+    },
+    {
+      "titulo": "Los frutos secos",
+      "texto": "Trocea las nueces con las manos. Si usas piñones, tuéstalos 2–3 minutos en una sartén sin aceite, removiendo para que no se quemen.",
+      "nota_adaptacion": "Lo de tostar los piñones no viene en el original; es opcional, pero ganan mucho."
+    },
+    {
+      "titulo": "La salsa",
+      "texto": "Mezcla en un bote o un cuenco el aceite, el vinagre, la mostaza, la miel y una pizca de sal fina. Bate (o agita el bote cerrado) hasta que emulsione."
+    },
+    {
+      "titulo": "Montar",
+      "texto": "Pon los canónigos lavados y bien secos en una fuente. Reparte por encima el queso de cabra desmenuzado, los frutos secos y el bacon."
+    },
+    {
+      "titulo": "Aliñar y servir",
+      "texto": "Echa la salsa por encima a última hora, justo antes de servir, para que los canónigos no se ablanden."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "ENSALADA CANÓNIGOS\n\nNueces o piñones\nBacon frito (solo) sin aceite\nQueso cabra fresco\n\nSalsa (añadir a última hora por encima):\n3 cucharadas aceite oliva\n1 cucharada vinagre\n1 c. mostaza amarilla\n1 c. miel\nSal fina",
+    "dudas": [
+      "«1 c. mostaza / 1 c. miel»: ¿cucharada o cucharadita? Las dos líneas anteriores ponen «cucharada» entera, así que «c.» podría ser otra cosa. Se ha tomado cucharadita (5 g de mostaza, 7 g de miel)."
+    ]
+  },
+  "alta": "2026-10-10"
+}

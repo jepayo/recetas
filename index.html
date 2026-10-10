@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recetario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,600;0,800;0,900;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Serif+Display&family=Playfair+Display:wght@500;700&family=Caveat:wght@500;700&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Variables de tema. Cada estilo de receta (data-estilo en <html> o en una tarjeta) las redefine. */
+:root {
+  --bg: #f7f3ec; --paper: #fffdf9; --ink: #2b2622; --muted: #857a6f; --line: #e6ddcf;
+  --accent: #b5532f; --accent-soft: #f3e1d6; --note: #f6efdc; --note-line: #e0cf9f;
+  --num-bg: var(--accent-soft); --num-fg: var(--accent);
+  --display: 'Fraunces', Georgia, serif; --texto: 'Inter', system-ui, sans-serif;
+  --peso: 800; --caso: none; --tracking: -.02em;
+  --sub: italic 400 19px/1.4 'Fraunces', Georgia, serif;
+  --ornamento: none;                 /* adorno bajo el título */
+  --banda: var(--accent);            /* tira decorativa de cabecera y tarjetas */
+  --fondo: var(--bg);                /* fondo de página (admite patrones) */
+  --marco: none; --marco-ancho: 0px; /* orlas laterales fijas */
+  --nota-fondo: var(--paper);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1c1916; --paper: #24201c; --ink: #ede6dc; --muted: #a39688; --line: #3a332c;
+    --accent: #e08259; --accent-soft: #3d2a20; --note: #2e2a1f; --note-line: #5a4d2c;
+  }
+}
+
+/* ---------- Estilos de receta ----------
+   Van después del modo oscuro para imponerse: un estilo es una decisión de diseño de la receta. */
+
+/* Trattoria: página blanca, orlas de pinceladas rojas,
+   títulos en palo seco negro y mayúsculas, el «• ● •» bajo el título y mantel de rayas azules. */
+:is(html, .tarjeta)[data-estilo="trattoria"] {
+  --bg: #ffffff; --paper: #ffffff; --ink: #1f1e1c; --muted: #6e6962; --line: #ebe5dc;
+  --accent: #d22b26; --accent-soft: #fde4e0; --note: #f3f6fc; --note-line: #2c56a8;
+  --num-bg: #d22b26; --num-fg: #ffffff;
+  --display: 'Montserrat', system-ui, sans-serif; --texto: 'Lora', Georgia, serif;
+  --peso: 900; --caso: uppercase; --tracking: .01em;
+  --sub: 400 17px/1.4 'Lora', Georgia, serif;
+  --ornamento: '•  ●  •';
+  --banda: repeating-linear-gradient(90deg, #d22b26 0 10px, #fff 10px 20px) top / 100% 50% repeat-x,
+           repeating-linear-gradient(90deg, #fff 0 10px, #d22b26 10px 20px) bottom / 100% 50% repeat-x;
+  --fondo: #ffffff;
+  --marco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='24'%3E%3Cpath d='M6 8.5c5-3.2 19-3.6 24-1.2 2.6 1.3 2.2 6.4-.8 7.6-6.4 2.3-17.6 2.4-22.4.3-3.2-1.4-3.4-4.9-.8-6.7z' fill='%23d22b26'/%3E%3C/svg%3E") center top / 36px 24px repeat-y, #fff;
+  --marco-ancho: 36px;
+  --nota-fondo: repeating-linear-gradient(180deg, #fff 0 16px, rgba(44,86,168,.16) 16px 19px, #fff 19px 23px, rgba(44,86,168,.09) 23px 24px, #fff 24px 40px);
+}
+/* Mediterráneo: azul cobalto y amarillo de azulejo sobre blanco. */
+:is(html, .tarjeta)[data-estilo="mediterraneo"] {
+  --bg: #f2f6fb; --paper: #ffffff; --ink: #13233f; --muted: #5b6a80; --line: #d9e2ee;
+  --accent: #1f4fa3; --accent-soft: #e1e9f7; --note: #fdf4d6; --note-line: #e2ae35;
+  --num-bg: #1f4fa3; --num-fg: #ffffff;
+  --display: 'DM Serif Display', Georgia, serif; --texto: 'Inter', system-ui, sans-serif;
+  --peso: 400; --caso: none; --tracking: 0;
+  --sub: italic 400 19px/1.4 'Lora', Georgia, serif;
+  --ornamento: '✺';
+  --banda: repeating-linear-gradient(90deg, #1f4fa3 0 14px, #e2ae35 14px 18px, #1f4fa3 18px 32px, #fff 32px 36px);
+  --fondo: radial-gradient(circle at 50% 50%, transparent 0 9px, rgba(31,79,163,.07) 9px 11px, transparent 11px) 0 0 / 34px 34px,
+           radial-gradient(circle at 0 0, rgba(226,174,53,.12) 0 4px, transparent 4px) 0 0 / 34px 34px, #f2f6fb;
+  --nota-fondo: var(--note);
+}
+/* Bistró: oscuro, dorado y serif clásica. */
+:is(html, .tarjeta)[data-estilo="bistro"] {
+  --bg: #15171b; --paper: #1e2126; --ink: #efe8dc; --muted: #9c948a; --line: #34373d;
+  --accent: #c9a45c; --accent-soft: #2d2a23; --note: #24231f; --note-line: #c9a45c;
+  --num-bg: transparent; --num-fg: #c9a45c;
+  --display: 'Playfair Display', Georgia, serif; --texto: 'Inter', system-ui, sans-serif;
+  --peso: 700; --caso: none; --tracking: 0;
+  --sub: italic 400 19px/1.4 'Playfair Display', Georgia, serif;
+  --ornamento: '✦';
+  --banda: linear-gradient(#c9a45c, #c9a45c) top / 100% 1px no-repeat, linear-gradient(#c9a45c, #c9a45c) bottom / 100% 1px no-repeat;
+  --fondo: #15171b;
+  --nota-fondo: var(--paper);
+}
+/* Nórdico: blanco, negro y un verde pino; sin adornos. */
+:is(html, .tarjeta)[data-estilo="nordico"] {
+  --bg: #f6f6f4; --paper: #ffffff; --ink: #161616; --muted: #787876; --line: #e6e6e2;
+  --accent: #2e6d60; --accent-soft: #e2eeeb; --note: #f1f1ee; --note-line: #bdbdb8;
+  --num-bg: #161616; --num-fg: #ffffff;
+  --display: 'Inter', system-ui, sans-serif; --texto: 'Inter', system-ui, sans-serif;
+  --peso: 700; --caso: none; --tracking: -.04em;
+  --sub: 400 18px/1.4 'Inter', system-ui, sans-serif;
+  --ornamento: none;
+  --banda: #161616;
+  --fondo: #f6f6f4;
+  --nota-fondo: var(--paper);
+}
+/* Huerta: verde oliva y paja, papel crudo. */
+:is(html, .tarjeta)[data-estilo="huerta"] {
+  --bg: #eef0e3; --paper: #fbfbf3; --ink: #2a2e22; --muted: #727861; --line: #dcdfca;
+  --accent: #5d7d34; --accent-soft: #e2e9cf; --note: #f5ecd1; --note-line: #cfb069;
+  --num-bg: #e2e9cf; --num-fg: #5d7d34;
+  --display: 'Fraunces', Georgia, serif; --texto: 'Lora', Georgia, serif;
+  --peso: 600; --caso: none; --tracking: -.01em;
+  --sub: italic 400 19px/1.4 'Fraunces', Georgia, serif;
+  --ornamento: '❦';
+  --banda: repeating-linear-gradient(90deg, #5d7d34 0 18px, #cfb069 18px 22px);
+  --fondo: #eef0e3;
+  --nota-fondo: var(--note);
+}
+
+/* Libro rosa: el cuaderno familiar de tapas rosas y hojas naranjas, escrito a boli. */
+:is(html, .tarjeta)[data-estilo="libro-rosa"] {
+  --bg: #e79bb1; --paper: #f6923f; --ink: #1d2139; --muted: #5e2c12; --line: #d4702c;
+  --accent: #8e1c4e; --accent-soft: #f9ab68; --note: #f9ab68; --note-line: #8e1c4e;
+  --num-bg: transparent; --num-fg: #1d2139;
+  --display: 'Caveat', cursive; --texto: 'Lora', Georgia, serif;
+  --peso: 700; --caso: uppercase; --tracking: .02em; --subrayado: underline;
+  --sub: 500 24px/1.3 'Caveat', cursive;
+  --ornamento: none;
+  --banda: #e79bb1;
+  --fondo: repeating-linear-gradient(45deg, rgba(255,255,255,.07) 0 2px, transparent 2px 6px), #e79bb1;
+  --nota-fondo: rgba(255,255,255,.16);
+}
+/* la página naranja sobre la tapa rosa */
+html[data-estilo="libro-rosa"] .wrap {
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.10), transparent 60%), #f28837;
+  margin-block: 28px; border-radius: 4px 14px 14px 4px;
+  box-shadow: -6px 0 0 #d9849c, 0 18px 40px -18px rgba(90,20,40,.55);
+}
+html[data-estilo="libro-rosa"] .lateral { border-color: rgba(29,33,57,.18); }
+html[data-estilo="libro-rosa"] .paso::before { font-size: 24px; border-width: 2px; }
+@media (max-width: 640px) { html[data-estilo="libro-rosa"] .wrap { margin-block: 0; border-radius: 0; box-shadow: none; } }
+
+/* Revista: editorial de revista de moda/casa/cocina (tipo Telva). Titular enorme y fino,
+   alineado a la izquierda, blanco y negro con un acento ocre membrillo, numeración 01, 02… */
+:is(html, .tarjeta)[data-estilo="revista"] {
+  --bg: #fbfaf7; --paper: #ffffff; --ink: #111111; --muted: #6a6a6a; --line: #e2e0da;
+  --accent: #946600; --accent-soft: #f5eed8; --note: #f6f4ef; --note-line: #111111;
+  --num-bg: transparent; --num-fg: #111111;
+  --display: 'Jost', 'Helvetica Neue', sans-serif; --texto: 'Inter', 'Helvetica Neue', sans-serif;
+  --peso: 200; --caso: none; --tracking: -.035em;
+  --sub: 400 21px/1.45 'Jost', 'Helvetica Neue', sans-serif;
+  --ornamento: none;
+  --banda: linear-gradient(#111, #111) top / 100% 2px no-repeat;
+  --fondo: #fbfaf7;
+  --nota-fondo: #ffffff;
+}
+html[data-estilo="revista"] .cabecera { text-align: left; border-bottom: 2px solid var(--ink); }
+html[data-estilo="revista"] .cabecera::before { margin: 0 0 22px; width: 100%; }
+html[data-estilo="revista"] .cabecera h1 { font-size: clamp(52px, 10vw, 112px); line-height: .92; max-width: 12ch; margin: 18px 0 22px; }
+html[data-estilo="revista"] .cabecera .sub { max-width: 34ch; }
+html[data-estilo="revista"] .kicker { color: var(--ink); letter-spacing: .28em; font-weight: 500; }
+html[data-estilo="revista"] .metas { justify-content: flex-start; }
+html[data-estilo="revista"] .metas li { align-items: flex-start; }
+html[data-estilo="revista"] .metas b { font-weight: 300; font-size: 26px; }
+html[data-estilo="revista"] .seccion { font-weight: 300; font-size: 34px; letter-spacing: -.02em; }
+html[data-estilo="revista"] .lateral { border: 0; border-top: 2px solid var(--ink); border-radius: 0; background: transparent; padding: 18px 0 0; }
+html[data-estilo="revista"] .escala { border-radius: 0; }
+html[data-estilo="revista"] .grupo h4 { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+html[data-estilo="revista"] .paso { padding-left: 70px; }
+html[data-estilo="revista"] .paso::before { content: counter(p, decimal-leading-zero); border: 0; border-radius: 0; width: auto; height: auto; top: 0; font: 200 34px/1 'Jost', sans-serif; letter-spacing: -.03em; }
+html[data-estilo="revista"] .paso.hecho::before { content: '✓'; background: none; color: var(--accent); }
+html[data-estilo="revista"] .paso::after { display: none; }
+html[data-estilo="revista"] .paso h3 { font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+html[data-estilo="revista"] .nota { border-radius: 0; border: 0; border-top: 1px solid var(--ink); padding: 16px 0; background: transparent; }
+html[data-estilo="revista"] .nota h3 { color: var(--ink); font-weight: 500; }
+html[data-estilo="revista"] .original, html[data-estilo="revista"] .etiquetas span { border-radius: 0; }
+
+[hidden] { display: none !important; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fondo); color: var(--ink); font: 16px/1.6 var(--texto); padding-inline: var(--marco-ancho); }
+body::before, body::after { content: ''; position: fixed; top: 0; bottom: 0; width: var(--marco-ancho); background: var(--marco); pointer-events: none; z-index: 1; }
+body::before { left: 0; } body::after { right: 0; }
+@media (max-width: 640px) {
+  :root[data-estilo] { --marco-ancho: 0px; }
+  body::before, body::after { display: none; }
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 32px 16px 80px; }
+
+/* ---------- Índice ---------- */
+.marca { font: 800 clamp(40px, 7vw, 64px)/1 var(--display); letter-spacing: -.02em; margin: 24px 0 4px; }
+.marca span { color: var(--accent); }
+.lema { color: var(--muted); margin: 0 0 28px; }
+.filtros { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 24px; }
+.buscar { flex: 1 1 260px; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); font: inherit; }
+.buscar:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.chip { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 6px 13px; font-size: 14px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.cuenta { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.tarjeta { position: relative; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: var(--ink); font-family: var(--texto); background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 30px 22px 18px; transition: transform .15s, box-shadow .15s, border-color .15s; }
+.tarjeta:hover { transform: translateY(-2px); box-shadow: 0 10px 28px -14px rgba(60,40,20,.35); border-color: var(--accent); }
+.tarjeta .kicker { margin-bottom: 10px; }
+.tarjeta::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 8px; background: var(--banda); }
+.tarjeta h2 { font: var(--peso) 23px/1.15 var(--display); text-transform: var(--caso); letter-spacing: var(--tracking); margin: 0 0 6px; }
+.tarjeta p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; }
+.tarjeta .pie { margin-top: auto; display: flex; gap: 14px; font-size: 13px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 12px; }
+.vacio { color: var(--muted); padding: 40px 0; text-align: center; }
+
+.kicker { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+
+/* ---------- Receta ---------- */
+.volver { display: inline-flex; gap: 6px; text-decoration: none; color: var(--muted); font-size: 14px; }
+.volver:hover { color: var(--accent); }
+.cabecera { text-align: center; padding: 20px 0 32px; border-bottom: 1px solid var(--line); margin-bottom: 36px; }
+.cabecera::before { content: ''; display: block; width: 180px; height: 8px; margin: 0 auto 22px; background: var(--banda); border-radius: 2px; }
+.cabecera h1 { font: var(--peso) clamp(34px, 6vw, 58px)/1.02 var(--display); text-transform: var(--caso); letter-spacing: var(--tracking); text-decoration: var(--subrayado, none); text-decoration-thickness: 2px; text-underline-offset: .18em; margin: 14px auto 10px; max-width: 16ch; text-wrap: balance; }
+.cabecera h1::after { content: var(--ornamento); display: block; font: 400 15px/1 var(--texto); letter-spacing: .1em; color: var(--muted); margin-top: 16px; }
+.cabecera .sub { font: var(--sub); color: var(--muted); margin: 0 0 22px; }
+.metas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; margin: 0; padding: 0; list-style: none; }
+.metas li { display: flex; flex-direction: column; align-items: center; }
+.metas b { font: 600 20px/1.2 var(--display); }
+.metas span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.fuente { margin: 18px 0 0; font-size: 13px; color: var(--muted); }
+
+.cuerpo { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: start; }
+@media (max-width: 820px) { .cuerpo { grid-template-columns: 1fr; gap: 32px; } }
+.lateral { position: sticky; top: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+@media (max-width: 820px) { .lateral { position: static; } }
+.seccion { font: 600 24px/1.2 var(--display); margin: 0 0 16px; }
+
+.escala { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; margin-bottom: 20px; }
+.escala .fila { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.escala label { font-size: 14px; font-weight: 600; }
+.paso-num { display: flex; align-items: center; gap: 4px; }
+.paso-num button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); cursor: pointer; font-size: 18px; line-height: 1; }
+.paso-num button:hover { border-color: var(--accent); color: var(--accent); }
+.paso-num output { min-width: 34px; text-align: center; font: 600 20px var(--display); }
+.atajos { display: flex; gap: 6px; margin-top: 10px; }
+.atajos button { flex: 1; padding: 5px 0; border-radius: 7px; border: 1px solid transparent; background: transparent; font-size: 13px; cursor: pointer; color: var(--muted); }
+.atajos button:hover { color: var(--ink); }
+.atajos button[aria-pressed="true"] { background: var(--paper); border-color: var(--line); color: var(--ink); font-weight: 600; }
+
+.grupo { margin: 0 0 20px; }
+.grupo:last-child { margin-bottom: 0; }
+.grupo h4 { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; font-weight: 600; }
+.grupo h4 .de { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.grupo h4 .de a { color: var(--accent); }
+.grupo ul { list-style: none; margin: 0; padding: 0; }
+.ing { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px dotted var(--line); cursor: pointer; font-size: 15px; line-height: 1.45; }
+.ing:last-child { border-bottom: 0; }
+.ing input { accent-color: var(--accent); margin: 3px 0 0; flex: none; cursor: pointer; }
+.ing .q { font-weight: 600; white-space: nowrap; }
+.ing .q.cambia { color: var(--accent); }
+.ing .n { color: var(--muted); font-size: 13.5px; }
+.ing .fija { font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.ing:has(input:checked) { opacity: .45; }
+.ing:has(input:checked) .t { text-decoration: line-through; }
+.aviso { font-size: 12.5px; color: var(--muted); margin: 14px 0 0; }
+
+.pasos { list-style: none; margin: 0; padding: 0; counter-reset: p; }
+.paso { counter-increment: p; position: relative; padding: 0 0 26px 60px; cursor: pointer; }
+.paso::before { content: counter(p); position: absolute; left: 0; top: -2px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font: 600 18px var(--display); background: var(--num-bg); color: var(--num-fg); border: 1px solid var(--num-fg); transition: background .15s, color .15s; }
+.paso:not(:last-child)::after { content: ''; position: absolute; left: 19.5px; top: 44px; bottom: 6px; border-left: 1px dashed var(--line); }
+.paso h3 { font: 600 19px/1.3 var(--display); margin: 4px 0 4px; }
+.paso p { margin: 0; font-size: 16.5px; line-height: 1.7; }
+.paso.hecho::before { content: '✓'; background: var(--accent); color: var(--paper); border-color: var(--accent); }
+.paso.hecho h3, .paso.hecho p { opacity: .45; }
+.ntrad { margin: 10px 0 0; font-size: 13.5px; line-height: 1.5; background: var(--note); border-left: 3px solid var(--note-line); padding: 8px 12px; border-radius: 0 8px 8px 0; color: var(--ink); }
+.ntrad b { font-weight: 600; }
+.ing .aprox { color: var(--muted); font-weight: 400; cursor: help; }
+.original { margin-top: 28px; border: 1px dashed var(--line); border-radius: 14px; padding: 4px 22px; }
+.original summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--muted); font-size: 14px; }
+.original .manuscrito { font: 500 22px/1.45 'Caveat', cursive; white-space: pre-wrap; margin: 0 0 18px; color: var(--ink); }
+.original .impreso { font-size: 14.5px; line-height: 1.6; white-space: pre-wrap; margin: 0 0 18px; columns: 2 260px; column-gap: 32px; }
+.original .dudas { font-size: 13.5px; color: var(--muted); margin: 0 0 16px; }
+
+.notas { margin-top: 16px; }
+.nota { background: var(--nota-fondo); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin-top: 14px; }
+.nota h3 { font: 600 18px var(--display); margin: 0 0 6px; color: var(--accent); }
+.nota p { margin: 0; }
+.etiquetas { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 28px; }
+.etiquetas span { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+
+.herramientas { float: right; display: flex; gap: 8px; align-items: center; }
+.estilo-sel { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+.estilo-sel select { font: inherit; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+.imprimir { border: 1px solid var(--line); background: var(--paper); border-radius: 8px; padding: 5px 12px; font-size: 13px; cursor: pointer; color: var(--muted); }
+.imprimir:hover { color: var(--accent); border-color: var(--accent); }
+
+@media print {
+  :root { --bg: #fff; --paper: #fff; }
+  .volver, .herramientas, .atajos, .paso-num button, .ing input { display: none !important; }
+  .lateral { position: static; border: 0; padding: 0; }
+  .cuerpo { grid-template-columns: 260px 1fr; gap: 32px; }
+  .wrap { padding: 0; }
+}
+</style>
+</head>
+<body>
+<main class="wrap" id="app"></main>
+
+<script src="datos.js"></script>
+<script>
+const RECETAS = window.RECETAS || [];
+const app = document.getElementById('app');
+
+// ---------- utilidades ----------
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const norm = s => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const num = (n, dec = 1) => Number(n.toFixed(dec)).toLocaleString('es-ES');
+const COCINAS = { italiana: 'Italiana', espanola: 'Española', francesa: 'Francesa', japonesa: 'Japonesa', mexicana: 'Mexicana', india: 'India', china: 'China', tailandesa: 'Tailandesa', griega: 'Griega', marroqui: 'Marroquí' };
+const cocina = c => COCINAS[c] || (c ? c[0].toUpperCase() + c.slice(1) : '');
+
+function minutos(m) {
+  if (!m) return '';
+  const h = Math.floor(m / 60), r = m % 60;
+  return h ? `${h} h${r ? ' ' + r + ' min' : ''}` : `${m} min`;
+}
+const total = r => Object.values(r.tiempos || {}).reduce((a, b) => a + (b || 0), 0);
+
+// ---------- cantidades ----------
+// unidades con abreviatura (no cambian en plural) y unidades con nombre (singular/plural)
+const ABREV = { g: 'g', kg: 'kg', ml: 'ml', cl: 'cl', l: 'l' };
+const NOMBRES = {
+  loncha: ['loncha', 'lonchas'], diente: ['diente', 'dientes'], pizca: ['pizca', 'pizcas'],
+  hoja: ['hoja', 'hojas'], ramita: ['ramita', 'ramitas'], manojo: ['manojo', 'manojos'],
+  lata: ['lata', 'latas'], sobre: ['sobre', 'sobres'],
+  tenedor: ['tenedor', 'tenedores'], chorro: ['chorro', 'chorros'], chorrito: ['chorrito', 'chorritos'], pastilla: ['pastilla', 'pastillas'],
+};
+const FRACC = [[0, ''], [1 / 4, '¼'], [1 / 3, '⅓'], [1 / 2, '½'], [2 / 3, '⅔'], [3 / 4, '¾'], [1, '']];
+
+// redondea a fracciones (¼, ⅓, ½…) — para piezas, lonchas, dientes, tenedores
+function fraccion(q) {
+  let ent = Math.floor(q), resto = q - ent, mejor = FRACC[0];
+  for (const f of FRACC) if (Math.abs(resto - f[0]) < Math.abs(resto - mejor[0])) mejor = f;
+  if (mejor[0] === 1) { ent += 1; mejor = FRACC[0]; }
+  if (!ent && !mejor[1]) mejor = FRACC[1]; // nunca mostrar 0
+  return { texto: (ent || '') + mejor[1], valor: ent + mejor[0] };
+}
+
+// redondeo "de báscula" para pesos y volúmenes
+function bascula(q) {
+  const paso = q < 10 ? 0.5 : q < 100 ? 1 : q < 500 ? 5 : 10;
+  return Math.max(paso, Math.round(q / paso) * paso);
+}
+
+function cantidad(q, u) {
+  if (q == null) return null;
+  if (u === 'g' && q >= 1000) { q /= 1000; u = 'kg'; }
+  if (u === 'kg' && q < 1) { q *= 1000; u = 'g'; }
+  if (u === 'ml' && q >= 1000) { q /= 1000; u = 'l'; }
+  if (u === 'l' && q < 1) { q *= 1000; u = 'ml'; }
+  if (u === 'cl') { q *= 10; u = 'ml'; }
+  if (u === 'g' || u === 'ml') { const v = bascula(q); return { texto: `${num(v)} ${u}`, valor: v, abrev: true }; }
+  if (u === 'kg' || u === 'l') { const v = Math.round(q * 10) / 10; return { texto: `${num(v)} ${u}`, valor: v, abrev: true }; }
+  const f = fraccion(q);
+  const nombreU = NOMBRES[u] ? ' ' + NOMBRES[u][f.valor > 1 ? 1 : 0] : '';
+  return { texto: f.texto + nombreU, valor: f.valor, conUnidad: !!NOMBRES[u] };
+}
+
+function lineaIngrediente(i, factor) {
+  const escala = i.escala !== false;
+  const c = cantidad(i.cantidad != null ? i.cantidad * (escala ? factor : 1) : null, i.unidad);
+  let nombre = i.nombre;
+  if (c && !c.abrev && !c.conUnidad && c.valor > 1 && i.nombre_plural) nombre = i.nombre_plural;
+  const de = c && (c.abrev || c.conUnidad) ? ' de ' : ' ';
+  const cambia = escala && factor !== 1 && c;
+  const aprox = i.estimada ? '<span class="aprox" title="Cantidad estimada: el original no la da">≈ </span>' : '';
+  return `<span class="t">${c ? `<span class="q${cambia ? ' cambia' : ''}">${aprox}${esc(c.texto)}</span>${de}` : ''}${esc(nombre)}` +
+    `${i.nota ? `<span class="n">, ${esc(i.nota)}</span>` : ''}</span>` +
+    `${!escala && factor !== 1 ? '<span class="fija" title="Esta cantidad no depende de las raciones">fija</span>' : ''}`;
+}
+
+// ---------- estilos ----------
+// Deben coincidir con los bloques [data-estilo] del CSS y con ESTILOS de build.mjs
+const ESTILOS = { clasico: 'Clásico', trattoria: 'Trattoria', mediterraneo: 'Mediterráneo', bistro: 'Bistró', nordico: 'Nórdico', huerta: 'Huerta', 'libro-rosa': 'Libro rosa', revista: 'Revista' };
+function aplicarEstilo(e) {
+  if (e && e !== 'clasico') document.documentElement.dataset.estilo = e;
+  else delete document.documentElement.dataset.estilo;
+}
+
+// ---------- vistas ----------
+let filtro = { q: '', cat: null };
+
+function vistaIndice() {
+  document.title = 'Recetario';
+  aplicarEstilo(null);
+  const cats = [...new Set(RECETAS.map(r => r.categoria).filter(Boolean))].sort();
+  app.innerHTML = `
+    <h1 class="marca">Recetario<span>.</span></h1>
+    <p class="lema">Recetas de casa y de libros, todas en el mismo formato.</p>
+    <div class="filtros">
+      <input class="buscar" type="search" placeholder="Buscar receta o ingrediente…" value="${esc(filtro.q)}" aria-label="Buscar">
+      <button class="chip" data-cat="" aria-pressed="${!filtro.cat}">Todas</button>
+      ${cats.map(c => `<button class="chip" data-cat="${esc(c)}" aria-pressed="${filtro.cat === c}">${esc(c)}</button>`).join('')}
+    </div>
+    <p class="cuenta"></p>
+    <div class="rejilla"></div>`;
+  const input = app.querySelector('.buscar');
+  input.addEventListener('input', () => { filtro.q = input.value; pintarRejilla(); });
+  app.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+    filtro.cat = b.dataset.cat || null;
+    app.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x === b));
+    pintarRejilla();
+  }));
+  pintarRejilla();
+}
+
+function pintarRejilla() {
+  const q = norm(filtro.q).trim();
+  const lista = RECETAS.filter(r => {
+    if (filtro.cat && r.categoria !== filtro.cat) return false;
+    if (!q) return true;
+    const texto = [r.titulo, r.titulo_es, r.cocina, r.categoria, ...(r.etiquetas || []),
+      ...r.ingredientes.flatMap(g => g.items.map(i => i.nombre))].join(' ');
+    return norm(texto).includes(q);
+  });
+  app.querySelector('.cuenta').textContent = `${lista.length} de ${RECETAS.length} receta${RECETAS.length === 1 ? '' : 's'}`;
+  app.querySelector('.rejilla').innerHTML = lista.length ? lista.map(r => `
+    <a class="tarjeta" href="#/r/${esc(r.id)}"${r.estilo && r.estilo !== 'clasico' ? ` data-estilo="${esc(r.estilo)}"` : ''}>
+      <div class="kicker">${esc([cocina(r.cocina), r.categoria].filter(Boolean).join(' · '))}</div>
+      <h2>${esc(r.titulo)}</h2>
+      ${r.titulo_es && r.titulo_es !== r.titulo ? `<p>${esc(r.titulo_es)}</p>` : '<p></p>'}
+      <div class="pie">
+        ${total(r) ? `<span>⏱ ${minutos(total(r))}</span>` : ''}
+        <span>🍽 ${r.raciones.cantidad} ${esc(r.raciones.unidad || 'raciones')}</span>
+      </div>
+    </a>`).join('') : '<div class="vacio">Nada por aquí.</div>';
+}
+
+function vistaReceta(r, raciones) {
+  const base = r.raciones.cantidad;
+  let n = raciones || base;
+  document.title = r.titulo + ' · Recetario';
+  aplicarEstilo(r.estilo);
+  const t = r.tiempos || {};
+  const fuente = r.fuente ? [r.fuente.nombre, r.fuente.autor, r.fuente.pagina && 'p. ' + r.fuente.pagina].filter(Boolean).join(', ') || r.fuente.nota : '';
+
+  app.innerHTML = `
+    <a class="volver" href="#/">← Todas las recetas</a>
+    <div class="herramientas">
+      <label class="estilo-sel" title="Vista previa: el estilo guardado es el del JSON de la receta">Estilo
+        <select>${Object.entries(ESTILOS).map(([k, v]) => `<option value="${k}"${k === (r.estilo || 'clasico') ? ' selected' : ''}>${v}</option>`).join('')}</select>
+      </label>
+      <button class="imprimir" onclick="print()">Imprimir</button>
+    </div>
+    <header class="cabecera">
+      <div class="kicker">${esc([cocina(r.cocina), r.categoria].filter(Boolean).join(' · '))}</div>
+      <h1>${esc(r.titulo)}</h1>
+      ${r.titulo_es && r.titulo_es !== r.titulo ? `<p class="sub">${esc(r.titulo_es)}</p>` : ''}
+      <ul class="metas">
+        ${t.preparacion ? `<li><b>${minutos(t.preparacion)}</b><span>Preparación</span></li>` : ''}
+        ${t.reposo ? `<li><b>${minutos(t.reposo)}</b><span>Reposo</span></li>` : ''}
+        ${t.coccion ? `<li><b>${minutos(t.coccion)}</b><span>Cocción</span></li>` : ''}
+        ${total(r) ? `<li><b>${minutos(total(r))}</b><span>Total</span></li>` : ''}
+      </ul>
+      ${fuente ? `<p class="fuente">Fuente: ${esc(fuente)}${r.raciones.original ? ` · original: «${esc(r.raciones.original)}»` : ''}</p>` : ''}
+    </header>
+    <div class="cuerpo">
+      <aside class="lateral">
+        <h2 class="seccion">Ingredientes</h2>
+        <div class="escala">
+          <div class="fila">
+            <label>${esc(cap(r.raciones.unidad || 'raciones'))}</label>
+            <div class="paso-num">
+              <button data-d="-1" aria-label="Menos">−</button>
+              <output></output>
+              <button data-d="1" aria-label="Más">+</button>
+            </div>
+          </div>
+          <div class="atajos">
+            <button data-f="0.5">½ receta</button>
+            <button data-f="1">Original</button>
+            <button data-f="2">Doble</button>
+          </div>
+        </div>
+        <div class="ingredientes"></div>
+        <p class="aviso" hidden>Al escalar, los tiempos, temperaturas y tamaños de los pasos no cambian.</p>
+      </aside>
+      <section>
+        <h2 class="seccion">Preparación</h2>
+        <ol class="pasos">
+          ${r.pasos.map(p => `
+            <li class="paso">
+              ${p.titulo ? `<h3>${esc(p.titulo)}</h3>` : ''}
+              <p>${esc(p.texto)}</p>
+              ${p.nota_traduccion ? `<p class="ntrad"><b>Nota de traducción:</b> ${esc(p.nota_traduccion)}</p>` : ''}
+              ${p.nota_adaptacion ? `<p class="ntrad"><b>Nota de adaptación:</b> ${esc(p.nota_adaptacion)}</p>` : ''}
+            </li>`).join('')}
+        </ol>
+        ${r.original?.texto ? `<details class="original"><summary>Texto original${r.original.tipo === 'manuscrito' ? ' (manuscrito)' : r.original.tipo === 'revista' ? ' (recorte de revista)' : ''}</summary>
+          <p class="${r.original.tipo === 'manuscrito' ? 'manuscrito' : 'impreso'}">${esc(r.original.texto)}</p>
+          ${(r.original.dudas || []).length ? `<p class="dudas">Dudas de lectura: ${r.original.dudas.map(esc).join(' · ')}</p>` : ''}
+          ${(r.original.aclaraciones || []).length ? `<ul class="dudas">${r.original.aclaraciones.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</details>` : ''}
+        ${(r.notas || []).length ? `<div class="notas">${r.notas.map(x => `
+          <div class="nota">${x.titulo ? `<h3>${esc(x.titulo)}</h3>` : ''}<p>${esc(x.texto)}</p></div>`).join('')}</div>` : ''}
+        ${(r.etiquetas || []).length ? `<div class="etiquetas">${r.etiquetas.map(e => `<span>${esc(e)}</span>`).join('')}</div>` : ''}
+      </section>
+    </div>`;
+
+  const pintar = () => {
+    const factor = n / base;
+    app.querySelector('output').textContent = num(n);
+    app.querySelectorAll('.atajos button').forEach(b => b.setAttribute('aria-pressed', Math.abs(+b.dataset.f - factor) < 1e-9));
+    app.querySelector('.aviso').hidden = factor === 1;
+    app.querySelector('.ingredientes').innerHTML = r.ingredientes.map(g => `
+      <div class="grupo">
+        ${g.grupo ? `<h4>${esc(g.grupo)}${g.de ? ` <span class="de">· igual que en <a href="#/r/${esc(g.de.receta)}">${esc(g.de.titulo)}</a></span>` : ''}</h4>` : ''}
+        <ul>${g.items.map(i => `<li><label class="ing"><input type="checkbox">${lineaIngrediente(i, factor)}</label></li>`).join('')}</ul>
+      </div>`).join('');
+    history.replaceState(null, '', `#/r/${r.id}${n !== base ? '/' + n : ''}`);
+  };
+  app.querySelectorAll('.paso-num button').forEach(b => b.addEventListener('click', () => {
+    // de uno en uno, y por debajo de 1 permite media ración
+    if (+b.dataset.d > 0) n = n < 1 ? 1 : Math.floor(n) + 1;
+    else n = n <= 1 ? 0.5 : Math.ceil(n) - 1;
+    pintar();
+  }));
+  app.querySelectorAll('.atajos button').forEach(b => b.addEventListener('click', () => { n = base * b.dataset.f; pintar(); }));
+  app.querySelector('.estilo-sel select').addEventListener('change', e => aplicarEstilo(e.target.value));
+  app.querySelectorAll('.paso').forEach(p => p.addEventListener('click', () => p.classList.toggle('hecho')));
+  pintar();
+  scrollTo(0, 0);
+}
+
+const cap = s => s[0].toUpperCase() + s.slice(1);
+
+function router() {
+  const m = location.hash.match(/^#\/r\/([^/]+)(?:\/([\d.]+))?/);
+  const r = m && RECETAS.find(x => x.id === decodeURIComponent(m[1]));
+  if (r) vistaReceta(r, m[2] ? +m[2] : null);
+  else vistaIndice();
+}
+addEventListener('hashchange', router);
+router();
+</script>
+</body>
+</html>

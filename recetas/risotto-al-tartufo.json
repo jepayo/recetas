@@ -1,0 +1,157 @@
+{
+  "id": "risotto-al-tartufo",
+  "titulo": "Risotto al tartufo",
+  "titulo_es": "Risotto con trufa",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": [
+    "arroz",
+    "risotto",
+    "trufa",
+    "setas",
+    "vegetariana",
+    "sin gluten"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "Per 4 amici"
+  },
+  "tiempos": {
+    "preparacion": 20,
+    "reposo": 3,
+    "coccion": 100
+  },
+  "ingredientes": [
+    {
+      "grupo": "Para la crema de trufa",
+      "items": [
+        {
+          "cantidad": 20,
+          "unidad": "g",
+          "nombre": "mantequilla sin sal"
+        },
+        {
+          "cantidad": 30,
+          "unidad": "ml",
+          "nombre": "aceite de trufa"
+        },
+        {
+          "cantidad": 0.5,
+          "nombre": "chalota",
+          "nombre_plural": "chalotas",
+          "nota": "picada"
+        },
+        {
+          "cantidad": 10,
+          "unidad": "g",
+          "nombre": "trufa negra fresca",
+          "nota": "picada"
+        },
+        {
+          "cantidad": 200,
+          "unidad": "g",
+          "nombre": "champiñones",
+          "nota": "laminados"
+        },
+        {
+          "cantidad": 30,
+          "unidad": "ml",
+          "nombre": "vino blanco"
+        }
+      ]
+    },
+    {
+      "grupo": "Para el risotto",
+      "items": [
+        {
+          "cantidad": 1,
+          "unidad": "l",
+          "nombre": "caldo de verduras",
+          "nota": "el libro tiene su propia receta en la p. 200"
+        },
+        {
+          "cantidad": 45,
+          "unidad": "ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": 5,
+          "nombre": "seta de cardo",
+          "nombre_plural": "setas de cardo",
+          "nota": "o el doble de setas de ostra; en láminas de 1 cm"
+        },
+        {
+          "cantidad": 400,
+          "unidad": "g",
+          "nombre": "arroz carnaroli",
+          "nota": "o arborio u otro arroz para risotto"
+        },
+        {
+          "cantidad": 200,
+          "unidad": "ml",
+          "nombre": "vino blanco",
+          "nota": "a temperatura ambiente"
+        },
+        {
+          "cantidad": 80,
+          "unidad": "g",
+          "nombre": "parmesano rallado"
+        },
+        {
+          "cantidad": 125,
+          "unidad": "g",
+          "nombre": "mantequilla"
+        },
+        {
+          "cantidad": 20,
+          "unidad": "g",
+          "nombre": "trufa negra",
+          "nota": "para rallar por encima"
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "La crema de trufa",
+      "texto": "En una sartén honda de fondo grueso, derrite la mantequilla con el aceite de trufa. Añade la chalota y la trufa picadas y los champiñones laminados. Saltea 10 minutos y desglasa con el vino blanco, rascando bien con una espátula de madera para disolver todos los jugos caramelizados.",
+      "nota_traduccion": "Aquí el libro no dice nada más, pero en la receta de las croquetas la misma crema se cocina 10 minutos más a fuego suave y después se tritura. Conviene hacerlo también aquí para que quede una crema de verdad."
+    },
+    {
+      "titulo": "El caldo",
+      "texto": "Lleva el caldo de verduras a ebullición en una olla grande y mantenlo caliente a fuego suave."
+    },
+    {
+      "titulo": "Las setas",
+      "texto": "En una sartén grande, calienta 15 ml del aceite de oliva a fuego fuerte y cocina las setas 10 minutos."
+    },
+    {
+      "titulo": "El arroz",
+      "texto": "Calienta el resto del aceite de oliva en una cazuela a fuego medio y rehoga el arroz 2–3 minutos. Añade el vino blanco y sigue cocinando 2 minutos sin dejar de remover. Incorpora el caldo de cazo en cazo, esperando a que el arroz absorba cada uno antes de añadir el siguiente. Sigue así unos 15 minutos, hasta que el arroz esté hecho pero todavía firme."
+    },
+    {
+      "titulo": "Mantecar",
+      "texto": "Retira la cazuela del fuego. Añade las setas fritas, la crema de trufa, el parmesano y la mantequilla. Remueve, tapa con un paño de cocina limpio y deja reposar 3 minutos. Después mantecalo 2–3 minutos, hasta que el risotto quede cremoso.",
+      "nota_traduccion": "El libro explica la técnica del mantecato en la p. 222: fuera del fuego, se bate el arroz con energía con una cuchara de madera para que la mantequilla y el queso se emulsionen con el almidón."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Reparte el risotto en los platos y ralla por encima un poco de esa trufa negra tan buena. ¡Sirve y a disfrutar!"
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Para una presentación bonita, corona el risotto con «chips» de seta. Antes de cocinar las setas, reserva 10 láminas y colócalas en una bandeja de horno forrada con papel de hornear. Rocíalas con un poco de aceite de oliva y hornéalas a 200 °C durante 8 minutos."
+    }
+  ],
+  "alta": "2026-10-10"
+}

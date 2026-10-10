@@ -1,0 +1,59 @@
+{
+  "id": "ensalada-gourmet",
+  "titulo": "Ensalada gourmet",
+  "titulo_es": "Con jamón york, tomates cherry y huevo duro",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Ensaladas",
+  "etiquetas": ["ensalada", "huevo", "rápida", "de casa"],
+  "estilo": "libro-rosa",
+  "raciones": { "cantidad": 2, "unidad": "personas", "original": "No lo indica: 2, igual que la de canónigos, porque lleva la misma salsa" },
+  "tiempos": { "preparacion": 10, "coccion": 10 },
+  "ingredientes": [
+    {
+      "grupo": "Para la ensalada",
+      "items": [
+        { "cantidad": 150, "unidad": "g", "nombre": "lechuga", "nota": "media lechuga, aprox.", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "jamón york", "estimada": true },
+        { "cantidad": 150, "unidad": "g", "nombre": "tomates cherry", "nota": "unos 10", "estimada": true },
+        { "cantidad": 2, "nombre": "huevo", "nombre_plural": "huevos", "estimada": true }
+      ]
+    },
+    {
+      "grupo": "Para la salsa",
+      "de": { "receta": "ensalada-de-canonigos", "grupo": "Para la salsa" }
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Los huevos duros",
+      "texto": "Cuece los huevos 10 minutos en agua hirviendo. Pásalos a agua fría para cortar la cocción, pélalos y córtalos en cuartos o en rodajas."
+    },
+    {
+      "titulo": "Preparar",
+      "texto": "Lava la lechuga, sécala bien y trocéala con las manos. Corta el jamón york en tiras y los tomates cherry por la mitad.",
+      "nota_adaptacion": "El original dice solo que las cantidades van «proporcionales a la cantidad de lechuga»: ajústalas a la lechuga que tengas."
+    },
+    {
+      "titulo": "La salsa",
+      "texto": "Prepara la misma salsa que la de la ensalada de canónigos: mezcla el aceite, el vinagre, la mostaza, la miel y una pizca de sal fina, y bate hasta que emulsione."
+    },
+    {
+      "titulo": "Montar, aliñar y servir",
+      "texto": "Pon la lechuga en una fuente y reparte por encima el jamón, los tomates y el huevo. Echa la salsa a última hora, justo antes de servir."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "ENSALADA GOURMET\n\nJamón york\nTomates cherry\nHuevo duro\n\nLa misma salsa que la de canónigos.\nLas cantidades, proporcionales a la cantidad de lechuga.",
+    "aclaraciones": [
+      "Las dos últimas líneas no se ven en la foto (la hoja sale cortada); se transcribieron de palabra."
+    ]
+  },
+  "alta": "2026-10-10"
+}

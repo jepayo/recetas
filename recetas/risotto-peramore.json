@@ -1,0 +1,145 @@
+{
+  "id": "risotto-peramore",
+  "titulo": "Risotto pera'more",
+  "titulo_es": "Risotto de gorgonzola, pera y nueces",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": [
+    "arroz",
+    "risotto",
+    "gorgonzola",
+    "pera",
+    "nueces",
+    "vegetariana",
+    "sin gluten"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "Per 4 amici"
+  },
+  "tiempos": {
+    "preparacion": 10,
+    "coccion": 40
+  },
+  "ingredientes": [
+    {
+      "grupo": "Para el risotto",
+      "items": [
+        {
+          "cantidad": 120,
+          "unidad": "g",
+          "nombre": "mantequilla",
+          "nota": "en dados"
+        },
+        {
+          "cantidad": 15,
+          "unidad": "ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": 400,
+          "unidad": "g",
+          "nombre": "arroz arborio",
+          "nota": "u otro arroz para risotto"
+        },
+        {
+          "cantidad": 150,
+          "unidad": "ml",
+          "nombre": "vino blanco"
+        },
+        {
+          "cantidad": 1,
+          "unidad": "l",
+          "nombre": "caldo de verduras",
+          "nota": "el libro tiene su propia receta en la p. 200"
+        },
+        {
+          "cantidad": 80,
+          "unidad": "g",
+          "nombre": "gorgonzola",
+          "nota": "en dados"
+        },
+        {
+          "cantidad": 70,
+          "unidad": "g",
+          "nombre": "parmesano rallado"
+        },
+        {
+          "nombre": "pimienta blanca recién molida"
+        }
+      ]
+    },
+    {
+      "grupo": "Para terminar",
+      "items": [
+        {
+          "cantidad": 2,
+          "nombre": "pera Williams",
+          "nombre_plural": "peras Williams",
+          "nota": "peladas, sin corazón y en dados"
+        },
+        {
+          "cantidad": 20,
+          "unidad": "g",
+          "nombre": "nueces",
+          "nota": "picadas"
+        },
+        {
+          "cantidad": 5,
+          "unidad": "ramita",
+          "nombre": "tomillo",
+          "nota": "solo las hojas"
+        },
+        {
+          "nombre": "mejorana",
+          "nota": "unas hojas"
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El caldo",
+      "texto": "Calienta el caldo de verduras en un cazo y mantenlo a fuego suave mientras haces el risotto.",
+      "nota_adaptacion": "El libro no lo dice en esta receta, pero el caldo tiene que entrar caliente para no cortar la cocción del arroz (así se hace en el risotto al tartufo)."
+    },
+    {
+      "titulo": "Nacarar el arroz",
+      "texto": "En una cazuela de fondo grueso, calienta el aceite de oliva con 15 g de la mantequilla a fuego medio. Añade el arroz y remueve 2–3 minutos, hasta que se vuelva translúcido."
+    },
+    {
+      "titulo": "Cazo a cazo",
+      "texto": "Desglasa con el vino blanco. Cuando el arroz lo haya absorbido, añade un primer cazo de caldo y remueve. Echa el segundo cazo cuando haya absorbido el primero, y repite hasta que el arroz esté hecho pero todavía entero, al dente: unos 15 minutos."
+    },
+    {
+      "titulo": "El gorgonzola",
+      "texto": "Retira la cazuela del fuego y añade la mitad de la mantequilla que queda (unos 50 g) y el gorgonzola, removiendo con energía. Salpimienta con la pimienta blanca.",
+      "nota_traduccion": "El original dice «la mitad de la mantequilla» después de haber usado ya una cucharada; se entiende que es la mitad de la que queda."
+    },
+    {
+      "titulo": "Mantecar",
+      "texto": "Añade el resto de la mantequilla y el parmesano, y mantécalo: bate el arroz con energía con una cuchara de madera hasta que la mantequilla y el queso se emulsionen con el almidón y quede cremoso.",
+      "nota_traduccion": "El libro remite a su explicación del mantecato en la p. 222."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Sirve el risotto en los platos y reparte por encima la pera en dados y las nueces picadas. Decora con las hojas de tomillo y de mejorana.",
+      "nota_adaptacion": "Corta la pera justo antes de servir para que no se oxide."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "El arroz para risotto no se lava nunca antes de usarlo: el almidón que contiene es lo que le da al plato su cremosidad especial."
+    }
+  ],
+  "alta": "2026-10-10"
+}

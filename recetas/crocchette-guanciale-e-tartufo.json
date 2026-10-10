@@ -1,0 +1,177 @@
+{
+  "id": "crocchette-guanciale-e-tartufo",
+  "titulo": "Crocchette guanciale e tartufo",
+  "titulo_es": "Croquetas de guanciale y crema de trufa",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Entrantes",
+  "etiquetas": [
+    "aperitivo",
+    "frito",
+    "croquetas",
+    "trufa"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "Per 4 amici"
+  },
+  "tiempos": {
+    "preparacion": 25,
+    "reposo": 20,
+    "coccion": 40
+  },
+  "ingredientes": [
+    {
+      "grupo": "Para la bechamel",
+      "items": [
+        {
+          "cantidad": 40,
+          "unidad": "g",
+          "nombre": "mantequilla"
+        },
+        {
+          "cantidad": 40,
+          "unidad": "g",
+          "nombre": "harina de trigo",
+          "nota": "preferiblemente italiana tipo 00"
+        },
+        {
+          "cantidad": 400,
+          "unidad": "ml",
+          "nombre": "leche"
+        },
+        {
+          "cantidad": 6,
+          "unidad": "g",
+          "nombre": "sal"
+        },
+        {
+          "cantidad": 2,
+          "unidad": "g",
+          "nombre": "nuez moscada rallada"
+        }
+      ]
+    },
+    {
+      "grupo": "Para la crema de trufa",
+      "items": [
+        {
+          "cantidad": 20,
+          "unidad": "g",
+          "nombre": "mantequilla sin sal"
+        },
+        {
+          "cantidad": 30,
+          "unidad": "ml",
+          "nombre": "aceite de trufa"
+        },
+        {
+          "cantidad": 0.5,
+          "nombre": "chalota",
+          "nombre_plural": "chalotas",
+          "nota": "picada"
+        },
+        {
+          "cantidad": 10,
+          "unidad": "g",
+          "nombre": "trufa negra fresca",
+          "nota": "picada"
+        },
+        {
+          "cantidad": 200,
+          "unidad": "g",
+          "nombre": "champiñones",
+          "nota": "laminados"
+        },
+        {
+          "cantidad": 30,
+          "unidad": "ml",
+          "nombre": "vino blanco"
+        }
+      ]
+    },
+    {
+      "grupo": "Para las croquetas",
+      "items": [
+        {
+          "cantidad": 15,
+          "unidad": "ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": 6,
+          "unidad": "loncha",
+          "nombre": "guanciale (carrillera de cerdo curada) o panceta",
+          "nota": "en dados finos"
+        },
+        {
+          "cantidad": 2,
+          "nombre": "huevo",
+          "nombre_plural": "huevos"
+        },
+        {
+          "cantidad": 80,
+          "unidad": "g",
+          "nombre": "pan rallado"
+        },
+        {
+          "cantidad": 2,
+          "unidad": "l",
+          "nombre": "aceite de girasol",
+          "nota": "para freír",
+          "escala": false
+        },
+        {
+          "cantidad": 50,
+          "unidad": "g",
+          "nombre": "parmesano",
+          "nota": "para terminar"
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "La bechamel",
+      "texto": "Derrite la mantequilla en un cazo pequeño a fuego medio e incorpora la harina. Añade la leche, la sal y la nuez moscada. Cocina 10 minutos a fuego medio, sin dejar de remover, hasta que la salsa espese. Retira del fuego, pásala a un bol y métela en la nevera."
+    },
+    {
+      "titulo": "La crema de trufa",
+      "texto": "En una sartén honda de fondo grueso, a fuego medio, derrite la mantequilla con el aceite de trufa. Añade la chalota y la trufa picadas y los champiñones laminados. Saltea 10 minutos y desglasa con el vino blanco, rascando bien con una espátula de madera para disolver todos los jugos caramelizados."
+    },
+    {
+      "texto": "Cocina la crema de trufa a fuego suave 10 minutos más. Retira del fuego y tritúrala en un procesador de alimentos.",
+      "nota_traduccion": "El original dice «cook the béchamel sauce» en este paso, pero por contexto se refiere a la crema de trufa: es lo que tiene sentido triturar, y la bechamel ya está enfriándose en la nevera."
+    },
+    {
+      "titulo": "El guanciale",
+      "texto": "En una sartén, calienta el aceite de oliva a fuego medio y dora el guanciale 5 minutos, hasta que esté bien tostado. Escúrrelo sobre papel de cocina y déjalo enfriar 5 minutos. Incorpora el guanciale y la crema de trufa a la bechamel y refrigera la mezcla 20 minutos."
+    },
+    {
+      "titulo": "Formar",
+      "texto": "Cuando la masa esté fría, mójate las manos y forma bolas de unos 5 cm de diámetro."
+    },
+    {
+      "titulo": "Empanar",
+      "texto": "Casca los huevos en un plato hondo y bátelos ligeramente. Pon el pan rallado en otro plato. Pasa cada croqueta por el huevo batido y después rebózala en el pan rallado."
+    },
+    {
+      "titulo": "Freír y servir",
+      "texto": "En una freidora o una cazuela grande de fondo grueso, calienta el aceite de girasol a 165 °C, o hasta que se formen burbujitas en la superficie. Fríe las croquetas 4–5 minutos, hasta que estén doradas. Escúrrelas sobre papel de cocina, espolvorea con el parmesano y sirve enseguida."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Disfruta las croquetas como más te guste. ¡Crean adicción! Las pequeñas son perfectas para picar con el aperitivo; las grandes, como entrante. Si vas justo de tiempo, puedes saltarte la crema de trufa (solo esta vez): en tiendas delicatessen encontrarás crema de trufa muy buena (mejor ecológica y con trufa de verdad)."
+    }
+  ],
+  "alta": "2026-10-10"
+}

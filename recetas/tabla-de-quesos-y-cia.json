@@ -1,0 +1,90 @@
+{
+  "id": "tabla-de-quesos-y-cia",
+  "titulo": "Tabla de quesos y Cía.",
+  "titulo_es": "Invita a tus amigos y complícate la vida… lo justo.",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "revista",
+    "nombre": "Telva, Escuela de Cocina",
+    "autor": "realiza María Silva, fotos de Sergio Moya"
+  },
+  "categoria": "Para picar",
+  "etiquetas": ["quesos", "tabla", "para compartir", "sin cocinar", "vino"],
+  "estilo": "revista",
+  "raciones": { "cantidad": 6, "unidad": "personas", "original": "No lo indica: 6 personas a unos 100 g de queso cada una" },
+  "tiempos": { "preparacion": 20, "reposo": 60 },
+  "ingredientes": [
+    {
+      "grupo": "Los quesos, en orden de degustación",
+      "items": [
+        { "cantidad": 100, "unidad": "g", "nombre": "rulo de cabra fresco", "nota": "fresco · cabra · España", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "torta del Casar", "nota": "cremoso · oveja · España", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "brie o camembert", "nota": "pasta blanda · vaca · Francia", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "manchego curado", "nota": "pasta dura · oveja · España", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "cabrales o stilton", "nota": "azul · mezcla o vaca · España o Inglaterra", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "San Simón da Costa o idiazábal ahumado", "nota": "ahumado · vaca u oveja · España", "estimada": true }
+      ]
+    },
+    {
+      "grupo": "Las compañías",
+      "items": [
+        { "cantidad": 300, "unidad": "g", "nombre": "panes variados", "nota": "de semillas, de nueces, baguette…", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "picos, grissini y crackers", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "nueces", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "dátiles", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "higos secos", "estimada": true },
+        { "cantidad": 300, "unidad": "g", "nombre": "uvas", "estimada": true },
+        { "cantidad": 150, "unidad": "g", "nombre": "membrillo o mermelada", "estimada": true }
+      ]
+    },
+    {
+      "grupo": "Para beber",
+      "items": [
+        { "cantidad": 750, "unidad": "ml", "nombre": "vino tinto", "nota": "o vino dulce, según el queso: con los azules, mejor dulce", "estimada": true }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Elegir los quesos",
+      "texto": "Una tabla estándar lleva entre 4 y 8 variedades. Combínalas para que haya de todo: leches diferentes (de cabra, de vaca, de oveja…); orígenes distintos (españoles los primeros, pero prueba con franceses, holandeses, ingleses, italianos…); texturas variadas (grasos curados, blandos cremosos, de corteza lavada…), y maduraciones que incluyan frescos, tiernos, semicurados, curados y añejos."
+    },
+    {
+      "titulo": "Atemperar",
+      "texto": "La temperatura ideal de consumo está entre 20 y 25 °C. Un queso cremoso pequeño debe sacarse de la nevera 1 hora antes; uno añejo grande, unas 3 horas."
+    },
+    {
+      "titulo": "Cortar",
+      "texto": "Corta los quesos duros en cuñas o lascas y deja los cremosos y los blandos enteros o en porciones grandes, para que cada uno se sirva. Pon un cuchillo para cada queso, sobre todo para los azules.",
+      "nota_adaptacion": "El artículo no habla del corte; es la forma habitual de presentarlos."
+    },
+    {
+      "titulo": "Disponer",
+      "texto": "Colócalos en la tabla en el sentido de las agujas del reloj, en orden de degustación y con el primero a las 12: primero los frescos, luego los cremosos, los de pasta blanda y los de pasta dura (curados), y termina con los azules y los ahumados."
+    },
+    {
+      "titulo": "Acompañar",
+      "texto": "Las mejores compañías son, claro está, un buen vino tinto o un vino dulce (según el queso), panes y picos variados, nueces, dátiles… Reparte las compañías entre los quesos, sin taparlos.",
+      "nota_adaptacion": "Los higos secos, las uvas y el membrillo no los cita el texto, pero salen en la foto del artículo."
+    },
+    {
+      "titulo": "Degustar",
+      "texto": "Prueba los quesos en el mismo orden en que están dispuestos, de los más suaves a los más intensos, para que ninguno tape al siguiente."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "¿Cuánto queso?",
+      "texto": "Cuenta unos 100 g de queso por persona si la tabla es un aperitivo y 150–200 g si es la cena. Si sois pocos, mejor menos variedades que trozos minúsculos de muchas."
+    }
+  ],
+  "original": {
+    "tipo": "revista",
+    "texto": "TABLA DE QUESOS Y CÍA.\nInvita a tus amigos y complícate la vida… lo justo. La Escuela de Cocina TELVA te enseña cómo organizar una variada tabla de quesos y lanza cinco ideas gastro para esta temporada.\nFotos: Sergio Moya. Realiza: María Silva.\n\nASÍ SE HACE\nUna tabla estándar debe incluir entre 4 y 8 variedades y, además, combinar:\n• Leches diferentes: de cabra, vaca, oveja…\n• Orígenes distintos: españoles los primeros, pero prueba con franceses, holandeses, ingleses, italianos…\n• Texturas variadas: grasos curados, blandos cremosos, de corteza lavada…\n• Maduraciones que incluyan frescos, tiernos, semi curados, curados, añejos…\n\nLa temperatura ideal de consumo está entre 20 ºC y los 25 ºC. Uno cremoso pequeño debe sacarse de la nevera 1 h. antes; uno añojo grande: 3 h. aprox.\n\nOrden de degustación: primero los frescos, continúa por los cremosos, de pasta blanda, de pasta dura (curados) y finaliza con azules y ahumados.\n\nDisponlos en el sentido de las agujas del reloj, con el primero a las 12.\n\nLas mejores compañías son, claro está, un buen vino tinto o vino dulce (según el queso), panes y picos variados, nueces, dátiles…",
+    "aclaraciones": [
+      "«uno añojo grande»: errata de la revista por «añejo».",
+      "Los quesos concretos de la lista son una propuesta para cumplir las reglas del artículo; el texto no nombra ninguno."
+    ]
+  },
+  "alta": "2026-10-10"
+}

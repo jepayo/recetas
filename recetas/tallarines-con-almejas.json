@@ -1,0 +1,164 @@
+{
+  "id": "tallarines-con-almejas",
+  "titulo": "Tallarines con almejas",
+  "titulo_es": "En salsa marinera",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Primeros",
+  "etiquetas": [
+    "pasta",
+    "marisco",
+    "almejas",
+    "de casa"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "No lo indica: 4 estimado por la cantidad de salsa"
+  },
+  "tiempos": {
+    "preparacion": 15,
+    "reposo": 120,
+    "coccion": 40
+  },
+  "ingredientes": [
+    {
+      "grupo": "Para la pasta y las almejas",
+      "items": [
+        {
+          "cantidad": 400,
+          "unidad": "g",
+          "nombre": "tallarines",
+          "estimada": true
+        },
+        {
+          "cantidad": 750,
+          "unidad": "g",
+          "nombre": "almejas",
+          "estimada": true
+        },
+        {
+          "nombre": "sal",
+          "nota": "para el agua de la pasta y para purgar las almejas"
+        },
+        {
+          "nombre": "aceite de oliva",
+          "nota": "un chorrito para la pasta"
+        }
+      ]
+    },
+    {
+      "grupo": "Para la salsa marinera",
+      "items": [
+        {
+          "cantidad": 1,
+          "nombre": "cebolla",
+          "nombre_plural": "cebollas",
+          "nota": "muy picadita"
+        },
+        {
+          "cantidad": 3,
+          "unidad": "diente",
+          "nombre": "ajo",
+          "nota": "picados"
+        },
+        {
+          "cantidad": 2,
+          "unidad": "hoja",
+          "nombre": "laurel"
+        },
+        {
+          "nombre": "aceite de oliva",
+          "nota": "un buen fondo para el sofrito y otro chorrito después"
+        },
+        {
+          "cantidad": 1,
+          "unidad": "chorro",
+          "nombre": "vino blanco",
+          "nota": "que sea generoso"
+        },
+        {
+          "cantidad": 2.5,
+          "unidad": "pastilla",
+          "nombre": "caldo de pescado"
+        },
+        {
+          "cantidad": 5,
+          "unidad": "tenedor",
+          "nombre": "harina",
+          "nota": "medida de abuela: la harina que se queda sostenida en el tenedor. Unos 25 g"
+        },
+        {
+          "cantidad": 1,
+          "unidad": "l",
+          "nombre": "agua",
+          "nota": "en el original, «4 vasos»"
+        },
+        {
+          "nombre": "perejil",
+          "nota": "picado"
+        },
+        {
+          "cantidad": 1,
+          "nombre": "limón",
+          "nombre_plural": "limones",
+          "nota": "su zumo"
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Purgar las almejas",
+      "texto": "Con 2 horas de antelación, pon las almejas en un bol con agua fría y sal para que suelten la arena. Cambia el agua si la ves muy turbia."
+    },
+    {
+      "titulo": "Cocer los tallarines",
+      "texto": "Cuece los tallarines en agua abundante con sal y un chorrito de aceite el tiempo que indique el paquete. Escúrrelos y pásalos por agua fría para cortar la cocción. Cuando hayan escurrido del todo, alíñalos con un poco de aceite para que no se peguen y remuévelos de vez en cuando mientras haces la salsa."
+    },
+    {
+      "titulo": "El sofrito",
+      "texto": "En una cazuela amplia, pon un buen fondo de aceite de oliva con la cebolla muy picadita, los ajos picados y las hojas de laurel. Sofríe a fuego medio hasta que esté todo dorado."
+    },
+    {
+      "titulo": "La salsa marinera",
+      "texto": "Añade la harina y remueve un minuto para que se tueste. Echa un buen chorro de vino blanco y deja que se evapore el alcohol. Incorpora las pastillas de caldo desmenuzadas, otro chorrito de aceite, el litro de agua, el perejil picado y el zumo del limón. Deja que hierva a fuego medio-alto unos 20 minutos, para que todo se una bien y coja sabor. Si espesa demasiado, añade más agua.",
+      "nota_adaptacion": "El original echa la harina después del vino y el caldo. Aquí se adelanta y se rehoga con el sofrito, que es la forma habitual de hacer la marinera para que no salgan grumos."
+    },
+    {
+      "titulo": "Esperar a las almejas",
+      "texto": "Baja el fuego al mínimo (posición 3–4 en una vitro o inducción de 9) y mantén la salsa caliente hasta el último momento: cuanto más tarde se echen las almejas, mejor."
+    },
+    {
+      "titulo": "Las almejas",
+      "texto": "Escurre las almejas y échalas a la salsa. Tapa la cazuela y sube el fuego al máximo hasta que se abran, 2–3 minutos. Retira del fuego en cuanto se abran, porque si no se ponen duras. Desecha las que no se hayan abierto."
+    },
+    {
+      "titulo": "Juntar y servir",
+      "texto": "Añade los tallarines a la cazuela y mézclalos con cuidado con la salsa, a fuego suave, un minuto para que se calienten. Sirve enseguida.",
+      "nota_adaptacion": "El original no dice cómo se juntan la pasta y la salsa; también puedes servir los tallarines en el plato y la salsa con las almejas por encima."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "El truco de casa",
+      "texto": "La salsa puede estar hecha con antelación: lo que no espera son las almejas. Échalas justo antes de comer y sácalas del fuego en cuanto se abran."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "TALLARINES CON ALMEJAS\n\nSe cuecen los tallarines con sal y aceite. Cuando hiervan se escurren y se les echa agua fría. Cuando ya no echan más agua se les añade un poco de aceite para que no se peguen y se mueven de vez en cuando.\n\nLas almejas se dejan 2 h en agua con sal para que suelten el agua.\n\nSalsa marinera:\nSe pica 1 cebolla muy picadita, 3 dientes de ajo, 2 hojas de laurel y aceite de oliva. Cuando esté dorado, se añade 1 buen chorro de vino blanco, 2 ½ pastillas de caldo de pescado, 5 tenedores de harina, otro chorrito de aceite, 4 vasos de agua, perejil picado y el zumo de 1 limón. A fuego medio-alto se deja que hierva 20 mins o así para que todo se una bien y coja el sabor. Si está muy espesa se añade más agua. Mientras más tarde se echen las almejas, mejor. Se pone a la temperatura más baja, 3-4.\n\nSe echan las almejas y se pone al máximo de temperatura hasta que se abran las almejas, y se retira porque si no se ponen duras, con la tapadera puesta. Son 2-3 mins.",
+    "aclaraciones": [
+      "«5 tenedores de harina»: medida de abuela de los años 70-80. Se coge la harina con un tenedor y cuenta lo que se queda sostenido.",
+      "«para que suelten el agua»: se refiere a la arena.",
+      "«temperatura más baja, 3-4»: la posición del fuego."
+    ]
+  },
+  "alta": "2026-10-10"
+}
