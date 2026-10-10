@@ -426,6 +426,112 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "mozza-fritta",
+  "titulo": "Mozza fritta",
+  "titulo_es": "Bolitas de mozzarella fritas",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Entrantes",
+  "etiquetas": [
+   "aperitivo",
+   "frito",
+   "mozzarella",
+   "vegetariana",
+   "pocos ingredientes"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 15,
+   "reposo": 180,
+   "coccion": 10
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 20,
+      "nombre": "bolita de mozzarella",
+      "nombre_plural": "bolitas de mozzarella",
+      "nota": "de 20 g (bocconcini)"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "harina de trigo"
+     },
+     {
+      "cantidad": 5,
+      "nombre": "huevo",
+      "nombre_plural": "huevos"
+     },
+     {
+      "cantidad": 200,
+      "unidad": "g",
+      "nombre": "pan rallado"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "l",
+      "nombre": "aceite de girasol",
+      "nota": "para freír",
+      "escala": false
+     },
+     {
+      "nombre": "albahaca",
+      "nota": "unas hojas, fritas, para decorar"
+     },
+     {
+      "nombre": "sal en escamas"
+     },
+     {
+      "nombre": "pimienta recién molida"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Secar",
+    "texto": "Coloca las bolitas de mozzarella sobre una rejilla con una bandeja debajo y déjalas secar al menos 3 horas a temperatura ambiente."
+   },
+   {
+    "titulo": "Preparar el empanado",
+    "texto": "Pon la harina en un plato. En un cuenco, bate ligeramente los huevos con un tenedor y pásalos a un segundo plato. Pon el pan rallado en un tercero."
+   },
+   {
+    "titulo": "Empanar",
+    "texto": "Pasa cada bolita por la harina, después por el huevo batido y por último por el pan rallado. Sacúdelas bien para quitar el exceso."
+   },
+   {
+    "titulo": "Freír",
+    "texto": "En una freidora o una cazuela de fondo grueso, calienta el aceite a 160 °C. Si no tienes termómetro de cocina, echa unas migas de pan rallado: si el aceite está a punto, se dorarán. Fríe las bolitas 3–4 minutos, hasta que estén bien doradas.",
+    "nota_adaptacion": "El libro no explica cómo freír la albahaca: antes que la mozzarella, fríe en el mismo aceite unas hojas bien secas durante unos segundos, hasta que se vuelvan translúcidas, y escúrrelas. Ojo, que salpican."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Saca las bolitas con una espumadera y déjalas escurrir sobre papel de cocina. Decora con unas hojas de albahaca frita, espolvorea con sal en escamas y pimienta recién molida y ¡a comer enseguida!"
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Estas bolitas crujientes están todavía más ricas acompañadas de un buen pesto verde (el libro tiene su receta en la p. 18). ¡Moja, muerde y vuelta a empezar!"
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "risotto-al-tartufo",
   "titulo": "Risotto al tartufo",
   "titulo_es": "Risotto con trufa",
@@ -1070,6 +1176,212 @@ window.RECETAS = [
     "«temperatura más baja, 3-4»: la posición del fuego."
    ]
   },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "tomates-confitados",
+  "titulo": "Tomates confitados",
+  "titulo_es": "Un consejo de Virginia Baldeschi",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Básicos",
+  "etiquetas": [
+   "tomate",
+   "horno",
+   "conserva",
+   "vegana",
+   "pocos ingredientes"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 10,
+   "coccion": 30
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 300,
+      "unidad": "g",
+      "nombre": "tomates datterini o cherry"
+     },
+     {
+      "nombre": "aceite de oliva"
+     },
+     {
+      "nombre": "sal fina"
+     },
+     {
+      "cantidad": 3,
+      "unidad": "g",
+      "nombre": "azúcar glas"
+     },
+     {
+      "cantidad": 4,
+      "unidad": "ramita",
+      "nombre": "tomillo"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Preparar",
+    "texto": "Precalienta el horno a 180 °C. Lava los tomates y pártelos por la mitad a lo largo."
+   },
+   {
+    "titulo": "A la fuente",
+    "texto": "Coloca cada mitad con el corte hacia abajo en una fuente apta para horno. Rocía con aceite de oliva, espolvorea con la sal y el azúcar y añade las ramitas de tomillo."
+   },
+   {
+    "titulo": "Al horno",
+    "texto": "Hornea 30 minutos en el horno ya caliente."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "La diva del tomate confitado",
+    "texto": "Virginia es «la mamma». Ha preparado prácticamente todas las recetas del libro y, cuando se trata de tomate confitado, es LA diva."
+   },
+   {
+    "titulo": "Conviene saber",
+    "texto": "El tomate confitado es fantástico. Se puede usar frío en una ensalada o sobre una bruschetta, o calentarlo para hacer en un momento salsas de tomate rápidas y sabrosas para acompañar huevos fritos o revueltos, carnes y mucho más. No dudes en hacer el doble o el triple: siempre encontrarás cómo usar estos tomates mágicos."
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "zuppa-di-vino",
+  "titulo": "Zuppa di vino",
+  "titulo_es": "Sopa de vino blanco",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": [
+   "sopa",
+   "vino",
+   "receta de abuela",
+   "vegetariana",
+   "rápida"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 10,
+   "coccion": 20
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la sopa",
+    "items": [
+     {
+      "cantidad": 4,
+      "nombre": "yema de huevo",
+      "nombre_plural": "yemas de huevo"
+     },
+     {
+      "cantidad": 500,
+      "unidad": "ml",
+      "nombre": "caldo de verduras",
+      "nota": "frío; el libro tiene su propia receta en la p. 200"
+     },
+     {
+      "cantidad": 350,
+      "unidad": "ml",
+      "nombre": "riesling seco",
+      "nota": "u otro vino blanco seco"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "ml",
+      "nombre": "crème fraîche"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "nuez moscada molida"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "canela molida"
+     },
+     {
+      "nombre": "sal y pimienta"
+     }
+    ]
+   },
+   {
+    "grupo": "Para los picatostes",
+    "items": [
+     {
+      "cantidad": 10,
+      "unidad": "g",
+      "nombre": "mantequilla"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "rebanada",
+      "nombre": "pan blanco",
+      "nota": "sin corteza y en dados"
+     },
+     {
+      "nombre": "cebollino",
+      "nota": "un poco, muy picado, para decorar"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Las yemas y el caldo",
+    "texto": "Bate las yemas en un cuenco e incorpóralas, sin dejar de batir, al caldo frío en una cazuela."
+   },
+   {
+    "titulo": "Espesar",
+    "texto": "Pon la cazuela a fuego suave y bate sin parar durante 10 minutos, o hasta que el líquido espese. Después, cocina 5 minutos más a fuego medio.",
+    "nota_adaptacion": "Que no llegue a hervir: si se calienta demasiado, la yema se corta y quedan grumos."
+   },
+   {
+    "titulo": "El vino",
+    "texto": "Añade el vino, la crème fraîche, la nuez moscada y la canela, y salpimienta.",
+    "nota_adaptacion": "El vino entra al final y casi no cuece, así que la sopa conserva buena parte del alcohol."
+   },
+   {
+    "titulo": "Los picatostes",
+    "texto": "Calienta la mantequilla en una sartén a fuego medio, añade los dados de pan y dóralos unos 5 minutos."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Sirve la sopa en cuencos y reparte por encima los picatostes y el cebollino picado. Sirve caliente."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Es una auténtica receta de abuela. Nos encanta, y nos divertimos cambiando el caldo según las verduras de temporada."
+   }
+  ],
   "alta": "2026-10-10"
  }
 ];

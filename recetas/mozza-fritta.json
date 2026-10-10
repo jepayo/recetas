@@ -1,0 +1,62 @@
+{
+  "id": "mozza-fritta",
+  "titulo": "Mozza fritta",
+  "titulo_es": "Bolitas de mozzarella fritas",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Entrantes",
+  "etiquetas": ["aperitivo", "frito", "mozzarella", "vegetariana", "pocos ingredientes"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 15, "reposo": 180, "coccion": 10 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 20, "nombre": "bolita de mozzarella", "nombre_plural": "bolitas de mozzarella", "nota": "de 20 g (bocconcini)" },
+        { "cantidad": 250, "unidad": "g", "nombre": "harina de trigo" },
+        { "cantidad": 5, "nombre": "huevo", "nombre_plural": "huevos" },
+        { "cantidad": 200, "unidad": "g", "nombre": "pan rallado" },
+        { "cantidad": 1, "unidad": "l", "nombre": "aceite de girasol", "nota": "para freír", "escala": false },
+        { "nombre": "albahaca", "nota": "unas hojas, fritas, para decorar" },
+        { "nombre": "sal en escamas" },
+        { "nombre": "pimienta recién molida" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Secar",
+      "texto": "Coloca las bolitas de mozzarella sobre una rejilla con una bandeja debajo y déjalas secar al menos 3 horas a temperatura ambiente."
+    },
+    {
+      "titulo": "Preparar el empanado",
+      "texto": "Pon la harina en un plato. En un cuenco, bate ligeramente los huevos con un tenedor y pásalos a un segundo plato. Pon el pan rallado en un tercero."
+    },
+    {
+      "titulo": "Empanar",
+      "texto": "Pasa cada bolita por la harina, después por el huevo batido y por último por el pan rallado. Sacúdelas bien para quitar el exceso."
+    },
+    {
+      "titulo": "Freír",
+      "texto": "En una freidora o una cazuela de fondo grueso, calienta el aceite a 160 °C. Si no tienes termómetro de cocina, echa unas migas de pan rallado: si el aceite está a punto, se dorarán. Fríe las bolitas 3–4 minutos, hasta que estén bien doradas.",
+      "nota_adaptacion": "El libro no explica cómo freír la albahaca: antes que la mozzarella, fríe en el mismo aceite unas hojas bien secas durante unos segundos, hasta que se vuelvan translúcidas, y escúrrelas. Ojo, que salpican."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Saca las bolitas con una espumadera y déjalas escurrir sobre papel de cocina. Decora con unas hojas de albahaca frita, espolvorea con sal en escamas y pimienta recién molida y ¡a comer enseguida!"
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Estas bolitas crujientes están todavía más ricas acompañadas de un buen pesto verde (el libro tiene su receta en la p. 18). ¡Moja, muerde y vuelta a empezar!"
+    }
+  ],
+  "alta": "2026-10-10"
+}

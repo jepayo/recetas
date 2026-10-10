@@ -1,0 +1,54 @@
+{
+  "id": "tomates-confitados",
+  "titulo": "Tomates confitados",
+  "titulo_es": "Un consejo de Virginia Baldeschi",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Básicos",
+  "etiquetas": ["tomate", "horno", "conserva", "vegana", "pocos ingredientes"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 10, "coccion": 30 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 300, "unidad": "g", "nombre": "tomates datterini o cherry" },
+        { "nombre": "aceite de oliva" },
+        { "nombre": "sal fina" },
+        { "cantidad": 3, "unidad": "g", "nombre": "azúcar glas" },
+        { "cantidad": 4, "unidad": "ramita", "nombre": "tomillo" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Preparar",
+      "texto": "Precalienta el horno a 180 °C. Lava los tomates y pártelos por la mitad a lo largo."
+    },
+    {
+      "titulo": "A la fuente",
+      "texto": "Coloca cada mitad con el corte hacia abajo en una fuente apta para horno. Rocía con aceite de oliva, espolvorea con la sal y el azúcar y añade las ramitas de tomillo."
+    },
+    {
+      "titulo": "Al horno",
+      "texto": "Hornea 30 minutos en el horno ya caliente."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "La diva del tomate confitado",
+      "texto": "Virginia es «la mamma». Ha preparado prácticamente todas las recetas del libro y, cuando se trata de tomate confitado, es LA diva."
+    },
+    {
+      "titulo": "Conviene saber",
+      "texto": "El tomate confitado es fantástico. Se puede usar frío en una ensalada o sobre una bruschetta, o calentarlo para hacer en un momento salsas de tomate rápidas y sabrosas para acompañar huevos fritos o revueltos, carnes y mucho más. No dudes en hacer el doble o el triple: siempre encontrarás cómo usar estos tomates mágicos."
+    }
+  ],
+  "alta": "2026-10-10"
+}

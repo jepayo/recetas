@@ -9,7 +9,7 @@ const raiz = dirname(fileURLToPath(import.meta.url));
 const dir = join(raiz, 'recetas');
 // Solo sistema métrico (sólidos en g, líquidos en ml) más medidas de casa sin equivalente.
 // Nada de cucharadas, tazas, onzas ni vasos: se convierten al dar de alta.
-const UNIDADES = ['g', 'kg', 'ml', 'cl', 'l', 'loncha', 'diente', 'pizca', 'hoja', 'ramita', 'manojo', 'lata', 'sobre', 'chorro', 'chorrito', 'pastilla', 'tenedor'];
+const UNIDADES = ['g', 'kg', 'ml', 'cl', 'l', 'loncha', 'diente', 'pizca', 'hoja', 'ramita', 'manojo', 'lata', 'sobre', 'chorro', 'chorrito', 'pastilla', 'tenedor', 'rebanada'];
 
 const ESTILOS = ['clasico', 'trattoria', 'mediterraneo', 'bistro', 'nordico', 'huerta', 'libro-rosa', 'revista'];
 

@@ -1,0 +1,70 @@
+{
+  "id": "zuppa-di-vino",
+  "titulo": "Zuppa di vino",
+  "titulo_es": "Sopa de vino blanco",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": ["sopa", "vino", "receta de abuela", "vegetariana", "rápida"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 10, "coccion": 20 },
+  "ingredientes": [
+    {
+      "grupo": "Para la sopa",
+      "items": [
+        { "cantidad": 4, "nombre": "yema de huevo", "nombre_plural": "yemas de huevo" },
+        { "cantidad": 500, "unidad": "ml", "nombre": "caldo de verduras", "nota": "frío; el libro tiene su propia receta en la p. 200" },
+        { "cantidad": 350, "unidad": "ml", "nombre": "riesling seco", "nota": "u otro vino blanco seco" },
+        { "cantidad": 250, "unidad": "ml", "nombre": "crème fraîche" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "nuez moscada molida" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "canela molida" },
+        { "nombre": "sal y pimienta" }
+      ]
+    },
+    {
+      "grupo": "Para los picatostes",
+      "items": [
+        { "cantidad": 10, "unidad": "g", "nombre": "mantequilla" },
+        { "cantidad": 1, "unidad": "rebanada", "nombre": "pan blanco", "nota": "sin corteza y en dados" },
+        { "nombre": "cebollino", "nota": "un poco, muy picado, para decorar" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Las yemas y el caldo",
+      "texto": "Bate las yemas en un cuenco e incorpóralas, sin dejar de batir, al caldo frío en una cazuela."
+    },
+    {
+      "titulo": "Espesar",
+      "texto": "Pon la cazuela a fuego suave y bate sin parar durante 10 minutos, o hasta que el líquido espese. Después, cocina 5 minutos más a fuego medio.",
+      "nota_adaptacion": "Que no llegue a hervir: si se calienta demasiado, la yema se corta y quedan grumos."
+    },
+    {
+      "titulo": "El vino",
+      "texto": "Añade el vino, la crème fraîche, la nuez moscada y la canela, y salpimienta.",
+      "nota_adaptacion": "El vino entra al final y casi no cuece, así que la sopa conserva buena parte del alcohol."
+    },
+    {
+      "titulo": "Los picatostes",
+      "texto": "Calienta la mantequilla en una sartén a fuego medio, añade los dados de pan y dóralos unos 5 minutos."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Sirve la sopa en cuencos y reparte por encima los picatostes y el cebollino picado. Sirve caliente."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Es una auténtica receta de abuela. Nos encanta, y nos divertimos cambiando el caldo según las verduras de temporada."
+    }
+  ],
+  "alta": "2026-10-10"
+}
