@@ -43,11 +43,12 @@ Unidades válidas: `g kg ml cl l loncha diente pizca hoja ramita manojo lata sob
 ## Estilos
 Cada receta puede llevar `estilo`, que cambia colores, tipografías, fondo y adornos de su ficha y de su tarjeta en el índice. El índice en sí usa siempre el clásico (y respeta el modo oscuro).
 - `clasico` — papel cálido y terracota (por defecto).
-- `trattoria` — trattoria italiana: blanco, orlas de pinceladas rojas, tira de cuadros rojos y blancos, títulos en mayúsculas, «• ● •» y mantel de rayas azules en las notas.
+- `trattoria` — trattoria italiana: blanco, orlas de pinceladas rojas, tira de cuadros rojos y blancos, títulos en mayúsculas, «• ● •» y notas sobre fondo azul liso.
 - `mediterraneo` — cobalto y amarillo de azulejo.
 - `bistro` — oscuro y dorado.
 - `nordico` — blanco y negro, minimalista.
 - `huerta` — verde oliva y paja.
+- `libro-rosa-cuadros` — spin-off del libro rosa para sus hojas cuadriculadas: mismo rosa, tipografías y tinta, pero papel blanco con cuadrícula azul en vez de naranja.
 - `revista` — editorial de revista (tipo Telva): titular enorme y fino (Jost) a la izquierda, blanco y negro, acento ocre, pasos 01, 02…
 - `libro-rosa` — el cuaderno familiar: tapa rosa, hoja naranja, títulos a mano (Caveat) subrayados y tinta de boli.
 

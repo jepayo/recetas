@@ -11,7 +11,7 @@ const dir = join(raiz, 'recetas');
 // Nada de cucharadas, tazas, onzas ni vasos: se convierten al dar de alta.
 const UNIDADES = ['g', 'kg', 'ml', 'cl', 'l', 'loncha', 'diente', 'pizca', 'hoja', 'ramita', 'manojo', 'lata', 'sobre', 'chorro', 'chorrito', 'pastilla', 'tenedor', 'rebanada', 'rama'];
 
-const ESTILOS = ['clasico', 'trattoria', 'mediterraneo', 'bistro', 'nordico', 'huerta', 'libro-rosa', 'revista'];
+const ESTILOS = ['clasico', 'trattoria', 'mediterraneo', 'bistro', 'nordico', 'huerta', 'libro-rosa', 'libro-rosa-cuadros', 'revista'];
 
 const errores = [];
 const recetas = readdirSync(dir)
