@@ -38,7 +38,7 @@ Catálogo personal de recetas en un formato estándar (JSON), con visor HTML.
   "alta": "AAAA-MM-DD"
 }
 ```
-Unidades válidas: `g kg ml cl l loncha diente pizca hoja ramita manojo lata sobre chorro chorrito pastilla tenedor rebanada rama` (ampliar en `build.mjs` y en `NOMBRES` de `index.html`). Sin `cantidad` = "al gusto".
+Unidades válidas: `g kg ml cl l loncha diente pizca hoja ramita manojo lata sobre chorro chorrito pastilla tenedor rebanada rama cabeza puñado` (ampliar en `build.mjs` y en `NOMBRES` de `index.html`). Sin `cantidad` = "al gusto".
 
 ## Estilos
 Cada receta puede llevar `estilo`, que cambia colores, tipografías, fondo y adornos de su ficha y de su tarjeta en el índice. El índice en sí usa siempre el clásico (y respeta el modo oscuro).
@@ -73,3 +73,8 @@ Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble.
 | big-lasagna | libro italiano | 2026-10-10 |
 | la-gran-carbonara | libro italiano | 2026-10-10 |
 | salsa-cacio-e-pepe | libro italiano | 2026-10-10 |
+| potaje-de-garbanzos | libro rosa, hojas de cuadros | 2026-10-10 |
+| canelones-de-la-abuela | libro rosa | 2026-10-10 |
+| canelones-de-verano | libro rosa | 2026-10-10 |
+| monteritas-de-mejillones | libro rosa | 2026-10-10 |
+| cordero-asado | libro rosa | 2026-10-10 |

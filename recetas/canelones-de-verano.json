@@ -1,0 +1,65 @@
+{
+  "id": "canelones-de-verano",
+  "titulo": "Canelones de verano",
+  "titulo_es": "Fríos, de atún, con mayonesa o salsa rosa",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Primeros",
+  "etiquetas": ["pasta", "canelones", "atún", "frío", "verano", "de casa"],
+  "estilo": "libro-rosa",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "No lo indica" },
+  "tiempos": { "preparacion": 30, "coccion": 15 },
+  "ingredientes": [
+    {
+      "grupo": "Para el relleno",
+      "items": [
+        { "cantidad": 100, "unidad": "g", "nombre": "lechuga", "estimada": true },
+        { "cantidad": 50, "unidad": "g", "nombre": "aceitunas sin hueso", "estimada": true },
+        { "cantidad": 2, "nombre": "huevo duro", "nombre_plural": "huevos duros", "estimada": true },
+        { "cantidad": 50, "unidad": "g", "nombre": "pepinillos", "estimada": true },
+        { "cantidad": 2, "unidad": "lata", "nombre": "atún", "nota": "escurrido", "estimada": true },
+        { "cantidad": 150, "unidad": "g", "nombre": "mayonesa espesa", "nota": "para unirlo todo", "estimada": true }
+      ]
+    },
+    {
+      "grupo": "Para los canelones",
+      "items": [
+        { "cantidad": 12, "nombre": "placa de canelón", "nombre_plural": "placas de canelón", "nota": "precocidas", "estimada": true },
+        { "nombre": "sal" },
+        { "nombre": "aceite de girasol", "nota": "un chorrito para el agua" }
+      ]
+    },
+    {
+      "grupo": "Para cubrir",
+      "items": [
+        { "cantidad": 150, "unidad": "g", "nombre": "mayonesa o salsa rosa", "estimada": true }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El relleno",
+      "texto": "Pica todo muy, muy pequeñito: la lechuga, las aceitunas, el huevo duro, los pepinillos y el atún. Únelo con mayonesa espesa."
+    },
+    {
+      "titulo": "Cocer los canelones",
+      "texto": "Cuece las placas en agua con sal y un chorrito de aceite de girasol para que no se peguen. Cuando estén cocidas, ponlas sobre un paño seco para que se sequen y déjalas reposar.",
+      "nota_adaptacion": "El original dice «se cuecen igual que antes»: se refiere a los canelones de la abuela, la receta anterior del cuaderno."
+    },
+    {
+      "titulo": "Rellenar y cubrir",
+      "texto": "Rellena las placas, enróllalas y colócalas en una fuente. Cúbrelas con mayonesa o salsa rosa.",
+      "nota_adaptacion": "Se comen fríos: si puedes, déjalos un rato en la nevera antes de servir."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "CANELONES DE VERANO\n\n→ El relleno: se pica muy pequeñito, muy pequeño: lechuga, aceitunas (también picadas), huevo duro, pepinillos, atún y unido con mayonesa espesa.\n\n→ Los canelones se cuecen igual que antes.\nSe rellenan los canelones y se cubren con mayonesa o salsa rosa."
+  },
+  "alta": "2026-10-10"
+}

@@ -191,6 +191,421 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "canelones-de-la-abuela",
+  "titulo": "Canelones de la abuela",
+  "titulo_es": "Con carne, foie-gras y bechamel",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa de las páginas naranjas",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Principales",
+  "etiquetas": [
+   "pasta",
+   "canelones",
+   "bechamel",
+   "horno",
+   "de casa"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "No lo indica: 4 estimado por el medio kilo de carne"
+  },
+  "tiempos": {
+   "preparacion": 45,
+   "coccion": 50
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para el relleno",
+    "items": [
+     {
+      "cantidad": 1,
+      "nombre": "cebolla",
+      "nombre_plural": "cebollas",
+      "nota": "picada"
+     },
+     {
+      "nombre": "aceite de oliva",
+      "nota": "para freír la cebolla"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "carne picada de vaca",
+      "nota": "en el original, «¼»"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "carne picada de cerdo",
+      "nota": "en el original, «¼»"
+     },
+     {
+      "cantidad": 20,
+      "unidad": "g",
+      "nombre": "harina"
+     },
+     {
+      "nombre": "leche",
+      "nota": "un chorrito"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "lata",
+      "nombre": "foie-gras",
+      "nota": "pequeña [?]"
+     },
+     {
+      "nombre": "sal y pimienta"
+     }
+    ]
+   },
+   {
+    "grupo": "Para los canelones",
+    "items": [
+     {
+      "cantidad": 20,
+      "nombre": "placa de canelón",
+      "nombre_plural": "placas de canelón",
+      "nota": "precocidas (en casa, las de El Pavo)",
+      "estimada": true
+     },
+     {
+      "nombre": "sal"
+     },
+     {
+      "nombre": "aceite de girasol",
+      "nota": "un chorrito para el agua"
+     }
+    ]
+   },
+   {
+    "grupo": "Para la bechamel",
+    "items": [
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "mantequilla o margarina",
+      "nota": "en el original, «6-7 cucharadas de Tulipán»"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "chorro",
+      "nombre": "aceite de girasol",
+      "nota": "que sea bueno"
+     },
+     {
+      "cantidad": 120,
+      "unidad": "g",
+      "nombre": "harina",
+      "nota": "en el original, «3 cucharones» [?]; más si la quieres más espesa",
+      "estimada": true
+     },
+     {
+      "cantidad": 1,
+      "unidad": "l",
+      "nombre": "leche",
+      "nota": "mejor templada",
+      "estimada": true
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "sal fina",
+      "nota": "una buena pizca"
+     },
+     {
+      "nombre": "mantequilla",
+      "nota": "para untar la fuente"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "El relleno",
+    "texto": "Salpimienta la carne. Pica la cebolla y fríela en una sartén con un poco de aceite. Echa la carne picada y sigue friendo. Añade la harina y un chorrito de leche, y cocina hasta que la carne se haya reducido. Incorpora el foie-gras, trabájalo un poco para que se mezcle y deja enfriar. La carne también puede ser de restos (de cocido, de asado…)."
+   },
+   {
+    "titulo": "Cocer los canelones",
+    "texto": "Cuece las placas en agua con sal y un chorrito de aceite de girasol para que no se peguen. Cuando estén cocidas, ponlas sobre un paño seco para que se sequen y déjalas reposar."
+   },
+   {
+    "titulo": "La bechamel: el principio",
+    "texto": "En una cazuela, pon la mantequilla con un buen chorro de aceite de girasol y la harina, a fuego 2–3 (de 10). Añade un chorro de leche y remueve sin parar para que no se formen grumos."
+   },
+   {
+    "titulo": "La bechamel: poco a poco",
+    "texto": "Sigue echando la leche poco a poco, sin dejar de remover, y sube el fuego a 7–8: hay que dejarla cocer mucho. Si se tiene la leche templada, mejor, y si la quieres más espesa, echa más harina. Cuando tenga el espesor que quieres, sube el fuego a 10 y ya no dejes de remover, añadiendo más leche. Cuando hierva, baja el fuego a 4–5 [?]: que no hierva mucho, porque se termina de hacer en el horno. Échale una buena pizca de sal fina."
+   },
+   {
+    "titulo": "Montar",
+    "texto": "Unta una fuente de horno con mantequilla. Rellena las placas con la carne, enróllalas y colócalas en la fuente. Cúbrelas con la bechamel.",
+    "nota_adaptacion": "El original da por hecho este paso: solo dice «se ponen los canelones con la bechamel en el horno»."
+   },
+   {
+    "titulo": "Al horno",
+    "texto": "Mete la fuente en el horno precalentado a 180 °C, con calor por abajo, unos 20 minutos o más, hasta que los canelones hiervan. Entonces pon el fuego de arriba para gratinarlos.",
+    "nota_adaptacion": "La última línea de la hoja está cortada («…apagando el horno por arriba ¾ de…»); falta confirmar el final."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "CANELONES DE LA ABUELA\n\n→ Pico 1 cebolla y la frío y echo la carne picada (¼ de vaca y ¼ de cerdo) y vuelvo a freírlo. Añado 2 cucharadas de harina y añado también leche hasta que la carne se ha reducido y añado foie-gras (1 lata de mina) y sal y pimienta previamente a la carne. Lo trabajo un poquito y se deja enfriar. [La carne también puede ser de restos].\n\n→ Cocción del canelón: agua, sal y aceite de girasol para que no se peguen. Cuando ya están cocidos los pongo en un paño seco para que se sequen. Se dejan reposar. «Canelones precocidos El Pavo».\n\n→ Bechamel: mantequilla (Tulipán) como 6-7 cucharadas con un buen chorro de aceite de girasol, 3 cucharones de harina (si se quiere más espesa se echa más). El fuego a 2 ó 3 y se le añade un chorro de leche y se mueve continuamente para que no se formen grumos. Se echa otro chorro y así poquito a poquito y removiendo se va echando más leche. [Se sube la Tª a 7-8] Hay que dejarla cocer mucho. (Para espesarla se echa más harina). Si se tiene la leche templada, mejor. Cuando se consigue el espesor que se quiere se sube la Tª a 10 y ahora no se puede dejar de mover, añadiendo más leche. Cuando hierve se baja la Tª al 4½. Que no hierva mucho, porque en el horno se va a terminar de hervir. 1 buen pizco de sal fina.\n\n1 vez finalizado se ponen los canelones con la bechamel en el horno, en el bol se unta mantequilla, para calentar el horno a más de 180° por abajo [± 20 min o más]. Cuando hiervan los canelones se les pone fuego para gratinar y apagando el horno por arriba ¾ de…",
+   "dudas": [
+    "«1 lata de mina»: no lo leo claro. ¿Una lata pequeña («mini»)? ¿Una marca?",
+    "«3 cucharones de harina»: ¿cucharones o cucharadas? Con 6-7 cucharadas de mantequilla, cucharones cuadra mejor.",
+    "«se baja la Tª al 4½»: ¿4 y medio o 4-5?",
+    "La última línea está cortada: «…apagando el horno por arriba ¾ de…»."
+   ]
+  },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "canelones-de-verano",
+  "titulo": "Canelones de verano",
+  "titulo_es": "Fríos, de atún, con mayonesa o salsa rosa",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa de las páginas naranjas",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Primeros",
+  "etiquetas": [
+   "pasta",
+   "canelones",
+   "atún",
+   "frío",
+   "verano",
+   "de casa"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "No lo indica"
+  },
+  "tiempos": {
+   "preparacion": 30,
+   "coccion": 15
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para el relleno",
+    "items": [
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "lechuga",
+      "estimada": true
+     },
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "aceitunas sin hueso",
+      "estimada": true
+     },
+     {
+      "cantidad": 2,
+      "nombre": "huevo duro",
+      "nombre_plural": "huevos duros",
+      "estimada": true
+     },
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "pepinillos",
+      "estimada": true
+     },
+     {
+      "cantidad": 2,
+      "unidad": "lata",
+      "nombre": "atún",
+      "nota": "escurrido",
+      "estimada": true
+     },
+     {
+      "cantidad": 150,
+      "unidad": "g",
+      "nombre": "mayonesa espesa",
+      "nota": "para unirlo todo",
+      "estimada": true
+     }
+    ]
+   },
+   {
+    "grupo": "Para los canelones",
+    "items": [
+     {
+      "cantidad": 12,
+      "nombre": "placa de canelón",
+      "nombre_plural": "placas de canelón",
+      "nota": "precocidas",
+      "estimada": true
+     },
+     {
+      "nombre": "sal"
+     },
+     {
+      "nombre": "aceite de girasol",
+      "nota": "un chorrito para el agua"
+     }
+    ]
+   },
+   {
+    "grupo": "Para cubrir",
+    "items": [
+     {
+      "cantidad": 150,
+      "unidad": "g",
+      "nombre": "mayonesa o salsa rosa",
+      "estimada": true
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "El relleno",
+    "texto": "Pica todo muy, muy pequeñito: la lechuga, las aceitunas, el huevo duro, los pepinillos y el atún. Únelo con mayonesa espesa."
+   },
+   {
+    "titulo": "Cocer los canelones",
+    "texto": "Cuece las placas en agua con sal y un chorrito de aceite de girasol para que no se peguen. Cuando estén cocidas, ponlas sobre un paño seco para que se sequen y déjalas reposar.",
+    "nota_adaptacion": "El original dice «se cuecen igual que antes»: se refiere a los canelones de la abuela, la receta anterior del cuaderno."
+   },
+   {
+    "titulo": "Rellenar y cubrir",
+    "texto": "Rellena las placas, enróllalas y colócalas en una fuente. Cúbrelas con mayonesa o salsa rosa.",
+    "nota_adaptacion": "Se comen fríos: si puedes, déjalos un rato en la nevera antes de servir."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "CANELONES DE VERANO\n\n→ El relleno: se pica muy pequeñito, muy pequeño: lechuga, aceitunas (también picadas), huevo duro, pepinillos, atún y unido con mayonesa espesa.\n\n→ Los canelones se cuecen igual que antes.\nSe rellenan los canelones y se cubren con mayonesa o salsa rosa."
+  },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "cordero-asado",
+  "titulo": "Cordero asado",
+  "titulo_es": "Dos piernas y una paletilla de lechal",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa de las páginas naranjas",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Principales",
+  "etiquetas": [
+   "cordero",
+   "lechal",
+   "asado",
+   "horno",
+   "de casa",
+   "fiesta"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "No lo indica: 2 piernas y 1 paletilla de lechal, para unas 4"
+  },
+  "tiempos": {
+   "preparacion": 10,
+   "coccion": 90
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 2,
+      "nombre": "pierna de cordero lechal",
+      "nombre_plural": "piernas de cordero lechal"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "paletilla de cordero lechal",
+      "nombre_plural": "paletillas de cordero lechal"
+     },
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "manteca de cerdo blanda",
+      "nota": "o, en su defecto, aceite de oliva",
+      "estimada": true
+     },
+     {
+      "nombre": "sal"
+     },
+     {
+      "cantidad": 4,
+      "unidad": "diente",
+      "nombre": "ajo",
+      "nota": "3 o 4"
+     },
+     {
+      "nombre": "pimienta negra en grano",
+      "nota": "unas bolas"
+     },
+     {
+      "cantidad": 3,
+      "unidad": "hoja",
+      "nombre": "laurel",
+      "nota": "2 o 3"
+     },
+     {
+      "nombre": "perejil",
+      "nota": "unas ramas, si hay"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "limón",
+      "nombre_plural": "limones",
+      "nota": "su zumo"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Untar y salar",
+    "texto": "Precalienta el horno a 180 °C. Unta el cordero con la manteca blanda por delante y por detrás, y pon también un poco en la fuente, pero muy poca. Sala el cordero por los dos lados."
+   },
+   {
+    "titulo": "Los aromáticos",
+    "texto": "Echa en la fuente los dientes de ajo, unas bolas de pimienta negra y las hojas de laurel, y, si hay perejil, unas ramas. Después, riega con el zumo del limón."
+   },
+   {
+    "titulo": "Asar despacito",
+    "texto": "Ásalo a 180 °C, despacito, entre 1 hora y cuarto y 1 hora y media. Ve vigilándolo, porque depende de si el cordero es duro o no.",
+    "nota_adaptacion": "Para que se dore por igual, dale la vuelta a mitad de asado. Si ves que el fondo de la fuente se seca, añade un chorrito de agua."
+   },
+   {
+    "titulo": "¿Está listo?",
+    "texto": "Cuando esté dorado y al pincharlo con una aguja no salga sangre, ¡está listo!"
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "CORDERO ASADO (2 piernas y 1 paletilla de lechal)\n\nManteca blanda de cerdo (en déficit aceite de oliva) → untar por delante y por detrás y 1 poco en el cacharro pero muy poca. Salar el cordero por los 2 lados.\nEchar 3 ó 4 dientes de ajo y bolas de pimienta negra. 2 ó 3 hojas de laurel y si hay perejil se echan unas ramas.\nSe echa después el zumo de 1 limón [«y medio», tachado].\n\nSe pone el horno a 180° que se haga despacito hora y 15-30, pero se va viendo porque depende del cordero si es duro o no. Cuando esté dorado y al pincharle con una aguja no salga sangre, ¡está listo!",
+   "aclaraciones": [
+    "«y medio» del limón está tachado en el original: es el zumo de 1 limón.",
+    "«en déficit» quiere decir «en su defecto»."
+   ]
+  },
+  "alta": "2026-10-10"
+ },
+ {
   "id": "crocchette-guanciale-e-tartufo",
   "titulo": "Crocchette guanciale e tartufo",
   "titulo_es": "Croquetas de guanciale y crema de trufa",
@@ -724,6 +1139,138 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "monteritas-de-mejillones",
+  "titulo": "Monteritas de mejillones",
+  "titulo_es": "Mejillones rellenos, rebozados y fritos",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa de las páginas naranjas",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Entrantes",
+  "etiquetas": [
+   "tapa",
+   "mejillones",
+   "marisco",
+   "bechamel",
+   "frito",
+   "de casa"
+  ],
+  "estilo": "libro-rosa",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "No lo indica"
+  },
+  "tiempos": {
+   "preparacion": 40,
+   "reposo": 60,
+   "coccion": 20
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para el relleno",
+    "items": [
+     {
+      "cantidad": 1,
+      "unidad": "kg",
+      "nombre": "mejillones",
+      "nota": "unos 30",
+      "estimada": true
+     },
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "jamón serrano",
+      "estimada": true
+     },
+     {
+      "cantidad": 15,
+      "unidad": "g",
+      "nombre": "tomate frito espeso"
+     }
+    ]
+   },
+   {
+    "grupo": "Para la bechamel",
+    "items": [
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "mantequilla",
+      "estimada": true
+     },
+     {
+      "cantidad": 60,
+      "unidad": "g",
+      "nombre": "harina",
+      "estimada": true
+     },
+     {
+      "cantidad": 500,
+      "unidad": "ml",
+      "nombre": "leche",
+      "estimada": true
+     },
+     {
+      "nombre": "sal"
+     }
+    ]
+   },
+   {
+    "grupo": "Para rebozar y freír",
+    "items": [
+     {
+      "cantidad": 2,
+      "nombre": "huevo",
+      "nombre_plural": "huevos",
+      "estimada": true
+     },
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "pan rallado",
+      "estimada": true
+     },
+     {
+      "nombre": "aceite",
+      "nota": "abundante, para freír"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Abrir los mejillones",
+    "texto": "Pon los mejillones en una olla con un poco de agua caliente y la tapa cerrada hasta que se abran. Saca el bicho y limpia bien las conchas."
+   },
+   {
+    "titulo": "El relleno",
+    "texto": "Pica el mejillón y el jamón serrano, añade el tomate frito espeso y rellena las conchas."
+   },
+   {
+    "titulo": "La bechamel",
+    "texto": "Haz una bechamel espesa: derrite la mantequilla, rehoga la harina un par de minutos y añade la leche poco a poco sin dejar de remover, hasta que espese. Sala. Cubre el relleno de cada concha con la bechamel, alisando, y déjalas enfriar.",
+    "nota_adaptacion": "El original solo dice «hago una bechamel». Las cantidades son para una bechamel espesa que aguante el rebozado."
+   },
+   {
+    "titulo": "Rebozar y freír",
+    "texto": "Cuando estén frías, pásalas por huevo batido y pan rallado y fríelas en abundante aceite."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "No las comas recién fritas, que queman mucho."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "MONTERITAS DE MEJILLONES\n\nPongo al agua caliente los mejillones para que se abran con la tapadera cerrada. Se saca el bicho y las conchas las limpio bien.\nPico el mejillón, jamón serrano, echo 1 cucharada de tomate frito espeso y relleno las conchas.\nHago 1 bechamel y relleno encima con la bechamel y los dejo enfriar. Cuando estén fríos se pasa por huevo y pan rallado y se fríen con abundante aceite. No tomar recién fritos porque queman mucho."
+  },
+  "alta": "2026-10-10"
+ },
+ {
   "id": "mozza-fritta",
   "titulo": "Mozza fritta",
   "titulo_es": "Bolitas de mozzarella fritas",
@@ -827,6 +1374,153 @@ window.RECETAS = [
     "texto": "Estas bolitas crujientes están todavía más ricas acompañadas de un buen pesto verde (el libro tiene su receta en la p. 18). ¡Moja, muerde y vuelta a empezar!"
    }
   ],
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "potaje-de-garbanzos",
+  "titulo": "Potaje de garbanzos",
+  "titulo_es": "En olla exprés",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa (hojas de cuadros)",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Guisos",
+  "etiquetas": [
+   "legumbres",
+   "garbanzos",
+   "chorizo",
+   "olla exprés",
+   "de casa",
+   "para muchos"
+  ],
+  "estilo": "libro-rosa-cuadros",
+  "raciones": {
+   "cantidad": 8,
+   "unidad": "personas",
+   "original": "No lo indica: 1 kg de garbanzos da para unas 8"
+  },
+  "tiempos": {
+   "preparacion": 15,
+   "reposo": 720,
+   "coccion": 40
+  },
+  "ingredientes": [
+   {
+    "grupo": "Todo a la olla",
+    "items": [
+     {
+      "cantidad": 1,
+      "unidad": "kg",
+      "nombre": "garbanzos",
+      "nota": "en remojo toda la noche"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "cabeza",
+      "nombre": "ajo",
+      "nota": "entera, medio pelada; no se reduce a la mitad",
+      "escala": false
+     },
+     {
+      "cantidad": 3,
+      "nombre": "tomate",
+      "nombre_plural": "tomates",
+      "nota": "enteros"
+     },
+     {
+      "cantidad": 3,
+      "nombre": "patata",
+      "nombre_plural": "patatas",
+      "nota": "medianas (2 o 3), en trozos"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "cebolla",
+      "nombre_plural": "cebollas",
+      "nota": "entera, pelada; no se reduce a la mitad",
+      "escala": false
+     },
+     {
+      "cantidad": 1,
+      "nombre": "chorizo de guiso",
+      "nombre_plural": "chorizos de guiso",
+      "nota": "entero, se corta después"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pastilla",
+      "nombre": "caldo de pollo",
+      "nota": "tipo Avecrem"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "trozo de panceta",
+      "nombre_plural": "trozos de panceta",
+      "nota": "opcional"
+     },
+     {
+      "nombre": "pimentón dulce"
+     },
+     {
+      "cantidad": 100,
+      "unidad": "ml",
+      "nombre": "aceite frito",
+      "nota": "ya usado para freír; en el original, «un vaso pequeño»",
+      "estimada": true
+     },
+     {
+      "cantidad": 3,
+      "unidad": "puñado",
+      "nombre": "sal",
+      "nota": "así en el original [?]: prueba y ajusta"
+     },
+     {
+      "nombre": "agua",
+      "nota": "hasta cubrir todo y que sobrepase los garbanzos tres dedos"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "El remojo",
+    "texto": "La noche antes, pon los garbanzos en remojo en agua abundante."
+   },
+   {
+    "titulo": "Todo a la olla",
+    "texto": "Escurre los garbanzos y ponlos en la olla exprés con el resto de ingredientes: la cabeza de ajo medio pelada, los tomates enteros, las patatas en trozos, la cebolla entera, el chorizo entero, la pastilla de caldo, la panceta (si la usas), el pimentón, el aceite y la sal. Cubre con agua hasta que sobrepase los garbanzos tres dedos."
+   },
+   {
+    "titulo": "A presión",
+    "texto": "Cierra la olla y ponla a fuego casi al máximo. Cuando empiece a pitar y a dar vueltas el pitorro, cuenta 20 minutos."
+   },
+   {
+    "titulo": "Enfriar",
+    "texto": "A los 20 minutos, apaga el fuego y deja enfriar la olla hasta que deje de pitar (hasta que baje la presión) antes de abrirla."
+   },
+   {
+    "titulo": "Triturar y servir",
+    "texto": "Saca la cabeza de ajo y el chorizo. Tritura el resto y sirve el potaje con el chorizo cortado en rodajas.",
+    "nota_adaptacion": "La hoja termina en «trituras todo menos ajo». Falta confirmar si se tritura todo (quedaría una crema) o solo las verduras."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Media receta",
+    "texto": "Regla de casa: para medio kilo de garbanzos, todo se reduce a la mitad menos la cebolla y la cabeza de ajo, que se ponen enteras igual. El selector de raciones ya lo hace así."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "POTAJE DE GARBANZOS\n\n1 kg. garbanzo (toda la noche en remojo)\n1 cabeza de ajo (medio pelada).\n3 tomates enteros\n2 ó 3 patatas medianas cortadas a trozos\n1 cebolla pelada sin piel\n1 chorizo de guiso entero (para cortar después)\n1 pastilla de avecrem.\n1 trozo de panceta (opcional)\nPimentón dulce.\nAceite frito (un vaso pequeño)\nSal (3 puñaos)\nAgua (cubriendo todo al final y sobrepasar 3 dedos los garbanzos)\n\n— Si se quiere reducir a ½ kg de garbanzos, se reducen todos los ingredientes a la mitad menos la cebolla y la cabeza de ajo —\n\nFuego casi al máximo.\nSe ponen todos los ingredientes en la olla exprés. Cuando empiece a pitar y dar vueltas el pitorro se cuentan 20 mins.\nA los 20 mins quitas el fuego y dejas enfriar hasta que deje de pitar y trituras todo menos ajo…",
+   "dudas": [
+    "«trituras todo menos ajo»: la hoja se acaba ahí. ¿Sigue en otra página? ¿Se tritura todo, garbanzos incluidos, o solo las verduras? ¿Y el chorizo?",
+    "«Sal (3 puñaos)»: ¿puñados de verdad? Serían unos 90 g, que es mucha sal."
+   ]
+  },
   "alta": "2026-10-10"
  },
  {

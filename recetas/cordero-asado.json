@@ -1,0 +1,61 @@
+{
+  "id": "cordero-asado",
+  "titulo": "Cordero asado",
+  "titulo_es": "Dos piernas y una paletilla de lechal",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Principales",
+  "etiquetas": ["cordero", "lechal", "asado", "horno", "de casa", "fiesta"],
+  "estilo": "libro-rosa",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "No lo indica: 2 piernas y 1 paletilla de lechal, para unas 4" },
+  "tiempos": { "preparacion": 10, "coccion": 90 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 2, "nombre": "pierna de cordero lechal", "nombre_plural": "piernas de cordero lechal" },
+        { "cantidad": 1, "nombre": "paletilla de cordero lechal", "nombre_plural": "paletillas de cordero lechal" },
+        { "cantidad": 50, "unidad": "g", "nombre": "manteca de cerdo blanda", "nota": "o, en su defecto, aceite de oliva", "estimada": true },
+        { "nombre": "sal" },
+        { "cantidad": 4, "unidad": "diente", "nombre": "ajo", "nota": "3 o 4" },
+        { "nombre": "pimienta negra en grano", "nota": "unas bolas" },
+        { "cantidad": 3, "unidad": "hoja", "nombre": "laurel", "nota": "2 o 3" },
+        { "nombre": "perejil", "nota": "unas ramas, si hay" },
+        { "cantidad": 1, "nombre": "limón", "nombre_plural": "limones", "nota": "su zumo" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Untar y salar",
+      "texto": "Precalienta el horno a 180 °C. Unta el cordero con la manteca blanda por delante y por detrás, y pon también un poco en la fuente, pero muy poca. Sala el cordero por los dos lados."
+    },
+    {
+      "titulo": "Los aromáticos",
+      "texto": "Echa en la fuente los dientes de ajo, unas bolas de pimienta negra y las hojas de laurel, y, si hay perejil, unas ramas. Después, riega con el zumo del limón."
+    },
+    {
+      "titulo": "Asar despacito",
+      "texto": "Ásalo a 180 °C, despacito, entre 1 hora y cuarto y 1 hora y media. Ve vigilándolo, porque depende de si el cordero es duro o no.",
+      "nota_adaptacion": "Para que se dore por igual, dale la vuelta a mitad de asado. Si ves que el fondo de la fuente se seca, añade un chorrito de agua."
+    },
+    {
+      "titulo": "¿Está listo?",
+      "texto": "Cuando esté dorado y al pincharlo con una aguja no salga sangre, ¡está listo!"
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "CORDERO ASADO (2 piernas y 1 paletilla de lechal)\n\nManteca blanda de cerdo (en déficit aceite de oliva) → untar por delante y por detrás y 1 poco en el cacharro pero muy poca. Salar el cordero por los 2 lados.\nEchar 3 ó 4 dientes de ajo y bolas de pimienta negra. 2 ó 3 hojas de laurel y si hay perejil se echan unas ramas.\nSe echa después el zumo de 1 limón [«y medio», tachado].\n\nSe pone el horno a 180° que se haga despacito hora y 15-30, pero se va viendo porque depende del cordero si es duro o no. Cuando esté dorado y al pincharle con una aguja no salga sangre, ¡está listo!",
+    "aclaraciones": [
+      "«y medio» del limón está tachado en el original: es el zumo de 1 limón.",
+      "«en déficit» quiere decir «en su defecto»."
+    ]
+  },
+  "alta": "2026-10-10"
+}

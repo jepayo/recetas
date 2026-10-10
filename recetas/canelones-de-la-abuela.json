@@ -1,0 +1,90 @@
+{
+  "id": "canelones-de-la-abuela",
+  "titulo": "Canelones de la abuela",
+  "titulo_es": "Con carne, foie-gras y bechamel",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Principales",
+  "etiquetas": ["pasta", "canelones", "bechamel", "horno", "de casa"],
+  "estilo": "libro-rosa",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "No lo indica: 4 estimado por el medio kilo de carne" },
+  "tiempos": { "preparacion": 45, "coccion": 50 },
+  "ingredientes": [
+    {
+      "grupo": "Para el relleno",
+      "items": [
+        { "cantidad": 1, "nombre": "cebolla", "nombre_plural": "cebollas", "nota": "picada" },
+        { "nombre": "aceite de oliva", "nota": "para freír la cebolla" },
+        { "cantidad": 250, "unidad": "g", "nombre": "carne picada de vaca", "nota": "en el original, «¼»" },
+        { "cantidad": 250, "unidad": "g", "nombre": "carne picada de cerdo", "nota": "en el original, «¼»" },
+        { "cantidad": 20, "unidad": "g", "nombre": "harina" },
+        { "nombre": "leche", "nota": "un chorrito" },
+        { "cantidad": 1, "unidad": "lata", "nombre": "foie-gras", "nota": "pequeña [?]" },
+        { "nombre": "sal y pimienta" }
+      ]
+    },
+    {
+      "grupo": "Para los canelones",
+      "items": [
+        { "cantidad": 20, "nombre": "placa de canelón", "nombre_plural": "placas de canelón", "nota": "precocidas (en casa, las de El Pavo)", "estimada": true },
+        { "nombre": "sal" },
+        { "nombre": "aceite de girasol", "nota": "un chorrito para el agua" }
+      ]
+    },
+    {
+      "grupo": "Para la bechamel",
+      "items": [
+        { "cantidad": 100, "unidad": "g", "nombre": "mantequilla o margarina", "nota": "en el original, «6-7 cucharadas de Tulipán»" },
+        { "cantidad": 1, "unidad": "chorro", "nombre": "aceite de girasol", "nota": "que sea bueno" },
+        { "cantidad": 120, "unidad": "g", "nombre": "harina", "nota": "en el original, «3 cucharones» [?]; más si la quieres más espesa", "estimada": true },
+        { "cantidad": 1, "unidad": "l", "nombre": "leche", "nota": "mejor templada", "estimada": true },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "sal fina", "nota": "una buena pizca" },
+        { "nombre": "mantequilla", "nota": "para untar la fuente" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El relleno",
+      "texto": "Salpimienta la carne. Pica la cebolla y fríela en una sartén con un poco de aceite. Echa la carne picada y sigue friendo. Añade la harina y un chorrito de leche, y cocina hasta que la carne se haya reducido. Incorpora el foie-gras, trabájalo un poco para que se mezcle y deja enfriar. La carne también puede ser de restos (de cocido, de asado…)."
+    },
+    {
+      "titulo": "Cocer los canelones",
+      "texto": "Cuece las placas en agua con sal y un chorrito de aceite de girasol para que no se peguen. Cuando estén cocidas, ponlas sobre un paño seco para que se sequen y déjalas reposar."
+    },
+    {
+      "titulo": "La bechamel: el principio",
+      "texto": "En una cazuela, pon la mantequilla con un buen chorro de aceite de girasol y la harina, a fuego 2–3 (de 10). Añade un chorro de leche y remueve sin parar para que no se formen grumos."
+    },
+    {
+      "titulo": "La bechamel: poco a poco",
+      "texto": "Sigue echando la leche poco a poco, sin dejar de remover, y sube el fuego a 7–8: hay que dejarla cocer mucho. Si se tiene la leche templada, mejor, y si la quieres más espesa, echa más harina. Cuando tenga el espesor que quieres, sube el fuego a 10 y ya no dejes de remover, añadiendo más leche. Cuando hierva, baja el fuego a 4–5 [?]: que no hierva mucho, porque se termina de hacer en el horno. Échale una buena pizca de sal fina."
+    },
+    {
+      "titulo": "Montar",
+      "texto": "Unta una fuente de horno con mantequilla. Rellena las placas con la carne, enróllalas y colócalas en la fuente. Cúbrelas con la bechamel.",
+      "nota_adaptacion": "El original da por hecho este paso: solo dice «se ponen los canelones con la bechamel en el horno»."
+    },
+    {
+      "titulo": "Al horno",
+      "texto": "Mete la fuente en el horno precalentado a 180 °C, con calor por abajo, unos 20 minutos o más, hasta que los canelones hiervan. Entonces pon el fuego de arriba para gratinarlos.",
+      "nota_adaptacion": "La última línea de la hoja está cortada («…apagando el horno por arriba ¾ de…»); falta confirmar el final."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "CANELONES DE LA ABUELA\n\n→ Pico 1 cebolla y la frío y echo la carne picada (¼ de vaca y ¼ de cerdo) y vuelvo a freírlo. Añado 2 cucharadas de harina y añado también leche hasta que la carne se ha reducido y añado foie-gras (1 lata de mina) y sal y pimienta previamente a la carne. Lo trabajo un poquito y se deja enfriar. [La carne también puede ser de restos].\n\n→ Cocción del canelón: agua, sal y aceite de girasol para que no se peguen. Cuando ya están cocidos los pongo en un paño seco para que se sequen. Se dejan reposar. «Canelones precocidos El Pavo».\n\n→ Bechamel: mantequilla (Tulipán) como 6-7 cucharadas con un buen chorro de aceite de girasol, 3 cucharones de harina (si se quiere más espesa se echa más). El fuego a 2 ó 3 y se le añade un chorro de leche y se mueve continuamente para que no se formen grumos. Se echa otro chorro y así poquito a poquito y removiendo se va echando más leche. [Se sube la Tª a 7-8] Hay que dejarla cocer mucho. (Para espesarla se echa más harina). Si se tiene la leche templada, mejor. Cuando se consigue el espesor que se quiere se sube la Tª a 10 y ahora no se puede dejar de mover, añadiendo más leche. Cuando hierve se baja la Tª al 4½. Que no hierva mucho, porque en el horno se va a terminar de hervir. 1 buen pizco de sal fina.\n\n1 vez finalizado se ponen los canelones con la bechamel en el horno, en el bol se unta mantequilla, para calentar el horno a más de 180° por abajo [± 20 min o más]. Cuando hiervan los canelones se les pone fuego para gratinar y apagando el horno por arriba ¾ de…",
+    "dudas": [
+      "«1 lata de mina»: no lo leo claro. ¿Una lata pequeña («mini»)? ¿Una marca?",
+      "«3 cucharones de harina»: ¿cucharones o cucharadas? Con 6-7 cucharadas de mantequilla, cucharones cuadra mejor.",
+      "«se baja la Tª al 4½»: ¿4 y medio o 4-5?",
+      "La última línea está cortada: «…apagando el horno por arriba ¾ de…»."
+    ]
+  },
+  "alta": "2026-10-10"
+}

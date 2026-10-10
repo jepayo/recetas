@@ -1,0 +1,72 @@
+{
+  "id": "monteritas-de-mejillones",
+  "titulo": "Monteritas de mejillones",
+  "titulo_es": "Mejillones rellenos, rebozados y fritos",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa de las páginas naranjas",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Entrantes",
+  "etiquetas": ["tapa", "mejillones", "marisco", "bechamel", "frito", "de casa"],
+  "estilo": "libro-rosa",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "No lo indica" },
+  "tiempos": { "preparacion": 40, "reposo": 60, "coccion": 20 },
+  "ingredientes": [
+    {
+      "grupo": "Para el relleno",
+      "items": [
+        { "cantidad": 1, "unidad": "kg", "nombre": "mejillones", "nota": "unos 30", "estimada": true },
+        { "cantidad": 50, "unidad": "g", "nombre": "jamón serrano", "estimada": true },
+        { "cantidad": 15, "unidad": "g", "nombre": "tomate frito espeso" }
+      ]
+    },
+    {
+      "grupo": "Para la bechamel",
+      "items": [
+        { "cantidad": 50, "unidad": "g", "nombre": "mantequilla", "estimada": true },
+        { "cantidad": 60, "unidad": "g", "nombre": "harina", "estimada": true },
+        { "cantidad": 500, "unidad": "ml", "nombre": "leche", "estimada": true },
+        { "nombre": "sal" }
+      ]
+    },
+    {
+      "grupo": "Para rebozar y freír",
+      "items": [
+        { "cantidad": 2, "nombre": "huevo", "nombre_plural": "huevos", "estimada": true },
+        { "cantidad": 100, "unidad": "g", "nombre": "pan rallado", "estimada": true },
+        { "nombre": "aceite", "nota": "abundante, para freír" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Abrir los mejillones",
+      "texto": "Pon los mejillones en una olla con un poco de agua caliente y la tapa cerrada hasta que se abran. Saca el bicho y limpia bien las conchas."
+    },
+    {
+      "titulo": "El relleno",
+      "texto": "Pica el mejillón y el jamón serrano, añade el tomate frito espeso y rellena las conchas."
+    },
+    {
+      "titulo": "La bechamel",
+      "texto": "Haz una bechamel espesa: derrite la mantequilla, rehoga la harina un par de minutos y añade la leche poco a poco sin dejar de remover, hasta que espese. Sala. Cubre el relleno de cada concha con la bechamel, alisando, y déjalas enfriar.",
+      "nota_adaptacion": "El original solo dice «hago una bechamel». Las cantidades son para una bechamel espesa que aguante el rebozado."
+    },
+    {
+      "titulo": "Rebozar y freír",
+      "texto": "Cuando estén frías, pásalas por huevo batido y pan rallado y fríelas en abundante aceite."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "No las comas recién fritas, que queman mucho."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "MONTERITAS DE MEJILLONES\n\nPongo al agua caliente los mejillones para que se abran con la tapadera cerrada. Se saca el bicho y las conchas las limpio bien.\nPico el mejillón, jamón serrano, echo 1 cucharada de tomate frito espeso y relleno las conchas.\nHago 1 bechamel y relleno encima con la bechamel y los dejo enfriar. Cuando estén fríos se pasa por huevo y pan rallado y se fríen con abundante aceite. No tomar recién fritos porque queman mucho."
+  },
+  "alta": "2026-10-10"
+}

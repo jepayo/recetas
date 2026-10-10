@@ -1,0 +1,74 @@
+{
+  "id": "potaje-de-garbanzos",
+  "titulo": "Potaje de garbanzos",
+  "titulo_es": "En olla exprés",
+  "idioma_original": "es",
+  "fuente": {
+    "tipo": "familia",
+    "nombre": "El libro rosa (hojas de cuadros)",
+    "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Guisos",
+  "etiquetas": ["legumbres", "garbanzos", "chorizo", "olla exprés", "de casa", "para muchos"],
+  "estilo": "libro-rosa-cuadros",
+  "raciones": { "cantidad": 8, "unidad": "personas", "original": "No lo indica: 1 kg de garbanzos da para unas 8" },
+  "tiempos": { "preparacion": 15, "reposo": 720, "coccion": 40 },
+  "ingredientes": [
+    {
+      "grupo": "Todo a la olla",
+      "items": [
+        { "cantidad": 1, "unidad": "kg", "nombre": "garbanzos", "nota": "en remojo toda la noche" },
+        { "cantidad": 1, "unidad": "cabeza", "nombre": "ajo", "nota": "entera, medio pelada; no se reduce a la mitad", "escala": false },
+        { "cantidad": 3, "nombre": "tomate", "nombre_plural": "tomates", "nota": "enteros" },
+        { "cantidad": 3, "nombre": "patata", "nombre_plural": "patatas", "nota": "medianas (2 o 3), en trozos" },
+        { "cantidad": 1, "nombre": "cebolla", "nombre_plural": "cebollas", "nota": "entera, pelada; no se reduce a la mitad", "escala": false },
+        { "cantidad": 1, "nombre": "chorizo de guiso", "nombre_plural": "chorizos de guiso", "nota": "entero, se corta después" },
+        { "cantidad": 1, "unidad": "pastilla", "nombre": "caldo de pollo", "nota": "tipo Avecrem" },
+        { "cantidad": 1, "nombre": "trozo de panceta", "nombre_plural": "trozos de panceta", "nota": "opcional" },
+        { "nombre": "pimentón dulce" },
+        { "cantidad": 100, "unidad": "ml", "nombre": "aceite frito", "nota": "ya usado para freír; en el original, «un vaso pequeño»", "estimada": true },
+        { "cantidad": 3, "unidad": "puñado", "nombre": "sal", "nota": "así en el original [?]: prueba y ajusta" },
+        { "nombre": "agua", "nota": "hasta cubrir todo y que sobrepase los garbanzos tres dedos" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El remojo",
+      "texto": "La noche antes, pon los garbanzos en remojo en agua abundante."
+    },
+    {
+      "titulo": "Todo a la olla",
+      "texto": "Escurre los garbanzos y ponlos en la olla exprés con el resto de ingredientes: la cabeza de ajo medio pelada, los tomates enteros, las patatas en trozos, la cebolla entera, el chorizo entero, la pastilla de caldo, la panceta (si la usas), el pimentón, el aceite y la sal. Cubre con agua hasta que sobrepase los garbanzos tres dedos."
+    },
+    {
+      "titulo": "A presión",
+      "texto": "Cierra la olla y ponla a fuego casi al máximo. Cuando empiece a pitar y a dar vueltas el pitorro, cuenta 20 minutos."
+    },
+    {
+      "titulo": "Enfriar",
+      "texto": "A los 20 minutos, apaga el fuego y deja enfriar la olla hasta que deje de pitar (hasta que baje la presión) antes de abrirla."
+    },
+    {
+      "titulo": "Triturar y servir",
+      "texto": "Saca la cabeza de ajo y el chorizo. Tritura el resto y sirve el potaje con el chorizo cortado en rodajas.",
+      "nota_adaptacion": "La hoja termina en «trituras todo menos ajo». Falta confirmar si se tritura todo (quedaría una crema) o solo las verduras."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Media receta",
+      "texto": "Regla de casa: para medio kilo de garbanzos, todo se reduce a la mitad menos la cebolla y la cabeza de ajo, que se ponen enteras igual. El selector de raciones ya lo hace así."
+    }
+  ],
+  "original": {
+    "tipo": "manuscrito",
+    "texto": "POTAJE DE GARBANZOS\n\n1 kg. garbanzo (toda la noche en remojo)\n1 cabeza de ajo (medio pelada).\n3 tomates enteros\n2 ó 3 patatas medianas cortadas a trozos\n1 cebolla pelada sin piel\n1 chorizo de guiso entero (para cortar después)\n1 pastilla de avecrem.\n1 trozo de panceta (opcional)\nPimentón dulce.\nAceite frito (un vaso pequeño)\nSal (3 puñaos)\nAgua (cubriendo todo al final y sobrepasar 3 dedos los garbanzos)\n\n— Si se quiere reducir a ½ kg de garbanzos, se reducen todos los ingredientes a la mitad menos la cebolla y la cabeza de ajo —\n\nFuego casi al máximo.\nSe ponen todos los ingredientes en la olla exprés. Cuando empiece a pitar y dar vueltas el pitorro se cuentan 20 mins.\nA los 20 mins quitas el fuego y dejas enfriar hasta que deje de pitar y trituras todo menos ajo…",
+    "dudas": [
+      "«trituras todo menos ajo»: la hoja se acaba ahí. ¿Sigue en otra página? ¿Se tritura todo, garbanzos incluidos, o solo las verduras? ¿Y el chorizo?",
+      "«Sal (3 puñaos)»: ¿puñados de verdad? Serían unos 90 g, que es mucha sal."
+    ]
+  },
+  "alta": "2026-10-10"
+}
