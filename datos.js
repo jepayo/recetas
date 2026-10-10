@@ -1,6 +1,196 @@
 // Generado por build.mjs — no editar a mano
 window.RECETAS = [
  {
+  "id": "big-lasagna",
+  "titulo": "Big lasagna",
+  "titulo_es": "Clásica, pero no tan sencilla",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Principales",
+  "etiquetas": [
+   "pasta",
+   "lasaña",
+   "ragù",
+   "horno",
+   "para muchos"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 60,
+   "coccion": 180
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para el ragù",
+    "items": [
+     {
+      "cantidad": 1,
+      "unidad": "kg",
+      "nombre": "carne picada de cerdo"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "kg",
+      "nombre": "carne picada de vacuno"
+     },
+     {
+      "cantidad": 500,
+      "unidad": "g",
+      "nombre": "carne picada de ternera"
+     },
+     {
+      "cantidad": 75,
+      "unidad": "ml",
+      "nombre": "aceite de oliva"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "cebolla",
+      "nombre_plural": "cebollas",
+      "nota": "picada fina"
+     },
+     {
+      "cantidad": 3,
+      "unidad": "rama",
+      "nombre": "apio",
+      "nota": "en dados"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "zanahoria",
+      "nombre_plural": "zanahorias",
+      "nota": "en rodajas finas"
+     },
+     {
+      "cantidad": 100,
+      "unidad": "ml",
+      "nombre": "vino tinto"
+     },
+     {
+      "cantidad": 1.5,
+      "unidad": "l",
+      "nombre": "salsa de tomate",
+      "nota": "el libro tiene su propia receta en la p. 160"
+     },
+     {
+      "cantidad": 2,
+      "unidad": "ramita",
+      "nombre": "romero"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "manojo",
+      "nombre": "salvia",
+      "nota": "solo las hojas"
+     },
+     {
+      "nombre": "sal y pimienta"
+     }
+    ]
+   },
+   {
+    "grupo": "Para la bechamel",
+    "items": [
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "mantequilla sin sal"
+     },
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "harina de trigo",
+      "nota": "preferiblemente italiana tipo 00"
+     },
+     {
+      "cantidad": 1.5,
+      "unidad": "l",
+      "nombre": "leche",
+      "nota": "caliente"
+     },
+     {
+      "cantidad": 7,
+      "unidad": "g",
+      "nombre": "nuez moscada rallada"
+     }
+    ]
+   },
+   {
+    "grupo": "Para montar",
+    "items": [
+     {
+      "cantidad": 1,
+      "unidad": "kg",
+      "nombre": "masa de pasta fresca",
+      "nota": "el libro tiene su receta en la p. 140; también valen láminas de lasaña frescas"
+     },
+     {
+      "cantidad": 200,
+      "unidad": "g",
+      "nombre": "parmesano rallado"
+     },
+     {
+      "cantidad": 8,
+      "unidad": "hoja",
+      "nombre": "laurel",
+      "nota": "para decorar"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Dorar la carne",
+    "texto": "Calienta 30 ml del aceite en una sartén grande a fuego medio y dora la carne picada 10 minutos. Resérvala."
+   },
+   {
+    "titulo": "El sofrito",
+    "texto": "En una cazuela grande, calienta el resto del aceite (45 ml) a fuego medio y rehoga la cebolla 5 minutos. Añade el apio y la zanahoria y sigue 8 minutos más."
+   },
+   {
+    "titulo": "El ragù",
+    "texto": "Incorpora la carne dorada y mezcla bien. Desglasa con el vino tinto y cocina a fuego fuerte 5 minutos, hasta que el líquido se haya evaporado del todo. Añade la salsa de tomate y salpimienta."
+   },
+   {
+    "titulo": "A fuego lento",
+    "texto": "Añade las ramitas de romero y las hojas de salvia y deja cocer a fuego suave 2 horas. Retira el romero y la salvia."
+   },
+   {
+    "titulo": "La bechamel",
+    "texto": "Derrite la mantequilla en un cazo a fuego suave durante 5 minutos y añade la harina. Mezcla bien hasta obtener una pasta lisa (el roux). Agrega la leche caliente y la nuez moscada, y cocina 15 minutos más a fuego suave sin dejar de remover. Resérvala."
+   },
+   {
+    "titulo": "La pasta",
+    "texto": "Precalienta el horno a 150 °C. Saca la masa de pasta de la nevera, enharina la superficie de trabajo y estírala hasta 1 mm de grosor. Córtala en láminas rectangulares del tamaño de la fuente que vayas a usar."
+   },
+   {
+    "titulo": "Montar y hornear",
+    "texto": "Separa unos 120 ml de bechamel para emplatar. Cubre el fondo de la fuente con una capa de pasta, una de ragù y una de bechamel, y espolvorea con parmesano. Repite cinco veces más, hasta tener seis pisos. Hornea 45 minutos en el horno ya caliente."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Sirve en cuatro platos y decora cada uno con un poco de la bechamel reservada (unos 30 ml) y 2 hojas de laurel."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "¿Para 4?",
+    "texto": "El libro dice «para 4 amigos», pero con 2,5 kg de carne y seis pisos da de sobra para 8–10 personas. Si sois 4, haz media receta (o congela lo que sobre: la lasaña aguanta muy bien)."
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "crocchette-guanciale-e-tartufo",
   "titulo": "Crocchette guanciale e tartufo",
   "titulo_es": "Croquetas de guanciale y crema de trufa",
@@ -426,6 +616,114 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "la-gran-carbonara",
+  "titulo": "La gran carbonara",
+  "titulo_es": "Espaguetis a la carbonara",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": [
+   "pasta",
+   "huevo",
+   "guanciale",
+   "rápida",
+   "pocos ingredientes"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 20,
+   "coccion": 15
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 3,
+      "nombre": "huevo",
+      "nombre_plural": "huevos",
+      "nota": "enteros"
+     },
+     {
+      "cantidad": 6,
+      "nombre": "yema de huevo",
+      "nombre_plural": "yemas de huevo"
+     },
+     {
+      "cantidad": 90,
+      "unidad": "g",
+      "nombre": "pecorino rallado"
+     },
+     {
+      "cantidad": 90,
+      "unidad": "g",
+      "nombre": "parmesano rallado"
+     },
+     {
+      "cantidad": 2,
+      "unidad": "g",
+      "nombre": "pimienta negra molida"
+     },
+     {
+      "cantidad": 400,
+      "unidad": "g",
+      "nombre": "espaguetis"
+     },
+     {
+      "cantidad": 8,
+      "unidad": "loncha",
+      "nombre": "guanciale (carrillera de cerdo curada)",
+      "nota": "en tiras finas"
+     },
+     {
+      "nombre": "sal",
+      "nota": "para el agua de la pasta"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "La crema",
+    "texto": "En un cuenco, mezcla los huevos enteros y las yemas con el pecorino, el parmesano y la pimienta. Reserva."
+   },
+   {
+    "titulo": "La pasta",
+    "texto": "Lleva a ebullición una olla grande de agua con sal y cuece los espaguetis el tiempo que indique el paquete. Escúrrelos, guardando el agua de cocción."
+   },
+   {
+    "titulo": "El guanciale",
+    "texto": "Mientras tanto, pon el guanciale en una sartén sin aceite a fuego medio y dóralo 5 minutos, hasta que esté crujiente. Añade 15 ml del agua de cocción de la pasta y después los espaguetis."
+   },
+   {
+    "titulo": "Mantecar",
+    "texto": "Retira la sartén del fuego. Añade la mezcla de huevo y remueve con energía. El huevo no debe cuajarse demasiado: la salsa tiene que quedar cremosa.",
+    "nota_adaptacion": "Si queda espesa, añade otro chorrito del agua de cocción reservada mientras remueves."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Pásala a una fuente grande y sirve enseguida."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Lo has oído bien: la auténtica carbonara italiana se hace sin nata. En algunas trattorias la terminan a la vista del cliente, directamente dentro de una rueda de pecorino."
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "mozza-fritta",
   "titulo": "Mozza fritta",
   "titulo_es": "Bolitas de mozzarella fritas",
@@ -834,6 +1132,107 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "salsa-cacio-e-pepe",
+  "titulo": "Salsa cacio e pepe",
+  "titulo_es": "Queso y pimienta",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Salsas",
+  "etiquetas": [
+   "salsa",
+   "pasta",
+   "queso",
+   "pimienta",
+   "vegetariana",
+   "rápida",
+   "pocos ingredientes"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 5
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la salsa",
+    "items": [
+     {
+      "cantidad": 200,
+      "unidad": "g",
+      "nombre": "pecorino rallado"
+     },
+     {
+      "cantidad": 150,
+      "unidad": "g",
+      "nombre": "parmesano rallado"
+     },
+     {
+      "cantidad": 8,
+      "unidad": "g",
+      "nombre": "pimienta negra molida gruesa"
+     },
+     {
+      "cantidad": 200,
+      "unidad": "ml",
+      "nombre": "agua de cocción de la pasta",
+      "nota": "fría; hasta el doble, según haga falta"
+     }
+    ]
+   },
+   {
+    "grupo": "Para servir",
+    "items": [
+     {
+      "cantidad": 400,
+      "unidad": "g",
+      "nombre": "pasta",
+      "nota": "cocida al dente",
+      "estimada": true
+     },
+     {
+      "nombre": "aceite de oliva",
+      "nota": "un chorrito"
+     },
+     {
+      "nombre": "parmesano rallado",
+      "nota": "para espolvorear"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "La salsa",
+    "texto": "Mezcla en un cuenco el pecorino, el parmesano, la pimienta y un poco del agua de cocción de la pasta, fría. Bátelo (o pásalo por la batidora) hasta obtener una crema lisa, añadiendo más agua de cocción según haga falta.",
+    "nota_adaptacion": "El agua tiene que estar fría para que el queso no se apelotone: guarda un vaso del agua de cocción y déjala enfriar, o usa la de una tanda anterior."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Sirve la salsa sobre la pasta cocida al dente, con un chorrito de aceite y parmesano rallado por encima."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Cacio e pepe significa literalmente «queso y pimienta», y es un plato de Roma y sus alrededores. La receta auténtica solo lleva pecorino. La pimienta es la protagonista, así que no te quedes corto. Una buena opción es mezclar tres variedades: la pimienta negra clásica, la de Sarawak y la de Tellicherry. Explosión garantizada. Si tuestas los granos en una sartén sin aceite, sueltan todavía más aroma."
+   },
+   {
+    "titulo": "Desde la rueda de queso",
+    "texto": "En algunas trattorias la pasta cacio e pepe se sirve en la mesa, directamente desde una rueda de pecorino, o de parmesano para una versión menos salada. Para algo distinto, prueba la salsa con alcachofas fritas. ¡A mojar!"
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "tabla-de-quesos-y-cia",
   "titulo": "Tabla de quesos y Cía.",
   "titulo_es": "Invita a tus amigos y complícate la vida… lo justo.",
@@ -1181,7 +1580,7 @@ window.RECETAS = [
  {
   "id": "tomates-confitados",
   "titulo": "Tomates confitados",
-  "titulo_es": "Un consejo de Virginia Baldeschi",
+  "titulo_es": "Al horno, con tomillo",
   "idioma_original": "it",
   "fuente": {
    "tipo": "libro",
@@ -1250,10 +1649,6 @@ window.RECETAS = [
    }
   ],
   "notas": [
-   {
-    "titulo": "La diva del tomate confitado",
-    "texto": "Virginia es «la mamma». Ha preparado prácticamente todas las recetas del libro y, cuando se trata de tomate confitado, es LA diva."
-   },
    {
     "titulo": "Conviene saber",
     "texto": "El tomate confitado es fantástico. Se puede usar frío en una ensalada o sobre una bruschetta, o calentarlo para hacer en un momento salsas de tomate rápidas y sabrosas para acompañar huevos fritos o revueltos, carnes y mucho más. No dudes en hacer el doble o el triple: siempre encontrarás cómo usar estos tomates mágicos."

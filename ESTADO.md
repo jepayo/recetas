@@ -38,7 +38,7 @@ Catálogo personal de recetas en un formato estándar (JSON), con visor HTML.
   "alta": "AAAA-MM-DD"
 }
 ```
-Unidades válidas: `g kg ml cl l loncha diente pizca hoja ramita manojo lata sobre chorro chorrito pastilla tenedor rebanada` (ampliar en `build.mjs` y en `NOMBRES` de `index.html`). Sin `cantidad` = "al gusto".
+Unidades válidas: `g kg ml cl l loncha diente pizca hoja ramita manojo lata sobre chorro chorrito pastilla tenedor rebanada rama` (ampliar en `build.mjs` y en `NOMBRES` de `index.html`). Sin `cantidad` = "al gusto".
 
 ## Estilos
 Cada receta puede llevar `estilo`, que cambia colores, tipografías, fondo y adornos de su ficha y de su tarjeta en el índice. El índice en sí usa siempre el clásico (y respeta el modo oscuro).
@@ -69,3 +69,6 @@ Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble.
 | tomates-confitados | libro italiano | 2026-10-10 |
 | mozza-fritta | libro italiano | 2026-10-10 |
 | zuppa-di-vino | libro italiano | 2026-10-10 |
+| big-lasagna | libro italiano | 2026-10-10 |
+| la-gran-carbonara | libro italiano | 2026-10-10 |
+| salsa-cacio-e-pepe | libro italiano | 2026-10-10 |

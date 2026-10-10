@@ -1,7 +1,7 @@
 {
   "id": "tomates-confitados",
   "titulo": "Tomates confitados",
-  "titulo_es": "Un consejo de Virginia Baldeschi",
+  "titulo_es": "Al horno, con tomillo",
   "idioma_original": "it",
   "fuente": {
     "tipo": "libro",
@@ -10,19 +10,48 @@
   },
   "cocina": "italiana",
   "categoria": "Básicos",
-  "etiquetas": ["tomate", "horno", "conserva", "vegana", "pocos ingredientes"],
+  "etiquetas": [
+    "tomate",
+    "horno",
+    "conserva",
+    "vegana",
+    "pocos ingredientes"
+  ],
   "estilo": "trattoria",
-  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
-  "tiempos": { "preparacion": 10, "coccion": 30 },
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "Per 4 amici"
+  },
+  "tiempos": {
+    "preparacion": 10,
+    "coccion": 30
+  },
   "ingredientes": [
     {
       "grupo": "Ingredientes",
       "items": [
-        { "cantidad": 300, "unidad": "g", "nombre": "tomates datterini o cherry" },
-        { "nombre": "aceite de oliva" },
-        { "nombre": "sal fina" },
-        { "cantidad": 3, "unidad": "g", "nombre": "azúcar glas" },
-        { "cantidad": 4, "unidad": "ramita", "nombre": "tomillo" }
+        {
+          "cantidad": 300,
+          "unidad": "g",
+          "nombre": "tomates datterini o cherry"
+        },
+        {
+          "nombre": "aceite de oliva"
+        },
+        {
+          "nombre": "sal fina"
+        },
+        {
+          "cantidad": 3,
+          "unidad": "g",
+          "nombre": "azúcar glas"
+        },
+        {
+          "cantidad": 4,
+          "unidad": "ramita",
+          "nombre": "tomillo"
+        }
       ]
     }
   ],
@@ -41,10 +70,6 @@
     }
   ],
   "notas": [
-    {
-      "titulo": "La diva del tomate confitado",
-      "texto": "Virginia es «la mamma». Ha preparado prácticamente todas las recetas del libro y, cuando se trata de tomate confitado, es LA diva."
-    },
     {
       "titulo": "Conviene saber",
       "texto": "El tomate confitado es fantástico. Se puede usar frío en una ensalada o sobre una bruschetta, o calentarlo para hacer en un momento salsas de tomate rápidas y sabrosas para acompañar huevos fritos o revueltos, carnes y mucho más. No dudes en hacer el doble o el triple: siempre encontrarás cómo usar estos tomates mágicos."

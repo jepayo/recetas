@@ -1,0 +1,58 @@
+{
+  "id": "salsa-cacio-e-pepe",
+  "titulo": "Salsa cacio e pepe",
+  "titulo_es": "Queso y pimienta",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Salsas",
+  "etiquetas": ["salsa", "pasta", "queso", "pimienta", "vegetariana", "rápida", "pocos ingredientes"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 5 },
+  "ingredientes": [
+    {
+      "grupo": "Para la salsa",
+      "items": [
+        { "cantidad": 200, "unidad": "g", "nombre": "pecorino rallado" },
+        { "cantidad": 150, "unidad": "g", "nombre": "parmesano rallado" },
+        { "cantidad": 8, "unidad": "g", "nombre": "pimienta negra molida gruesa" },
+        { "cantidad": 200, "unidad": "ml", "nombre": "agua de cocción de la pasta", "nota": "fría; hasta el doble, según haga falta" }
+      ]
+    },
+    {
+      "grupo": "Para servir",
+      "items": [
+        { "cantidad": 400, "unidad": "g", "nombre": "pasta", "nota": "cocida al dente", "estimada": true },
+        { "nombre": "aceite de oliva", "nota": "un chorrito" },
+        { "nombre": "parmesano rallado", "nota": "para espolvorear" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "La salsa",
+      "texto": "Mezcla en un cuenco el pecorino, el parmesano, la pimienta y un poco del agua de cocción de la pasta, fría. Bátelo (o pásalo por la batidora) hasta obtener una crema lisa, añadiendo más agua de cocción según haga falta.",
+      "nota_adaptacion": "El agua tiene que estar fría para que el queso no se apelotone: guarda un vaso del agua de cocción y déjala enfriar, o usa la de una tanda anterior."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Sirve la salsa sobre la pasta cocida al dente, con un chorrito de aceite y parmesano rallado por encima."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Cacio e pepe significa literalmente «queso y pimienta», y es un plato de Roma y sus alrededores. La receta auténtica solo lleva pecorino. La pimienta es la protagonista, así que no te quedes corto. Una buena opción es mezclar tres variedades: la pimienta negra clásica, la de Sarawak y la de Tellicherry. Explosión garantizada. Si tuestas los granos en una sartén sin aceite, sueltan todavía más aroma."
+    },
+    {
+      "titulo": "Desde la rueda de queso",
+      "texto": "En algunas trattorias la pasta cacio e pepe se sirve en la mesa, directamente desde una rueda de pecorino, o de parmesano para una versión menos salada. Para algo distinto, prueba la salsa con alcachofas fritas. ¡A mojar!"
+    }
+  ],
+  "alta": "2026-10-10"
+}

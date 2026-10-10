@@ -1,0 +1,62 @@
+{
+  "id": "la-gran-carbonara",
+  "titulo": "La gran carbonara",
+  "titulo_es": "Espaguetis a la carbonara",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": ["pasta", "huevo", "guanciale", "rápida", "pocos ingredientes"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 20, "coccion": 15 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 3, "nombre": "huevo", "nombre_plural": "huevos", "nota": "enteros" },
+        { "cantidad": 6, "nombre": "yema de huevo", "nombre_plural": "yemas de huevo" },
+        { "cantidad": 90, "unidad": "g", "nombre": "pecorino rallado" },
+        { "cantidad": 90, "unidad": "g", "nombre": "parmesano rallado" },
+        { "cantidad": 2, "unidad": "g", "nombre": "pimienta negra molida" },
+        { "cantidad": 400, "unidad": "g", "nombre": "espaguetis" },
+        { "cantidad": 8, "unidad": "loncha", "nombre": "guanciale (carrillera de cerdo curada)", "nota": "en tiras finas" },
+        { "nombre": "sal", "nota": "para el agua de la pasta" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "La crema",
+      "texto": "En un cuenco, mezcla los huevos enteros y las yemas con el pecorino, el parmesano y la pimienta. Reserva."
+    },
+    {
+      "titulo": "La pasta",
+      "texto": "Lleva a ebullición una olla grande de agua con sal y cuece los espaguetis el tiempo que indique el paquete. Escúrrelos, guardando el agua de cocción."
+    },
+    {
+      "titulo": "El guanciale",
+      "texto": "Mientras tanto, pon el guanciale en una sartén sin aceite a fuego medio y dóralo 5 minutos, hasta que esté crujiente. Añade 15 ml del agua de cocción de la pasta y después los espaguetis."
+    },
+    {
+      "titulo": "Mantecar",
+      "texto": "Retira la sartén del fuego. Añade la mezcla de huevo y remueve con energía. El huevo no debe cuajarse demasiado: la salsa tiene que quedar cremosa.",
+      "nota_adaptacion": "Si queda espesa, añade otro chorrito del agua de cocción reservada mientras remueves."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Pásala a una fuente grande y sirve enseguida."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Lo has oído bien: la auténtica carbonara italiana se hace sin nata. En algunas trattorias la terminan a la vista del cliente, directamente dentro de una rueda de pecorino."
+    }
+  ],
+  "alta": "2026-10-10"
+}
