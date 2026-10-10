@@ -1,0 +1,86 @@
+{
+  "id": "choco-mouss-party",
+  "titulo": "Choco mouss' party",
+  "titulo_es": "Mousse de chocolate con praliné de café",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": ["postre", "chocolate", "café", "avellanas", "vegetariana", "sin gluten"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 6, "unidad": "personas", "original": "Per 6 amici" },
+  "tiempos": { "preparacion": 30, "reposo": 240, "coccion": 20 },
+  "ingredientes": [
+    {
+      "grupo": "Para la mousse",
+      "items": [
+        { "cantidad": 190, "unidad": "g", "nombre": "chocolate negro", "nota": "70 % de cacao" },
+        { "cantidad": 60, "unidad": "g", "nombre": "mantequilla sin sal" },
+        { "cantidad": 8, "nombre": "clara de huevo", "nombre_plural": "claras de huevo" },
+        { "cantidad": 45, "unidad": "g", "nombre": "azúcar extrafino" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "flor de sal" },
+        { "cantidad": 3, "nombre": "yema de huevo", "nombre_plural": "yemas de huevo" }
+      ]
+    },
+    {
+      "grupo": "Para el praliné de café",
+      "items": [
+        { "cantidad": 100, "unidad": "g", "nombre": "avellanas peladas" },
+        { "cantidad": 40, "unidad": "g", "nombre": "azúcar extrafino" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "flor de sal" },
+        { "cantidad": 20, "unidad": "ml", "nombre": "aceite de oliva" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "café soluble" },
+        { "cantidad": 12, "unidad": "g", "nombre": "café en grano" }
+      ]
+    },
+    {
+      "grupo": "Para decorar",
+      "items": [
+        { "nombre": "avellanas peladas", "nota": "unas pocas, troceadas" },
+        { "nombre": "virutas de chocolate", "nota": "unas pocas" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "El chocolate",
+      "texto": "Funde el chocolate con la mantequilla al baño maría, en un bol resistente al calor sobre un cazo de agua a fuego suave. Reserva hasta que esté tibio."
+    },
+    {
+      "titulo": "Las claras",
+      "texto": "En un bol limpio y sin rastro de grasa, monta las claras con el azúcar y la flor de sal a punto de nieve firme."
+    },
+    {
+      "titulo": "La mousse",
+      "texto": "Añade las yemas a la mezcla de chocolate y bate bien con unas varillas hasta obtener una ganache lisa. Incorpora las claras montadas con cuidado, con movimientos envolventes. Vierte la mousse en un cuenco grande o en seis individuales y refrigera 4 horas.",
+      "nota_adaptacion": "Lleva huevo crudo: usa huevos muy frescos y mantenla siempre en la nevera."
+    },
+    {
+      "titulo": "Tostar las avellanas",
+      "texto": "Mientras tanto, prepara el praliné. Precalienta el horno a 150 °C. Reparte las avellanas, separadas, en una bandeja forrada con papel de hornear y tuéstalas 15 minutos."
+    },
+    {
+      "titulo": "El caramelo",
+      "texto": "Forra otra bandeja con papel de hornear. Funde el azúcar con la sal en un cazo a fuego suave durante 5 minutos, hasta obtener un caramelo oscuro. Retira del fuego y añade enseguida las avellanas tostadas. Vierte la mezcla de inmediato sobre la bandeja y extiéndela hasta cubrir todo el papel. Deja enfriar 1 hora a temperatura ambiente."
+    },
+    {
+      "titulo": "El praliné",
+      "texto": "Trocea el crocante de avellanas. Ponlo en la batidora con el aceite, el café soluble y el café en grano, y tritura hasta obtener una pasta lisa."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Vierte el praliné de café sobre la mousse. Decora con avellanas troceadas y virutas de chocolate, y sirve enseguida."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "No hay nada como ser el primero en meter la cuchara: por eso se sirve en el mismo cuenco en el que se ha preparado. ¡Al ataque!"
+    }
+  ],
+  "alta": "2026-10-10"
+}

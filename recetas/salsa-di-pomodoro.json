@@ -1,0 +1,53 @@
+{
+  "id": "salsa-di-pomodoro",
+  "titulo": "Salsa di pomodoro",
+  "titulo_es": "La auténtica salsa de tomate",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Salsas",
+  "etiquetas": ["salsa", "tomate", "básico", "vegana", "sin gluten", "pocos ingredientes"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 750, "unidad": "ml de salsa", "paso": 250, "original": "Per 750 ml di salsa" },
+  "tiempos": { "preparacion": 5, "coccion": 120 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 50, "unidad": "ml", "nombre": "aceite de oliva", "nota": "entre 45 y 60 ml" },
+        { "cantidad": 250, "unidad": "g", "nombre": "tomates pequeños frescos", "nota": "datterini o cherry" },
+        { "cantidad": 500, "unidad": "g", "nombre": "tomate pelado en conserva", "nota": "tipo San Marzano" },
+        { "nombre": "sal y pimienta" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Los tomates frescos",
+      "texto": "Pon el aceite de oliva en una cazuela grande de fondo grueso, caliéntalo 3 minutos y añade los tomates frescos. Aplasta algunos con el dorso de una cuchara para que suelten su jugo."
+    },
+    {
+      "titulo": "El tomate en conserva",
+      "texto": "Tritura el tomate pelado con la batidora de mano, directamente en la lata, y añádelo a la cazuela. Salpimienta."
+    },
+    {
+      "titulo": "A fuego lento",
+      "texto": "Deja cocer a fuego suave 1 hora, removiendo de vez en cuando. Si la quieres menos líquida, sigue 1 hora más."
+    },
+    {
+      "titulo": "Rectificar",
+      "texto": "Cuando esté hecha, rectifica de sal y pimienta si hace falta."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Es un auténtico clásico que se puede tomar de mil maneras, y la base de muchas recetas del libro, como la big lasagna. Para una salsa más aromática, añade al principio 5–6 hojas de albahaca y 2 cebollas en dados finos. Para los que la quieren picante: una guindilla roja fresca, sin semillas y picada, le da un punto extra."
+    }
+  ],
+  "alta": "2026-10-10"
+}

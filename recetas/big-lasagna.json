@@ -10,43 +10,139 @@
   },
   "cocina": "italiana",
   "categoria": "Principales",
-  "etiquetas": ["pasta", "lasaña", "ragù", "horno", "para muchos"],
+  "etiquetas": [
+    "pasta",
+    "lasaña",
+    "ragù",
+    "horno",
+    "para muchos"
+  ],
   "estilo": "trattoria",
-  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
-  "tiempos": { "preparacion": 60, "coccion": 180 },
+  "raciones": {
+    "cantidad": 4,
+    "unidad": "personas",
+    "original": "Per 4 amici"
+  },
+  "tiempos": {
+    "preparacion": 60,
+    "coccion": 180
+  },
   "ingredientes": [
     {
       "grupo": "Para el ragù",
       "items": [
-        { "cantidad": 1, "unidad": "kg", "nombre": "carne picada de cerdo" },
-        { "cantidad": 1, "unidad": "kg", "nombre": "carne picada de vacuno" },
-        { "cantidad": 500, "unidad": "g", "nombre": "carne picada de ternera" },
-        { "cantidad": 75, "unidad": "ml", "nombre": "aceite de oliva" },
-        { "cantidad": 1, "nombre": "cebolla", "nombre_plural": "cebollas", "nota": "picada fina" },
-        { "cantidad": 3, "unidad": "rama", "nombre": "apio", "nota": "en dados" },
-        { "cantidad": 1, "nombre": "zanahoria", "nombre_plural": "zanahorias", "nota": "en rodajas finas" },
-        { "cantidad": 100, "unidad": "ml", "nombre": "vino tinto" },
-        { "cantidad": 1.5, "unidad": "l", "nombre": "salsa de tomate", "nota": "el libro tiene su propia receta en la p. 160" },
-        { "cantidad": 2, "unidad": "ramita", "nombre": "romero" },
-        { "cantidad": 1, "unidad": "manojo", "nombre": "salvia", "nota": "solo las hojas" },
-        { "nombre": "sal y pimienta" }
+        {
+          "cantidad": 1,
+          "unidad": "kg",
+          "nombre": "carne picada de cerdo"
+        },
+        {
+          "cantidad": 1,
+          "unidad": "kg",
+          "nombre": "carne picada de vacuno"
+        },
+        {
+          "cantidad": 500,
+          "unidad": "g",
+          "nombre": "carne picada de ternera"
+        },
+        {
+          "cantidad": 75,
+          "unidad": "ml",
+          "nombre": "aceite de oliva"
+        },
+        {
+          "cantidad": 1,
+          "nombre": "cebolla",
+          "nombre_plural": "cebollas",
+          "nota": "picada fina"
+        },
+        {
+          "cantidad": 3,
+          "unidad": "rama",
+          "nombre": "apio",
+          "nota": "en dados"
+        },
+        {
+          "cantidad": 1,
+          "nombre": "zanahoria",
+          "nombre_plural": "zanahorias",
+          "nota": "en rodajas finas"
+        },
+        {
+          "cantidad": 100,
+          "unidad": "ml",
+          "nombre": "vino tinto"
+        },
+        {
+          "cantidad": 1.5,
+          "unidad": "l",
+          "nombre": "salsa de tomate",
+          "nota": "la salsa di pomodoro del recetario: haz el doble de la receta"
+        },
+        {
+          "cantidad": 2,
+          "unidad": "ramita",
+          "nombre": "romero"
+        },
+        {
+          "cantidad": 1,
+          "unidad": "manojo",
+          "nombre": "salvia",
+          "nota": "solo las hojas"
+        },
+        {
+          "nombre": "sal y pimienta"
+        }
       ]
     },
     {
       "grupo": "Para la bechamel",
       "items": [
-        { "cantidad": 100, "unidad": "g", "nombre": "mantequilla sin sal" },
-        { "cantidad": 100, "unidad": "g", "nombre": "harina de trigo", "nota": "preferiblemente italiana tipo 00" },
-        { "cantidad": 1.5, "unidad": "l", "nombre": "leche", "nota": "caliente" },
-        { "cantidad": 7, "unidad": "g", "nombre": "nuez moscada rallada" }
+        {
+          "cantidad": 100,
+          "unidad": "g",
+          "nombre": "mantequilla sin sal"
+        },
+        {
+          "cantidad": 100,
+          "unidad": "g",
+          "nombre": "harina de trigo",
+          "nota": "preferiblemente italiana tipo 00"
+        },
+        {
+          "cantidad": 1.5,
+          "unidad": "l",
+          "nombre": "leche",
+          "nota": "caliente"
+        },
+        {
+          "cantidad": 7,
+          "unidad": "g",
+          "nombre": "nuez moscada rallada"
+        }
       ]
     },
     {
       "grupo": "Para montar",
       "items": [
-        { "cantidad": 1, "unidad": "kg", "nombre": "masa de pasta fresca", "nota": "el libro tiene su receta en la p. 140; también valen láminas de lasaña frescas" },
-        { "cantidad": 200, "unidad": "g", "nombre": "parmesano rallado" },
-        { "cantidad": 8, "unidad": "hoja", "nombre": "laurel", "nota": "para decorar" }
+        {
+          "cantidad": 1,
+          "unidad": "kg",
+          "nombre": "masa de pasta fresca",
+          "nota": "el libro tiene su receta en la p. 140; también valen láminas de lasaña frescas"
+        },
+        {
+          "cantidad": 200,
+          "unidad": "g",
+          "nombre": "parmesano rallado"
+        },
+        {
+          "cantidad": 8,
+          "unidad": "hoja",
+          "nombre": "laurel",
+          "nota": "para decorar"
+        }
       ]
     }
   ],

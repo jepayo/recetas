@@ -1,0 +1,55 @@
+{
+  "id": "gnocchi",
+  "titulo": "Gnocchi",
+  "titulo_es": "Ñoquis de patata caseros",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Básicos",
+  "etiquetas": ["pasta fresca", "patata", "básico", "vegetariana", "pocos ingredientes", "se congela"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 30, "reposo": 60, "coccion": 33 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 240, "unidad": "g", "nombre": "patatas harinosas", "nota": "tipo Agria o Kennebec" },
+        { "cantidad": 80, "unidad": "g", "nombre": "parmesano rallado" },
+        { "cantidad": 2, "nombre": "huevo", "nombre_plural": "huevos" },
+        { "cantidad": 60, "unidad": "g", "nombre": "harina de trigo" },
+        { "cantidad": 50, "unidad": "g", "nombre": "harina de arroz o sémola de trigo duro" },
+        { "nombre": "sal" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Cocer las patatas",
+      "texto": "Pon las patatas, con piel, en una olla grande con agua con sal. Lleva a ebullición y cuécelas 30 minutos a fuego fuerte."
+    },
+    {
+      "titulo": "La masa",
+      "texto": "Pélalas y hazlas puré pasándolas por el pasapurés. Añade el parmesano, los huevos y las dos harinas, y mezcla con una cuchara de madera o con las manos hasta obtener una masa lisa. Tápala y déjala reposar 1 hora a temperatura ambiente."
+    },
+    {
+      "titulo": "Dar forma",
+      "texto": "Coge un trozo pequeño de masa y, sobre la superficie de trabajo enharinada, estíralo en un cilindro largo de unos 2 cm de grosor. Córtalo en trozos de 2 cm. Repite con el resto de la masa."
+    },
+    {
+      "titulo": "Cocer los gnocchi",
+      "texto": "Lleva a ebullición una olla grande de agua con sal. Cuece los gnocchi por tandas unos 3 minutos, o hasta que suban a la superficie."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Si quieres, puedes hacerlos con antelación y congelarlos en una bandeja, separados para que no se peguen. Quedan muy bien con la salsa di pomodoro o con la salsa cacio e pepe."
+    }
+  ],
+  "alta": "2026-10-10"
+}

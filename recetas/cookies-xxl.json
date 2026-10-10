@@ -1,0 +1,79 @@
+{
+  "id": "cookies-xxl",
+  "titulo": "Cookies XXL",
+  "titulo_es": "Galletas de chocolate y pecanas rellenas de gianduja",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": ["postre", "galletas", "chocolate", "gianduja", "pecanas", "horno", "vegetariana"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici (salen unas 30 galletas)" },
+  "tiempos": { "preparacion": 25, "reposo": 60, "coccion": 45 },
+  "ingredientes": [
+    {
+      "grupo": "Para la gianduja",
+      "items": [
+        { "cantidad": 150, "unidad": "g", "nombre": "avellanas", "nota": "mejor ecológicas" },
+        { "cantidad": 150, "unidad": "g", "nombre": "chocolate con leche", "nota": "en trozos" },
+        { "cantidad": 10, "unidad": "ml", "nombre": "aceite de colza o de girasol" },
+        { "cantidad": 1, "unidad": "pizca", "nombre": "sal" }
+      ]
+    },
+    {
+      "grupo": "Para las galletas",
+      "items": [
+        { "cantidad": 200, "unidad": "g", "nombre": "nueces pecanas" },
+        { "cantidad": 365, "unidad": "g", "nombre": "azúcar moreno claro" },
+        { "cantidad": 250, "unidad": "g", "nombre": "mantequilla", "nota": "blanda" },
+        { "cantidad": 1, "nombre": "huevo", "nombre_plural": "huevos" },
+        { "cantidad": 350, "unidad": "g", "nombre": "harina de trigo" },
+        { "cantidad": 4, "unidad": "g", "nombre": "bicarbonato sódico" },
+        { "cantidad": 6, "unidad": "g", "nombre": "sal" },
+        { "cantidad": 350, "unidad": "g", "nombre": "pepitas de chocolate negro" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Tostar las avellanas",
+      "texto": "Precalienta el horno a 170 °C. Reparte las avellanas en una bandeja sin que se toquen y tuéstalas 15–20 minutos, hasta que la piel se agriete y brillen. Pásalas a un paño de cocina limpio y déjalas enfriar.",
+      "nota_adaptacion": "Frótalas con el mismo paño para quitarles la piel antes de triturarlas."
+    },
+    {
+      "titulo": "La gianduja",
+      "texto": "Funde el chocolate con leche al baño maría y añade una pizca de sal. Tritura las avellanas en el robot de cocina, a golpes, hasta que formen una pasta. Añade el chocolate fundido y vuelve a triturar. Añade el aceite, tritura otra vez y deja enfriar."
+    },
+    {
+      "titulo": "Las bolitas de gianduja",
+      "texto": "Forma con la gianduja bolitas de 3 cm de diámetro y guárdalas en la nevera 1 hora."
+    },
+    {
+      "titulo": "Tostar las pecanas",
+      "texto": "Precalienta el horno a 180 °C. Forra una bandeja con papel de hornear, reparte las pecanas sin que se toquen y tuéstalas 10 minutos. Pásalas a un paño limpio y déjalas enfriar."
+    },
+    {
+      "titulo": "La masa",
+      "texto": "En un bol, bate el azúcar con la mantequilla con unas varillas eléctricas hasta que la mezcla blanquee y esté esponjosa. Incorpora, batiendo, el huevo, la harina, el bicarbonato y la sal. Añade las pepitas de chocolate y las pecanas tostadas mezclando con una espátula, sin batir, para que la masa no se oscurezca."
+    },
+    {
+      "titulo": "Rellenar",
+      "texto": "Divide la masa en porciones del tamaño de una pelota de golf. Haz un hueco en el centro de cada una con dos dedos, mete una bolita de gianduja y cierra la masa alrededor."
+    },
+    {
+      "titulo": "Hornear",
+      "texto": "Coloca las bolas en una bandeja antiadherente, separadas para que no se toquen, y aplástalas ligeramente. Hornea 15 minutos. Déjalas enfriar (¡o no!) y a disfrutar."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "¡Estas galletas son una gloria! Rellenarlas de gianduja fue una idea loca del jefe de pastelería, y están buenas… increíblemente buenas. Aunque el relleno se te escurra entre los dedos, son el capricho definitivo."
+    }
+  ],
+  "alta": "2026-10-10"
+}

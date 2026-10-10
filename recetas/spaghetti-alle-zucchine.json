@@ -1,0 +1,73 @@
+{
+  "id": "spaghetti-alle-zucchine",
+  "titulo": "Spaghetti alle zucchine",
+  "titulo_es": "Con stracciatella, pistachos y calabacín",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": ["pasta", "calabacín", "stracciatella", "pistachos", "vegetariana"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  "tiempos": { "preparacion": 10, "coccion": 45 },
+  "ingredientes": [
+    {
+      "grupo": "Ingredientes",
+      "items": [
+        { "cantidad": 4, "nombre": "calabacín", "nombre_plural": "calabacines" },
+        { "cantidad": 1, "unidad": "l", "nombre": "aceite de girasol", "nota": "para freír", "escala": false },
+        { "cantidad": 20, "nombre": "pistacho pelado", "nombre_plural": "pistachos pelados" },
+        { "cantidad": 600, "unidad": "g", "nombre": "spaghetti quadrati", "nota": "u otra pasta larga" },
+        { "cantidad": 60, "unidad": "ml", "nombre": "aceite de oliva" },
+        { "cantidad": 2, "unidad": "diente", "nombre": "ajo", "nota": "sin pelar" },
+        { "cantidad": 1, "unidad": "manojo", "nombre": "albahaca", "nota": "picada fina, y unas hojas más para decorar" },
+        { "cantidad": 250, "unidad": "g", "nombre": "stracciatella o ricotta" },
+        { "cantidad": 6, "unidad": "g", "nombre": "parmesano rallado" },
+        { "nombre": "sal y pimienta" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Láminas de calabacín",
+      "texto": "Precalienta el horno a 180 °C. Corta 2 de los calabacines en láminas finas con una mandolina o un cuchillo bien afilado."
+    },
+    {
+      "titulo": "Freír las láminas",
+      "texto": "En una freidora o una cazuela grande de fondo grueso, calienta el aceite de girasol a 160 °C. Si no tienes termómetro, echa unos granos de sal: si el aceite está a punto, se forman burbujitas. Fríe las láminas de calabacín 3 minutos, hasta que estén doradas. Sácalas con una espumadera a una bandeja con papel de cocina y resérvalas."
+    },
+    {
+      "titulo": "Los pistachos",
+      "texto": "Forra una bandeja con papel de hornear, reparte los pistachos y tuéstalos 5 minutos en el horno. Resérvalos."
+    },
+    {
+      "titulo": "La pasta",
+      "texto": "Lleva a ebullición una olla grande de agua con sal y cuece la pasta unos 5 minutos. Escúrrela, guardando el agua de cocción.",
+      "nota_adaptacion": "Solo 5 minutos porque se termina en la sartén: tiene que quedar bastante al dente."
+    },
+    {
+      "titulo": "La crema de calabacín",
+      "texto": "Corta los otros 2 calabacines en dados de 1 cm. En una sartén, calienta 15 ml del aceite de oliva a fuego fuerte y saltea los dados con los ajos unos 5 minutos, hasta que se doren. Añade un cazo del agua de cocción y sigue 10 minutos a fuego medio, hasta que el calabacín esté tierno. Retira los ajos y tritura el calabacín con la batidora o el robot hasta hacer una salsa, añadiendo otros 15 ml de aceite de oliva. Salpimienta y reserva."
+    },
+    {
+      "titulo": "Mantecar",
+      "texto": "En otra sartén, calienta los 30 ml de aceite de oliva restantes y añade la mitad de las láminas fritas y un cazo del agua de cocción. Echa la pasta y la crema de calabacín y mantécalo 2 minutos, haciendo saltar la pasta con unos golpes de muñeca. Retira del fuego y añade la albahaca picada.",
+      "nota_traduccion": "El libro remite a su explicación del mantecato en la p. 222."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Reparte la pasta en cuencos individuales, formando nidos. Pon en cada cuenco un poco de stracciatella y, por encima, el resto de las láminas fritas, los pistachos tostados, un poco de parmesano rallado y unas hojas de albahaca."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Hay cocineros que le añaden orégano fresco, que le da un punto extra."
+    }
+  ],
+  "alta": "2026-10-10"
+}

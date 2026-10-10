@@ -519,8 +519,10 @@ function vistaReceta(r, raciones) {
     history.replaceState(null, '', `#/r/${r.id}${n !== base ? '/' + n : ''}`);
   };
   app.querySelectorAll('.paso-num button').forEach(b => b.addEventListener('click', () => {
+    const paso = r.raciones.paso; // p. ej. 250 para una salsa medida en ml
+    if (paso) n = +b.dataset.d > 0 ? (Math.floor(n / paso) + 1) * paso : Math.max(paso, (Math.ceil(n / paso) - 1) * paso);
     // de uno en uno, y por debajo de 1 permite media ración
-    if (+b.dataset.d > 0) n = n < 1 ? 1 : Math.floor(n) + 1;
+    else if (+b.dataset.d > 0) n = n < 1 ? 1 : Math.floor(n) + 1;
     else n = n <= 1 ? 0.5 : Math.ceil(n) - 1;
     pintar();
   }));

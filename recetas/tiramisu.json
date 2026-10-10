@@ -1,0 +1,63 @@
+{
+  "id": "tiramisu",
+  "titulo": "Tiramisù",
+  "titulo_es": "Con marsala y mucho cacao",
+  "idioma_original": "it",
+  "fuente": {
+    "tipo": "libro",
+    "nombre": null,
+    "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": ["postre", "mascarpone", "café", "sin horno", "vegetariana"],
+  "estilo": "trattoria",
+  "raciones": { "cantidad": 6, "unidad": "personas", "original": "Per 6 amici" },
+  "tiempos": { "preparacion": 45, "reposo": 120 },
+  "ingredientes": [
+    {
+      "grupo": "Para la crema",
+      "items": [
+        { "cantidad": 250, "unidad": "ml", "nombre": "nata para montar" },
+        { "cantidad": 4, "nombre": "yema de huevo", "nombre_plural": "yemas de huevo" },
+        { "cantidad": 70, "unidad": "g", "nombre": "azúcar extrafino" },
+        { "cantidad": 400, "unidad": "g", "nombre": "mascarpone" }
+      ]
+    },
+    {
+      "grupo": "Para montar",
+      "items": [
+        { "cantidad": 400, "unidad": "ml", "nombre": "café espresso", "nota": "caliente" },
+        { "cantidad": 30, "unidad": "ml", "nombre": "marsala" },
+        { "cantidad": 30, "nombre": "bizcocho de soletilla", "nombre_plural": "bizcochos de soletilla", "nota": "el libro tiene su receta en la p. 298" },
+        { "nombre": "cacao en polvo sin azúcar", "nota": "para espolvorear" }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "La crema",
+      "texto": "Monta la nata con unas varillas en un bol. En otro bol, bate las yemas con el azúcar, añade el mascarpone y vuelve a batir hasta que quede liso. Incorpora la nata montada a la mezcla de mascarpone con una espátula, con movimientos envolventes. Reserva.",
+      "nota_adaptacion": "Lleva yema cruda: usa huevos muy frescos y mantenlo siempre en la nevera."
+    },
+    {
+      "titulo": "Montar",
+      "texto": "Mezcla el café con el marsala en un cuenco. Moja los bizcochos en la mezcla, primero por un lado y luego por el otro, y colócalos en una fuente grande (de unos 20 × 25 cm y 7 cm de hondo). Cúbrelos con una capa de crema de 2 cm. Repite hasta terminar los ingredientes, acabando con una capa de crema."
+    },
+    {
+      "titulo": "Reposar",
+      "texto": "Tapa la fuente con film transparente y déjala en la nevera toda la noche (como mínimo, 2 horas)."
+    },
+    {
+      "titulo": "Servir",
+      "texto": "Justo antes de servir, espolvorea la superficie con una capa gruesa de cacao en polvo."
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Conviene saber",
+      "texto": "Queda espectacular servido como en las trattorias: con la fuente apoyada en el brazo, llenando cada plato con una cuchara grande. ¡Impresiona seguro!"
+    }
+  ],
+  "alta": "2026-10-10"
+}

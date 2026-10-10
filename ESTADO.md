@@ -23,6 +23,7 @@ Catálogo personal de recetas en un formato estándar (JSON), con visor HTML.
   "cocina": "italiana", "categoria": "Entrantes", "etiquetas": ["…"],
   "estilo": "trattoria",                                          // opcional; por defecto "clasico"
   "raciones": { "cantidad": 4, "unidad": "personas", "original": "Per 4 amici" },
+  // para recetas que se miden en cantidad (p. ej. una salsa): { "cantidad": 750, "unidad": "ml de salsa", "paso": 250 }
   "tiempos": { "preparacion": 25, "reposo": 20, "coccion": 40 },   // minutos
   "ingredientes": [ { "grupo": "Para la bechamel", "items": [
       { "cantidad": 40, "unidad": "g", "nombre": "mantequilla", "nota": "…" },
@@ -79,3 +80,9 @@ Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble.
 | monteritas-de-mejillones | libro rosa | 2026-10-10 |
 | cordero-asado | libro rosa | 2026-10-10 |
 | cocido-de-malole | libro rosa, hojas de cuadros | 2026-10-10 |
+| salsa-di-pomodoro | libro italiano | 2026-10-10 |
+| choco-mouss-party | libro italiano | 2026-10-10 |
+| cookies-xxl | libro italiano | 2026-10-10 |
+| tiramisu | libro italiano | 2026-10-10 |
+| spaghetti-alle-zucchine | libro italiano | 2026-10-10 |
+| gnocchi | libro italiano | 2026-10-10 |

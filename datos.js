@@ -80,7 +80,7 @@ window.RECETAS = [
       "cantidad": 1.5,
       "unidad": "l",
       "nombre": "salsa de tomate",
-      "nota": "el libro tiene su propia receta en la p. 160"
+      "nota": "la salsa di pomodoro del recetario: haz el doble de la receta"
      },
      {
       "cantidad": 2,
@@ -494,6 +494,162 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "choco-mouss-party",
+  "titulo": "Choco mouss' party",
+  "titulo_es": "Mousse de chocolate con praliné de café",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": [
+   "postre",
+   "chocolate",
+   "café",
+   "avellanas",
+   "vegetariana",
+   "sin gluten"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 6,
+   "unidad": "personas",
+   "original": "Per 6 amici"
+  },
+  "tiempos": {
+   "preparacion": 30,
+   "reposo": 240,
+   "coccion": 20
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la mousse",
+    "items": [
+     {
+      "cantidad": 190,
+      "unidad": "g",
+      "nombre": "chocolate negro",
+      "nota": "70 % de cacao"
+     },
+     {
+      "cantidad": 60,
+      "unidad": "g",
+      "nombre": "mantequilla sin sal"
+     },
+     {
+      "cantidad": 8,
+      "nombre": "clara de huevo",
+      "nombre_plural": "claras de huevo"
+     },
+     {
+      "cantidad": 45,
+      "unidad": "g",
+      "nombre": "azúcar extrafino"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "flor de sal"
+     },
+     {
+      "cantidad": 3,
+      "nombre": "yema de huevo",
+      "nombre_plural": "yemas de huevo"
+     }
+    ]
+   },
+   {
+    "grupo": "Para el praliné de café",
+    "items": [
+     {
+      "cantidad": 100,
+      "unidad": "g",
+      "nombre": "avellanas peladas"
+     },
+     {
+      "cantidad": 40,
+      "unidad": "g",
+      "nombre": "azúcar extrafino"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "flor de sal"
+     },
+     {
+      "cantidad": 20,
+      "unidad": "ml",
+      "nombre": "aceite de oliva"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "café soluble"
+     },
+     {
+      "cantidad": 12,
+      "unidad": "g",
+      "nombre": "café en grano"
+     }
+    ]
+   },
+   {
+    "grupo": "Para decorar",
+    "items": [
+     {
+      "nombre": "avellanas peladas",
+      "nota": "unas pocas, troceadas"
+     },
+     {
+      "nombre": "virutas de chocolate",
+      "nota": "unas pocas"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "El chocolate",
+    "texto": "Funde el chocolate con la mantequilla al baño maría, en un bol resistente al calor sobre un cazo de agua a fuego suave. Reserva hasta que esté tibio."
+   },
+   {
+    "titulo": "Las claras",
+    "texto": "En un bol limpio y sin rastro de grasa, monta las claras con el azúcar y la flor de sal a punto de nieve firme."
+   },
+   {
+    "titulo": "La mousse",
+    "texto": "Añade las yemas a la mezcla de chocolate y bate bien con unas varillas hasta obtener una ganache lisa. Incorpora las claras montadas con cuidado, con movimientos envolventes. Vierte la mousse en un cuenco grande o en seis individuales y refrigera 4 horas.",
+    "nota_adaptacion": "Lleva huevo crudo: usa huevos muy frescos y mantenla siempre en la nevera."
+   },
+   {
+    "titulo": "Tostar las avellanas",
+    "texto": "Mientras tanto, prepara el praliné. Precalienta el horno a 150 °C. Reparte las avellanas, separadas, en una bandeja forrada con papel de hornear y tuéstalas 15 minutos."
+   },
+   {
+    "titulo": "El caramelo",
+    "texto": "Forra otra bandeja con papel de hornear. Funde el azúcar con la sal en un cazo a fuego suave durante 5 minutos, hasta obtener un caramelo oscuro. Retira del fuego y añade enseguida las avellanas tostadas. Vierte la mezcla de inmediato sobre la bandeja y extiéndela hasta cubrir todo el papel. Deja enfriar 1 hora a temperatura ambiente."
+   },
+   {
+    "titulo": "El praliné",
+    "texto": "Trocea el crocante de avellanas. Ponlo en la batidora con el aceite, el café soluble y el café en grano, y tritura hasta obtener una pasta lisa."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Vierte el praliné de café sobre la mousse. Decora con avellanas troceadas y virutas de chocolate, y sirve enseguida."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "No hay nada como ser el primero en meter la cuchara: por eso se sirve en el mismo cuenco en el que se ha preparado. ¡Al ataque!"
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "cocido-de-malole",
   "titulo": "Cocido de Malole",
   "titulo_es": "Cocido rápido con garbanzos de bote y pollo",
@@ -603,6 +759,152 @@ window.RECETAS = [
     "«Malole»: ¿lo leo bien? Entiendo que es el nombre o apodo de quien hacía la receta."
    ]
   },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "cookies-xxl",
+  "titulo": "Cookies XXL",
+  "titulo_es": "Galletas de chocolate y pecanas rellenas de gianduja",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": [
+   "postre",
+   "galletas",
+   "chocolate",
+   "gianduja",
+   "pecanas",
+   "horno",
+   "vegetariana"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici (salen unas 30 galletas)"
+  },
+  "tiempos": {
+   "preparacion": 25,
+   "reposo": 60,
+   "coccion": 45
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la gianduja",
+    "items": [
+     {
+      "cantidad": 150,
+      "unidad": "g",
+      "nombre": "avellanas",
+      "nota": "mejor ecológicas"
+     },
+     {
+      "cantidad": 150,
+      "unidad": "g",
+      "nombre": "chocolate con leche",
+      "nota": "en trozos"
+     },
+     {
+      "cantidad": 10,
+      "unidad": "ml",
+      "nombre": "aceite de colza o de girasol"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "pizca",
+      "nombre": "sal"
+     }
+    ]
+   },
+   {
+    "grupo": "Para las galletas",
+    "items": [
+     {
+      "cantidad": 200,
+      "unidad": "g",
+      "nombre": "nueces pecanas"
+     },
+     {
+      "cantidad": 365,
+      "unidad": "g",
+      "nombre": "azúcar moreno claro"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "mantequilla",
+      "nota": "blanda"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "huevo",
+      "nombre_plural": "huevos"
+     },
+     {
+      "cantidad": 350,
+      "unidad": "g",
+      "nombre": "harina de trigo"
+     },
+     {
+      "cantidad": 4,
+      "unidad": "g",
+      "nombre": "bicarbonato sódico"
+     },
+     {
+      "cantidad": 6,
+      "unidad": "g",
+      "nombre": "sal"
+     },
+     {
+      "cantidad": 350,
+      "unidad": "g",
+      "nombre": "pepitas de chocolate negro"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Tostar las avellanas",
+    "texto": "Precalienta el horno a 170 °C. Reparte las avellanas en una bandeja sin que se toquen y tuéstalas 15–20 minutos, hasta que la piel se agriete y brillen. Pásalas a un paño de cocina limpio y déjalas enfriar.",
+    "nota_adaptacion": "Frótalas con el mismo paño para quitarles la piel antes de triturarlas."
+   },
+   {
+    "titulo": "La gianduja",
+    "texto": "Funde el chocolate con leche al baño maría y añade una pizca de sal. Tritura las avellanas en el robot de cocina, a golpes, hasta que formen una pasta. Añade el chocolate fundido y vuelve a triturar. Añade el aceite, tritura otra vez y deja enfriar."
+   },
+   {
+    "titulo": "Las bolitas de gianduja",
+    "texto": "Forma con la gianduja bolitas de 3 cm de diámetro y guárdalas en la nevera 1 hora."
+   },
+   {
+    "titulo": "Tostar las pecanas",
+    "texto": "Precalienta el horno a 180 °C. Forra una bandeja con papel de hornear, reparte las pecanas sin que se toquen y tuéstalas 10 minutos. Pásalas a un paño limpio y déjalas enfriar."
+   },
+   {
+    "titulo": "La masa",
+    "texto": "En un bol, bate el azúcar con la mantequilla con unas varillas eléctricas hasta que la mezcla blanquee y esté esponjosa. Incorpora, batiendo, el huevo, la harina, el bicarbonato y la sal. Añade las pepitas de chocolate y las pecanas tostadas mezclando con una espátula, sin batir, para que la masa no se oscurezca."
+   },
+   {
+    "titulo": "Rellenar",
+    "texto": "Divide la masa en porciones del tamaño de una pelota de golf. Haz un hueco en el centro de cada una con dos dedos, mete una bolita de gianduja y cierra la masa alrededor."
+   },
+   {
+    "titulo": "Hornear",
+    "texto": "Coloca las bolas en una bandeja antiadherente, separadas para que no se toquen, y aplástalas ligeramente. Hornea 15 minutos. Déjalas enfriar (¡o no!) y a disfrutar."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "¡Estas galletas son una gloria! Rellenarlas de gianduja fue una idea loca del jefe de pastelería, y están buenas… increíblemente buenas. Aunque el relleno se te escurra entre los dedos, son el capricho definitivo."
+   }
+  ],
   "alta": "2026-10-10"
  },
  {
@@ -1140,6 +1442,99 @@ window.RECETAS = [
     "Las dos últimas líneas no se ven en la foto (la hoja sale cortada); se transcribieron de palabra."
    ]
   },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "gnocchi",
+  "titulo": "Gnocchi",
+  "titulo_es": "Ñoquis de patata caseros",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Básicos",
+  "etiquetas": [
+   "pasta fresca",
+   "patata",
+   "básico",
+   "vegetariana",
+   "pocos ingredientes",
+   "se congela"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 30,
+   "reposo": 60,
+   "coccion": 33
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 240,
+      "unidad": "g",
+      "nombre": "patatas harinosas",
+      "nota": "tipo Agria o Kennebec"
+     },
+     {
+      "cantidad": 80,
+      "unidad": "g",
+      "nombre": "parmesano rallado"
+     },
+     {
+      "cantidad": 2,
+      "nombre": "huevo",
+      "nombre_plural": "huevos"
+     },
+     {
+      "cantidad": 60,
+      "unidad": "g",
+      "nombre": "harina de trigo"
+     },
+     {
+      "cantidad": 50,
+      "unidad": "g",
+      "nombre": "harina de arroz o sémola de trigo duro"
+     },
+     {
+      "nombre": "sal"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Cocer las patatas",
+    "texto": "Pon las patatas, con piel, en una olla grande con agua con sal. Lleva a ebullición y cuécelas 30 minutos a fuego fuerte."
+   },
+   {
+    "titulo": "La masa",
+    "texto": "Pélalas y hazlas puré pasándolas por el pasapurés. Añade el parmesano, los huevos y las dos harinas, y mezcla con una cuchara de madera o con las manos hasta obtener una masa lisa. Tápala y déjala reposar 1 hora a temperatura ambiente."
+   },
+   {
+    "titulo": "Dar forma",
+    "texto": "Coge un trozo pequeño de masa y, sobre la superficie de trabajo enharinada, estíralo en un cilindro largo de unos 2 cm de grosor. Córtalo en trozos de 2 cm. Repite con el resto de la masa."
+   },
+   {
+    "titulo": "Cocer los gnocchi",
+    "texto": "Lleva a ebullición una olla grande de agua con sal. Cuece los gnocchi por tandas unos 3 minutos, o hasta que suban a la superficie."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Si quieres, puedes hacerlos con antelación y congelarlos en una bandeja, separados para que no se peguen. Quedan muy bien con la salsa di pomodoro o con la salsa cacio e pepe."
+   }
+  ],
   "alta": "2026-10-10"
  },
  {
@@ -2039,6 +2434,220 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "salsa-di-pomodoro",
+  "titulo": "Salsa di pomodoro",
+  "titulo_es": "La auténtica salsa de tomate",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Salsas",
+  "etiquetas": [
+   "salsa",
+   "tomate",
+   "básico",
+   "vegana",
+   "sin gluten",
+   "pocos ingredientes"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 750,
+   "unidad": "ml de salsa",
+   "paso": 250,
+   "original": "Per 750 ml di salsa"
+  },
+  "tiempos": {
+   "preparacion": 5,
+   "coccion": 120
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 50,
+      "unidad": "ml",
+      "nombre": "aceite de oliva",
+      "nota": "entre 45 y 60 ml"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "tomates pequeños frescos",
+      "nota": "datterini o cherry"
+     },
+     {
+      "cantidad": 500,
+      "unidad": "g",
+      "nombre": "tomate pelado en conserva",
+      "nota": "tipo San Marzano"
+     },
+     {
+      "nombre": "sal y pimienta"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Los tomates frescos",
+    "texto": "Pon el aceite de oliva en una cazuela grande de fondo grueso, caliéntalo 3 minutos y añade los tomates frescos. Aplasta algunos con el dorso de una cuchara para que suelten su jugo."
+   },
+   {
+    "titulo": "El tomate en conserva",
+    "texto": "Tritura el tomate pelado con la batidora de mano, directamente en la lata, y añádelo a la cazuela. Salpimienta."
+   },
+   {
+    "titulo": "A fuego lento",
+    "texto": "Deja cocer a fuego suave 1 hora, removiendo de vez en cuando. Si la quieres menos líquida, sigue 1 hora más."
+   },
+   {
+    "titulo": "Rectificar",
+    "texto": "Cuando esté hecha, rectifica de sal y pimienta si hace falta."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Es un auténtico clásico que se puede tomar de mil maneras, y la base de muchas recetas del libro, como la big lasagna. Para una salsa más aromática, añade al principio 5–6 hojas de albahaca y 2 cebollas en dados finos. Para los que la quieren picante: una guindilla roja fresca, sin semillas y picada, le da un punto extra."
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "spaghetti-alle-zucchine",
+  "titulo": "Spaghetti alle zucchine",
+  "titulo_es": "Con stracciatella, pistachos y calabacín",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Primeros",
+  "etiquetas": [
+   "pasta",
+   "calabacín",
+   "stracciatella",
+   "pistachos",
+   "vegetariana"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "Per 4 amici"
+  },
+  "tiempos": {
+   "preparacion": 10,
+   "coccion": 45
+  },
+  "ingredientes": [
+   {
+    "grupo": "Ingredientes",
+    "items": [
+     {
+      "cantidad": 4,
+      "nombre": "calabacín",
+      "nombre_plural": "calabacines"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "l",
+      "nombre": "aceite de girasol",
+      "nota": "para freír",
+      "escala": false
+     },
+     {
+      "cantidad": 20,
+      "nombre": "pistacho pelado",
+      "nombre_plural": "pistachos pelados"
+     },
+     {
+      "cantidad": 600,
+      "unidad": "g",
+      "nombre": "spaghetti quadrati",
+      "nota": "u otra pasta larga"
+     },
+     {
+      "cantidad": 60,
+      "unidad": "ml",
+      "nombre": "aceite de oliva"
+     },
+     {
+      "cantidad": 2,
+      "unidad": "diente",
+      "nombre": "ajo",
+      "nota": "sin pelar"
+     },
+     {
+      "cantidad": 1,
+      "unidad": "manojo",
+      "nombre": "albahaca",
+      "nota": "picada fina, y unas hojas más para decorar"
+     },
+     {
+      "cantidad": 250,
+      "unidad": "g",
+      "nombre": "stracciatella o ricotta"
+     },
+     {
+      "cantidad": 6,
+      "unidad": "g",
+      "nombre": "parmesano rallado"
+     },
+     {
+      "nombre": "sal y pimienta"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Láminas de calabacín",
+    "texto": "Precalienta el horno a 180 °C. Corta 2 de los calabacines en láminas finas con una mandolina o un cuchillo bien afilado."
+   },
+   {
+    "titulo": "Freír las láminas",
+    "texto": "En una freidora o una cazuela grande de fondo grueso, calienta el aceite de girasol a 160 °C. Si no tienes termómetro, echa unos granos de sal: si el aceite está a punto, se forman burbujitas. Fríe las láminas de calabacín 3 minutos, hasta que estén doradas. Sácalas con una espumadera a una bandeja con papel de cocina y resérvalas."
+   },
+   {
+    "titulo": "Los pistachos",
+    "texto": "Forra una bandeja con papel de hornear, reparte los pistachos y tuéstalos 5 minutos en el horno. Resérvalos."
+   },
+   {
+    "titulo": "La pasta",
+    "texto": "Lleva a ebullición una olla grande de agua con sal y cuece la pasta unos 5 minutos. Escúrrela, guardando el agua de cocción.",
+    "nota_adaptacion": "Solo 5 minutos porque se termina en la sartén: tiene que quedar bastante al dente."
+   },
+   {
+    "titulo": "La crema de calabacín",
+    "texto": "Corta los otros 2 calabacines en dados de 1 cm. En una sartén, calienta 15 ml del aceite de oliva a fuego fuerte y saltea los dados con los ajos unos 5 minutos, hasta que se doren. Añade un cazo del agua de cocción y sigue 10 minutos a fuego medio, hasta que el calabacín esté tierno. Retira los ajos y tritura el calabacín con la batidora o el robot hasta hacer una salsa, añadiendo otros 15 ml de aceite de oliva. Salpimienta y reserva."
+   },
+   {
+    "titulo": "Mantecar",
+    "texto": "En otra sartén, calienta los 30 ml de aceite de oliva restantes y añade la mitad de las láminas fritas y un cazo del agua de cocción. Echa la pasta y la crema de calabacín y mantécalo 2 minutos, haciendo saltar la pasta con unos golpes de muñeca. Retira del fuego y añade la albahaca picada.",
+    "nota_traduccion": "El libro remite a su explicación del mantecato en la p. 222."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Reparte la pasta en cuencos individuales, formando nidos. Pon en cada cuenco un poco de stracciatella y, por encima, el resto de las láminas fritas, los pistachos tostados, un poco de parmesano rallado y unas hojas de albahaca."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Hay cocineros que le añaden orégano fresco, que le da un punto extra."
+   }
+  ],
+  "alta": "2026-10-10"
+ },
+ {
   "id": "tabla-de-quesos-y-cia",
   "titulo": "Tabla de quesos y Cía.",
   "titulo_es": "Invita a tus amigos y complícate la vida… lo justo.",
@@ -2381,6 +2990,115 @@ window.RECETAS = [
     "«temperatura más baja, 3-4»: la posición del fuego."
    ]
   },
+  "alta": "2026-10-10"
+ },
+ {
+  "id": "tiramisu",
+  "titulo": "Tiramisù",
+  "titulo_es": "Con marsala y mucho cacao",
+  "idioma_original": "it",
+  "fuente": {
+   "tipo": "libro",
+   "nombre": null,
+   "nota": "Libro de cocina italiana (edición en inglés)"
+  },
+  "cocina": "italiana",
+  "categoria": "Postres",
+  "etiquetas": [
+   "postre",
+   "mascarpone",
+   "café",
+   "sin horno",
+   "vegetariana"
+  ],
+  "estilo": "trattoria",
+  "raciones": {
+   "cantidad": 6,
+   "unidad": "personas",
+   "original": "Per 6 amici"
+  },
+  "tiempos": {
+   "preparacion": 45,
+   "reposo": 120
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la crema",
+    "items": [
+     {
+      "cantidad": 250,
+      "unidad": "ml",
+      "nombre": "nata para montar"
+     },
+     {
+      "cantidad": 4,
+      "nombre": "yema de huevo",
+      "nombre_plural": "yemas de huevo"
+     },
+     {
+      "cantidad": 70,
+      "unidad": "g",
+      "nombre": "azúcar extrafino"
+     },
+     {
+      "cantidad": 400,
+      "unidad": "g",
+      "nombre": "mascarpone"
+     }
+    ]
+   },
+   {
+    "grupo": "Para montar",
+    "items": [
+     {
+      "cantidad": 400,
+      "unidad": "ml",
+      "nombre": "café espresso",
+      "nota": "caliente"
+     },
+     {
+      "cantidad": 30,
+      "unidad": "ml",
+      "nombre": "marsala"
+     },
+     {
+      "cantidad": 30,
+      "nombre": "bizcocho de soletilla",
+      "nombre_plural": "bizcochos de soletilla",
+      "nota": "el libro tiene su receta en la p. 298"
+     },
+     {
+      "nombre": "cacao en polvo sin azúcar",
+      "nota": "para espolvorear"
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "La crema",
+    "texto": "Monta la nata con unas varillas en un bol. En otro bol, bate las yemas con el azúcar, añade el mascarpone y vuelve a batir hasta que quede liso. Incorpora la nata montada a la mezcla de mascarpone con una espátula, con movimientos envolventes. Reserva.",
+    "nota_adaptacion": "Lleva yema cruda: usa huevos muy frescos y mantenlo siempre en la nevera."
+   },
+   {
+    "titulo": "Montar",
+    "texto": "Mezcla el café con el marsala en un cuenco. Moja los bizcochos en la mezcla, primero por un lado y luego por el otro, y colócalos en una fuente grande (de unos 20 × 25 cm y 7 cm de hondo). Cúbrelos con una capa de crema de 2 cm. Repite hasta terminar los ingredientes, acabando con una capa de crema."
+   },
+   {
+    "titulo": "Reposar",
+    "texto": "Tapa la fuente con film transparente y déjala en la nevera toda la noche (como mínimo, 2 horas)."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Justo antes de servir, espolvorea la superficie con una capa gruesa de cacao en polvo."
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Conviene saber",
+    "texto": "Queda espectacular servido como en las trattorias: con la fuente apoyada en el brazo, llenando cada plato con una cuchara grande. ¡Impresiona seguro!"
+   }
+  ],
   "alta": "2026-10-10"
  },
  {
