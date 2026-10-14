@@ -1020,6 +1020,126 @@ window.RECETAS = [
   "alta": "2026-10-10"
  },
  {
+  "id": "crema-de-acelgas",
+  "titulo": "Crema de acelgas",
+  "titulo_es": "La de Araceli",
+  "idioma_original": "es",
+  "fuente": {
+   "tipo": "familia",
+   "nombre": "El libro rosa (hojas de cuadros)",
+   "nota": "Receta manuscrita"
+  },
+  "cocina": "espanola",
+  "categoria": "Primeros",
+  "etiquetas": [
+   "crema",
+   "verduras",
+   "acelgas",
+   "vegetariana",
+   "sin gluten",
+   "de casa"
+  ],
+  "estilo": "libro-rosa-cuadros",
+  "raciones": {
+   "cantidad": 4,
+   "unidad": "personas",
+   "original": "No lo indica"
+  },
+  "tiempos": {
+   "preparacion": 15,
+   "coccion": 40
+  },
+  "ingredientes": [
+   {
+    "grupo": "Para la crema",
+    "items": [
+     {
+      "cantidad": 300,
+      "unidad": "g",
+      "nombre": "hojas de acelga",
+      "nota": "un manojo sin tallos (solo la hoja) o una bolsa de 300 g"
+     },
+     {
+      "cantidad": 5,
+      "nombre": "zanahoria",
+      "nombre_plural": "zanahorias"
+     },
+     {
+      "cantidad": 2,
+      "nombre": "patata",
+      "nombre_plural": "patatas"
+     },
+     {
+      "cantidad": 1,
+      "nombre": "cebolla",
+      "nombre_plural": "cebollas"
+     },
+     {
+      "cantidad": 2,
+      "unidad": "diente",
+      "nombre": "ajo"
+     },
+     {
+      "cantidad": 1.5,
+      "unidad": "pastilla",
+      "nombre": "caldo de pollo",
+      "nota": "tipo Avecrem"
+     },
+     {
+      "nombre": "aceite de oliva",
+      "nota": "un poco, para dorar"
+     },
+     {
+      "nombre": "sal"
+     },
+     {
+      "nombre": "agua",
+      "nota": "hasta cubrir y que sobrepase 2 o 3 dedos"
+     }
+    ]
+   },
+   {
+    "grupo": "Para acompañar",
+    "items": [
+     {
+      "cantidad": 2,
+      "nombre": "huevo duro",
+      "nombre_plural": "huevos duros",
+      "estimada": true
+     }
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "titulo": "Preparar las verduras",
+    "texto": "Lava bien las hojas de las acelgas. Pela, trocea y lava el resto de verduras."
+   },
+   {
+    "titulo": "Dorar",
+    "texto": "Dora en la olla el ajo y la cebolla hasta que estén flojitos. Después, dora el resto de verduras.",
+    "nota_adaptacion": "El original no menciona el aceite: pon un poco de aceite de oliva en el fondo de la olla para dorar."
+   },
+   {
+    "titulo": "Cubrir y hervir",
+    "texto": "Cubre con agua hasta que sobrepase las verduras 2 o 3 dedos y añade la pastilla y media de caldo. Hierve hasta que todas las verduras estén blandas, 20–30 minutos."
+   },
+   {
+    "titulo": "Batir y salar",
+    "texto": "Bátelo con la batidora y, ya triturado, prueba y ajusta de sal: la sal va después de batir, no antes."
+   },
+   {
+    "titulo": "Servir",
+    "texto": "Acompáñala de huevo duro picado por encima."
+   }
+  ],
+  "original": {
+   "tipo": "manuscrito",
+   "texto": "CREMA DE ACELGAS (Araceli)\n\n1 manojo de acelgas sin tallo (sólo hoja) ó 1 bolsa de acelgas de 300 gr.\n5 zanahorias.\n2 patatas\n1 cebolla\n2 dientes de ajo.\n1 y ½ pastilla avecrem\nSal.\n\nLavar bien las hojas de las acelgas.\nPelar, trocear y lavar el resto de verduras.\nDorar en la olla el ajo y la cebolla hasta que esté flojita. Después, dorar el resto de verduras.\nCubrir con agua, que sobrepase 2 ó 3 dedos. Añadir el avecrem (y la sal después de pasarlo por la turmix).\nHervir todas las verduras hasta que estén blandas (20-30 mins). Batir en la turmix y comprobar la sal.\n\n→ Acompañar de huevo duro."
+  },
+  "alta": "2026-10-14"
+ },
+ {
   "id": "crocchette-guanciale-e-tartufo",
   "titulo": "Crocchette guanciale e tartufo",
   "titulo_es": "Croquetas de guanciale y crema de trufa",

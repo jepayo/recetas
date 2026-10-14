@@ -86,3 +86,4 @@ Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble.
 | tiramisu | libro italiano | 2026-10-10 |
 | spaghetti-alle-zucchine | libro italiano | 2026-10-10 |
 | gnocchi | libro italiano | 2026-10-10 |
+| crema-de-acelgas | libro rosa, hojas de cuadros | 2026-10-14 |
