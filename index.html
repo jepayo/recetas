@@ -46,7 +46,7 @@
            repeating-linear-gradient(90deg, #fff 0 10px, #d22b26 10px 20px) bottom / 100% 50% repeat-x;
   --fondo: #ffffff;
   --marco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='24'%3E%3Cpath d='M6 8.5c5-3.2 19-3.6 24-1.2 2.6 1.3 2.2 6.4-.8 7.6-6.4 2.3-17.6 2.4-22.4.3-3.2-1.4-3.4-4.9-.8-6.7z' fill='%23d22b26'/%3E%3C/svg%3E") center top / 36px 24px repeat-y, #fff;
-  --marco-ancho: 36px;
+  --marco-ancho: 36px; --marco-hoja: 36px;
   --nota-fondo: #f3f6fc;
 }
 /* Mediterráneo: azul cobalto y amarillo de azulejo sobre blanco. */
@@ -186,7 +186,7 @@ html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--fondo); color: var(--ink); font: 16px/1.6 var(--texto); padding-inline: var(--marco-ancho); }
 body::before, body::after { content: ''; position: fixed; top: 0; bottom: 0; width: var(--marco-ancho); background: var(--marco); pointer-events: none; z-index: 1; }
 body::before { left: 0; } body::after { right: 0; }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   :root[data-estilo] { --marco-ancho: 0px; }
   body::before, body::after { display: none; }
 }
@@ -295,17 +295,97 @@ button { font: inherit; color: inherit; }
 .imprimir { border: 1px solid var(--line); background: var(--paper); border-radius: 8px; padding: 5px 12px; font-size: 13px; cursor: pointer; color: var(--muted); }
 .imprimir:hover { color: var(--accent); border-color: var(--accent); }
 
+.hoja-info { font-size: 12px; color: var(--muted); }
+.hoja-info.mal { color: var(--accent); font-weight: 600; }
+
+/* ---------- Impresión: una receta = una hoja A4, con el estilo de la receta ----------
+   La hoja (#hoja) existe siempre, fuera de pantalla y a ancho real de A4, para poder medirla;
+   el JS busca el mayor tamaño de letra (--z) con el que cabe. Los adornos (fondos, bandas, orlas)
+   van detrás o en los bordes, nunca ocupan sitio útil. */
+@page { size: A4; margin: 0; }
+#hoja {
+  --z: 1; --h-m: 10mm; --h-p: 0mm;
+  position: absolute; left: -99999px; top: 0; visibility: hidden; pointer-events: none;
+  width: 210mm; height: 296mm; box-sizing: border-box; overflow: hidden;
+  padding: var(--h-m) calc(var(--h-m) + var(--marco-hoja, 0px));
+  color: var(--ink); font: calc(10.5pt * var(--z))/1.42 var(--texto);
+}
+#hoja .h-pagina { height: 100%; box-sizing: border-box; padding: var(--h-p); }
+#hoja .h-caja { height: 100%; }
+#hoja .h-in { display: flex; flex-direction: column; min-height: 100%; }
+#hoja .h-banda { width: 48mm; height: 2.2mm; margin: 0 auto .7em; background: var(--banda); border-radius: 2px; flex: none; }
+#hoja .h-cab { text-align: center; padding-bottom: .6em; margin-bottom: .9em; border-bottom: 1px solid var(--line); }
+#hoja .h-kicker { font: 600 .72em var(--texto); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+#hoja .h-tit { font-family: var(--display); font-weight: var(--peso); font-size: 2.3em; line-height: 1.04; letter-spacing: var(--tracking); text-transform: var(--caso); text-decoration: var(--subrayado, none); text-decoration-thickness: 1.5px; text-underline-offset: .16em; margin: .2em 0 .1em; text-wrap: balance; }
+#hoja .h-tit::after { content: var(--ornamento); display: block; font: 400 .38em/1 var(--texto); letter-spacing: .1em; color: var(--muted); margin-top: .7em; text-decoration: none; }
+#hoja .h-sub { font: var(--sub); font-size: 1.12em; color: var(--muted); margin: .1em 0 0; }
+#hoja .h-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: .1em 1.7em; margin: .6em 0 0; padding: 0; list-style: none; font-size: .74em; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+#hoja .h-meta li { text-align: center; }
+#hoja .h-meta b { display: block; font: 600 1.6em/1.2 var(--display); text-transform: none; letter-spacing: 0; color: var(--ink); }
+#hoja .h-cuerpo { display: grid; grid-template-columns: 31% 1fr; gap: 0 1.7em; align-items: start; }
+#hoja .h-sec { font: 600 1.3em/1.2 var(--display); margin: 0 0 .5em; }
+#hoja .h-ing { padding-right: 1.1em; border-right: 1px solid var(--line); }
+#hoja .h-grupo { margin: 0 0 .9em; }
+#hoja .h-grupo:last-child { margin-bottom: 0; }
+#hoja .h-grupo h4 { font: 600 .72em/1.3 var(--texto); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 .25em; }
+#hoja .h-grupo h4 .de { text-transform: none; letter-spacing: 0; font-weight: 400; }
+#hoja .h-grupo ul { list-style: none; margin: 0; padding: 0; }
+#hoja .h-grupo li { padding: .28em 0; border-bottom: 1px dotted var(--line); font-size: .95em; line-height: 1.38; }
+#hoja .h-grupo li:last-child { border-bottom: 0; }
+#hoja .q { font-weight: 700; white-space: nowrap; }
+#hoja .n { color: var(--muted); font-size: .9em; }
+#hoja .aprox { color: var(--muted); font-weight: 400; }
+#hoja .fija { display: none; }
+#hoja .h-pasos { list-style: none; margin: 0; padding: 0; counter-reset: p; }
+#hoja .h-paso { counter-increment: p; position: relative; padding: 0 0 .8em 2.7em; break-inside: avoid; }
+#hoja .h-paso:last-child { padding-bottom: 0; }
+#hoja .h-paso::before { content: counter(p); position: absolute; left: 0; top: .05em; width: 1.9em; height: 1.9em; box-sizing: border-box; border-radius: 50%; display: grid; place-items: center; font: 600 1.05em var(--display); background: var(--num-bg); color: var(--num-fg); border: 1px solid var(--num-fg); }
+#hoja .h-paso h3 { font-family: var(--display); font-weight: 600; font-size: 1.1em; line-height: 1.25; margin: .15em 0 .1em; }
+#hoja .h-paso p { margin: 0; }
+#hoja .h-paso p.h-ntrad { font-size: .82em; line-height: 1.4; margin: .4em 0 0; padding: .35em .7em; background: var(--note); border-left: 3px solid var(--note-line); border-radius: 0 6px 6px 0; }
+#hoja .h-notas { display: grid; grid-template-columns: repeat(auto-fit, minmax(70mm, 1fr)); gap: .7em; margin-top: 1em; }
+#hoja .h-nota { background: var(--nota-fondo); border: 1px solid var(--line); border-radius: .7em; padding: .55em .9em; font-size: .93em; }
+#hoja .h-nota h3 { font: 600 1.08em/1.2 var(--display); color: var(--accent); margin: 0 0 .15em; }
+#hoja .h-nota p { margin: 0; }
+#hoja .h-pie { margin-top: auto; padding-top: .9em; font-size: .72em; color: var(--muted); text-align: center; }
+
+/* libro rosa: la hoja naranja (o cuadriculada) sobre la tapa rosa */
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja { --h-m: 9mm; --h-p: 7mm; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-pagina { background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.10), transparent 60%), #f28837; border-radius: 4px 14px 14px 4px; box-shadow: -6px 0 0 #d9849c; }
+html[data-estilo="libro-rosa-cuadros"] #hoja .h-pagina { background: var(--cuadricula); }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-tit { font-size: 3.1em; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-sec { font-size: 1.9em; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-paso h3 { font-size: 1.45em; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-paso::before { font-size: 1.5em; border-width: 2px; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-meta b { font-size: 1.9em; }
+html:is([data-estilo="libro-rosa"], [data-estilo="libro-rosa-cuadros"]) #hoja .h-ing { border-color: rgba(29,33,57,.18); }
+/* revista */
+html[data-estilo="revista"] #hoja .h-banda { width: 100%; }
+html[data-estilo="revista"] #hoja .h-cab { text-align: left; border-bottom: 2px solid var(--ink); }
+html[data-estilo="revista"] #hoja .h-tit { font-size: 3em; line-height: .95; }
+html[data-estilo="revista"] #hoja .h-meta { justify-content: flex-start; }
+html[data-estilo="revista"] #hoja .h-meta li { text-align: left; }
+html[data-estilo="revista"] #hoja .h-sec { font-weight: 300; font-size: 1.7em; }
+html[data-estilo="revista"] #hoja .h-paso { padding-left: 3.4em; }
+html[data-estilo="revista"] #hoja .h-paso::before { content: counter(p, decimal-leading-zero); width: auto; height: auto; border: 0; border-radius: 0; font: 200 1.9em/1 var(--display); background: none; }
+
 @media print {
-  :root { --bg: #fff; --paper: #fff; }
-  .volver, .herramientas, .atajos, .paso-num button, .ing input { display: none !important; }
-  .lateral { position: static; border: 0; padding: 0; }
-  .cuerpo { grid-template-columns: 260px 1fr; gap: 32px; }
-  .wrap { padding: 0; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; padding-inline: 0; }
+  body.con-hoja #app { display: none !important; }
+  body.con-hoja #hoja { position: static; visibility: visible; overflow: visible; }
+  body:not(.con-hoja) #hoja { display: none; }
+  /* el estilo clásico se imprime siempre en claro, aunque el sistema esté en modo oscuro */
+  html:root:not([data-estilo]):not([data-theme="light"]) {
+    --bg: #f7f3ec; --paper: #fffdf9; --ink: #2b2622; --muted: #857a6f; --line: #e6ddcf;
+    --accent: #b5532f; --accent-soft: #f3e1d6; --note: #f6efdc; --note-line: #e0cf9f;
+  }
 }
 </style>
 </head>
 <body>
 <main class="wrap" id="app"></main>
+<div id="hoja" aria-hidden="true"></div>
 
 <script src="datos.js"></script>
 <script>
@@ -387,12 +467,81 @@ function aplicarEstilo(e) {
   else delete document.documentElement.dataset.estilo;
 }
 
+// ---------- hoja de impresión ----------
+// Cada receta se imprime en UNA hoja A4 con el estilo que lleva y las raciones que se ven en pantalla.
+// La hoja se monta en #hoja (fuera de pantalla, a ancho real de A4) y se busca el mayor tamaño de letra
+// con el que cabe: letra generosa si sobra sitio, y solo se reduce si hace falta.
+const hoja = document.getElementById('hoja');
+const PT_BASE = 10.5, Z_MIN = 0.72, Z_MAX = 1.45;
+let hojaActual = null; // () => vuelve a montar y ajustar la hoja de la receta que se está viendo
+
+const fuenteTexto = r => r.fuente ? [r.fuente.nombre, r.fuente.autor, r.fuente.pagina && 'p. ' + r.fuente.pagina].filter(Boolean).join(', ') || r.fuente.nota : '';
+
+function hojaHTML(r, n) {
+  const base = r.raciones.cantidad, factor = n / base, t = r.tiempos || {};
+  const tiempos = [['Preparación', t.preparacion], ['Reposo', t.reposo], ['Cocción', t.coccion]].filter(([, m]) => m);
+  if (tiempos.length > 1) tiempos.push(['Total', total(r)]);
+  const unidad = r.raciones.unidad || 'raciones';
+  const meta = tiempos.map(([k, m]) => `<li><b>${minutos(m)}</b>${k}</li>`).join('') +
+    `<li><b>${num(n)}</b>${esc(n === 1 && unidad === 'personas' ? 'persona' : unidad)}${n !== base ? ` (original: ${num(base)})` : ''}</li>`;
+  const ings = r.ingredientes.map(g => `
+    <div class="h-grupo">
+      ${g.grupo ? `<h4>${esc(g.grupo)}${g.de ? ` <span class="de">· igual que en ${esc(g.de.titulo)}</span>` : ''}</h4>` : ''}
+      <ul>${g.items.map(i => `<li>${lineaIngrediente(i, factor)}</li>`).join('')}</ul>
+    </div>`).join('');
+  const nota = (txt, ttl) => txt ? `<p class="h-ntrad"><b>${ttl}:</b> ${esc(txt)}</p>` : '';
+  const pasos = r.pasos.map(p => `
+    <li class="h-paso">
+      ${p.titulo ? `<h3>${esc(p.titulo)}</h3>` : ''}
+      <p>${esc(p.texto)}</p>
+      ${nota(p.nota_traduccion, 'Nota de traducción')}${nota(p.nota_adaptacion, 'Nota de adaptación')}
+    </li>`).join('');
+  const notas = (r.notas || []).length ? `<div class="h-notas">${r.notas.map(x => `
+    <div class="h-nota">${x.titulo ? `<h3>${esc(x.titulo)}</h3>` : ''}<p>${esc(x.texto)}</p></div>`).join('')}</div>` : '';
+  const fuente = fuenteTexto(r);
+  return `<div class="h-pagina"><div class="h-caja"><div class="h-in">
+    <div class="h-banda"></div>
+    <header class="h-cab">
+      <div class="h-kicker">${esc([cocina(r.cocina), r.categoria].filter(Boolean).join(' · '))}</div>
+      <h1 class="h-tit">${esc(r.titulo)}</h1>
+      ${r.titulo_es && r.titulo_es !== r.titulo ? `<p class="h-sub">${esc(r.titulo_es)}</p>` : ''}
+      <ul class="h-meta">${meta}</ul>
+    </header>
+    <div class="h-cuerpo">
+      <aside class="h-ing"><h2 class="h-sec">Ingredientes</h2>${ings}</aside>
+      <section><h2 class="h-sec">Preparación</h2><ol class="h-pasos">${pasos}</ol></section>
+    </div>
+    ${notas}
+    ${fuente ? `<div class="h-pie">Fuente: ${esc(fuente)}</div>` : ''}
+  </div></div></div>`;
+}
+
+function prepararHoja(r, n) {
+  try {
+    hoja.innerHTML = hojaHTML(r, n);
+    const caja = hoja.querySelector('.h-caja'), cont = hoja.querySelector('.h-in');
+    const cabe = z => { hoja.style.setProperty('--z', z); return cont.getBoundingClientRect().height <= caja.getBoundingClientRect().height + 0.5; };
+    let z = Z_MAX, ok = cabe(Z_MAX);
+    if (!ok) {
+      let lo = Z_MIN, hi = Z_MAX;
+      ok = cabe(lo);
+      if (ok) { for (let i = 0; i < 14; i++) { const mid = (lo + hi) / 2; if (cabe(mid)) lo = mid; else hi = mid; } }
+      z = lo;
+      hoja.style.setProperty('--z', z);
+    }
+    const info = document.querySelector('.hoja-info');
+    if (info) { info.textContent = ok ? `1 hoja · letra ${num(PT_BASE * z)} pt` : 'No cabe en 1 hoja'; info.classList.toggle('mal', !ok); }
+  } catch (e) { console.warn('hoja de impresión:', e); } // que un fallo aquí nunca rompa la ficha
+}
+addEventListener('beforeprint', () => hojaActual?.());
+
 // ---------- vistas ----------
 let filtro = { q: '', cat: null };
 
 function vistaIndice() {
   document.title = 'Recetario';
   aplicarEstilo(null);
+  document.body.classList.remove('con-hoja'); hojaActual = null; hoja.innerHTML = '';
   const cats = [...new Set(RECETAS.map(r => r.categoria).filter(Boolean))].sort();
   app.innerHTML = `
     <h1 class="marca">Recetario<span>.</span></h1>
@@ -441,12 +590,14 @@ function vistaReceta(r, raciones) {
   let n = raciones || base;
   document.title = r.titulo + ' · Recetario';
   aplicarEstilo(r.estilo);
+  document.body.classList.add('con-hoja');
   const t = r.tiempos || {};
-  const fuente = r.fuente ? [r.fuente.nombre, r.fuente.autor, r.fuente.pagina && 'p. ' + r.fuente.pagina].filter(Boolean).join(', ') || r.fuente.nota : '';
+  const fuente = fuenteTexto(r);
 
   app.innerHTML = `
     <a class="volver" href="#/">← Todas las recetas</a>
     <div class="herramientas">
+      <span class="hoja-info" title="Al imprimir, la receta se ajusta a una hoja A4"></span>
       <label class="estilo-sel" title="Vista previa: el estilo guardado es el del JSON de la receta">Estilo
         <select>${Object.entries(ESTILOS).map(([k, v]) => `<option value="${k}"${k === (r.estilo || 'clasico') ? ' selected' : ''}>${v}</option>`).join('')}</select>
       </label>
@@ -517,6 +668,7 @@ function vistaReceta(r, raciones) {
         <ul>${g.items.map(i => `<li><label class="ing"><input type="checkbox">${lineaIngrediente(i, factor)}</label></li>`).join('')}</ul>
       </div>`).join('');
     history.replaceState(null, '', `#/r/${r.id}${n !== base ? '/' + n : ''}`);
+    prepararHoja(r, n);
   };
   app.querySelectorAll('.paso-num button').forEach(b => b.addEventListener('click', () => {
     const paso = r.raciones.paso; // p. ej. 250 para una salsa medida en ml
@@ -527,9 +679,11 @@ function vistaReceta(r, raciones) {
     pintar();
   }));
   app.querySelectorAll('.atajos button').forEach(b => b.addEventListener('click', () => { n = base * b.dataset.f; pintar(); }));
-  app.querySelector('.estilo-sel select').addEventListener('change', e => aplicarEstilo(e.target.value));
+  app.querySelector('.estilo-sel select').addEventListener('change', e => { aplicarEstilo(e.target.value); prepararHoja(r, n); });
   app.querySelectorAll('.paso').forEach(p => p.addEventListener('click', () => p.classList.toggle('hecho')));
   pintar();
+  const mia = hojaActual = () => prepararHoja(r, n);
+  document.fonts?.ready.then(() => { if (hojaActual === mia) mia(); }); // las tipografías cambian las medidas
   scrollTo(0, 0);
 }
 

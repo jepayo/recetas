@@ -55,6 +55,9 @@ Cada receta puede llevar `estilo`, que cambia colores, tipografías, fondo y ado
 
 El selector «Estilo» de la ficha es solo una vista previa: lo que se guarda es lo que diga el JSON. Para añadir un estilo nuevo: un bloque `[data-estilo]` en el CSS de `index.html`, y su entrada en `ESTILOS`, tanto en `index.html` como en `build.mjs`.
 
+## Impresión
+El botón «Imprimir» (o Ctrl/⌘+P) saca la receta en **una hoja A4**, con su propio estilo (fondos, bandas y orlas van detrás o en los bordes, sin quitar sitio al texto) y con las raciones que se ven en pantalla. La hoja se monta fuera de pantalla (`#hoja`) y el JS busca el mayor tamaño de letra con el que cabe (de 7,6 a 15 pt): generosa si sobra sitio, y solo se reduce si hace falta. Junto a «Imprimir» se lee «1 hoja · letra N pt» o «No cabe en 1 hoja» (en ese caso se imprime en 2). No se imprimen los controles, el texto original ni las etiquetas; sí las notas de traducción/adaptación y «Conviene saber». Para que salgan los fondos hay que dejar activado «Gráficos de fondo» en el diálogo de impresión si el navegador no lo hace solo.
+
 ## Escalado
 Raciones con − / + (de uno en uno, mínimo ½) o atajos ½ / original / doble. Pesos y volúmenes se redondean "de báscula", las piezas y medidas de casa a fracciones (¼ ⅓ ½ ⅔ ¾). Tiempos y temperaturas de los pasos no se escalan.
 
